@@ -22,9 +22,9 @@ export default function Features({ data }) {
                 return(
                   <div key={index} className="py-4 px-5 border-l-4 border-slate-100 hover:border-slate-500">
                     <h3 className="text-xl font-medium mb-2">{feature.title}</h3>
-                    <ReactMarkdown children={feature.description} escapeHtml={false} className="text-gray-500 text-base mb-3" />                    
+                    <ReactMarkdown escapeHtml={false} className="text-gray-500 text-base mb-3" >{feature.description}</ReactMarkdown>                    
                     <a href={feature.url} className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     </a>
                   </div>
