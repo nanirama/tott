@@ -13,7 +13,7 @@ export default function Features({ data }) {
           <div className="xl:w-3/5 px-4 w-full lg:mb-12 mb-8">
             <h6 className="text-base font-semibold mb-3">{title}</h6>
             <h2 className="text-4xl font-semibold tracking-tight mb-4">{sub_title}f</h2>
-            <ReactMarkdown children={description} escapeHtml={false} className="text-xl text-gray-500 leading-8" />
+            <ReactMarkdown escapeHtml={false} className="text-xl text-gray-500 leading-8" >{description}</ReactMarkdown>
 
           </div>
           <div className="w-full flex md:flex-row flex-col ">

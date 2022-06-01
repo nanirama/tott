@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import Logo from "../assets/images/logo.png"
 
@@ -12,28 +13,39 @@ function MobileNav({ open, setOpen }) {
   return (
     <div className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter`}>
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-      <Image className=' ' src={Logo}
+      <Link href="/">
+        <a><Image className=' ' src={Logo}
               alt=""
               width={145}
               height={38}
             />
+        </a>
+      </Link>
       </div>
       <div className="flex flex-col px-4 bg-white">
-        <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+      <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        <a>
           Home
         </a>
-        <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        </Link>
+        <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        <a>
           Benifits
         </a>
-        <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        </Link>
+        <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        <a>
           Resources
         </a>
-        <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        </Link>
+        <Link href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        <a>
           Pricing
         </a>
-
-        <a href="#" className="mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">Login</a>
-
+        </Link>
+        <Link href="#" className="mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
+        <a>Login</a>
+        </Link>
 
       </div>
 
