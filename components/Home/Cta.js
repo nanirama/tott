@@ -9,8 +9,8 @@ export default function Cta({data}) {
           </div>
           <div className="md:w-1/2 px-4">
             <div className=" flex md:flex-row flex-col md:justify-end justify-start">
-              {buttons[0] && buttons[0].button_text && <a href={buttons[0].button_url} target="_blank" className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">{buttons[0].button_text}</a>}
-              {buttons[1] && buttons[1].button_text && <a href={buttons[1].button_url} target="_blank" className="inline-block rounded-lg bg-zinc-600 border  border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">{buttons[1].button_text}</a>}
+              {buttons[0] && buttons[0].button_text && <a href={buttons[0].button_url} target="_blank" rel="noopener noreferrer" className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">{buttons[0].button_text}</a>}
+              {buttons[1] && buttons[1].button_text && <a href={buttons[1].button_url} target="_blank" rel="noopener noreferrer" className="inline-block rounded-lg bg-zinc-600 border  border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">{buttons[1].button_text}</a>}
             </div>
           </div>
         </div>
