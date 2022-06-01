@@ -11,9 +11,9 @@ export default function Faq({data}) {
         <p className="md:text-xl text-lg font-normal text-gray-500 md:mb-16 mb-8 text-center">{sub_title}</p>
         {questions && questions.map((q, index)=>{
           return(
-            <details class="border-b-2 py-4 mb-3">
-              <summary class="text-gray-900 font-medium cursor-pointer mb-3 text-lg leading-5 pr-8">{q.question}</summary>
-              <p class="text-gray-500 text-base font-normal mb-3 pr-8">{q.answer}</p>
+            <details className="border-b-2 py-4 mb-3" key={index}>
+              <summary className="text-gray-900 font-medium cursor-pointer mb-3 text-lg leading-5 pr-8">{q.question}</summary>
+              <p className="text-gray-500 text-base font-normal mb-3 pr-8">{q.answer}</p>
             </details>
           )
         })}

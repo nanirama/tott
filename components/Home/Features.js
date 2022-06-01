@@ -20,7 +20,7 @@ export default function Features({ data }) {
             <div className="md:w-1/2 w-full px-4 lg:pr-14 lg:mt-10 mb-3">
               {features_list && features_list.map((feature, index)=>{
                 return(
-                  <div className="py-4 px-5 border-l-4 border-slate-100 hover:border-slate-500">
+                  <div key={index} className="py-4 px-5 border-l-4 border-slate-100 hover:border-slate-500">
                     <h3 className="text-xl font-medium mb-2">{feature.title}</h3>
                     <ReactMarkdown children={feature.description} escapeHtml={false} className="text-gray-500 text-base mb-3" />                    
                     <a href={feature.url} className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

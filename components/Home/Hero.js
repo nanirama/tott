@@ -12,7 +12,7 @@ export default function Hero({data}) {
             <h2 className="text-4xl font-semibold mb-5">{sub_title}</h2>
             <ReactMarkdown children={description} escapeHtml={false} className="text-xl text-gray-400 leading-8 mb-8 xl:pr-28"/>     
 
-            <div class="flex lg:flex-row flex-col items-stretch xl:pr-28">
+            <div className="flex lg:flex-row flex-col items-stretch xl:pr-28">
               <div className="flex flex-col mb-2 w-full">
 
                 <div className="flex rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 lg:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 mb-2">
