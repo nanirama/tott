@@ -4,8 +4,8 @@ import IphonePro1 from "../../assets/images/iPhone-Pro1.png"
 import IphonePro from "../../assets/images/iPhone-Pro.png"
 
 export default function Features({ data }) {
-  const { title, sub_title, description, image, features_list } = data
-  console.log("Header data image", image)
+  const { title, sub_title, description, first_image, second_image, features_list } = data
+  console.log('features data', data)
   return (
     <div className="lg:py-20 py-14 relative">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col">
@@ -33,18 +33,18 @@ export default function Features({ data }) {
            </div>
             <div className="md:w-1/2 w-full px-4 relative ">
               <div className='absolute left-0 top-16 hidden lg:flex'>
-                <Image className='z-50 ' src={IphonePro1}
+                { second_image && second_image.data && <Image className='z-50 ' src={second_image.data.attributes.url}
                   alt=""
                   width={314}
                   height={496}
-                />
+                />}
               </div>
               <div className='flex lg:justify-end justify-center md:mt-0 mt-8'>
-                <Image className='z-50 ' src={image.data.attributes.url}
+                {first_image && first_image.data && <Image className='z-50 ' src={first_image.data.attributes.url}
                   alt=""
                   width={406}
                   height={560}
-                />
+                />}
 
               </div>
             </div>

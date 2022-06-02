@@ -12,7 +12,7 @@ import { HOME_DATA } from "../lib/graphql/queries";
 
 export default function Home(props) {
   console.log('Props', props.pageData.data.attributes)
-  //const { hero_section, features_section, cta_section, faq_section } = props.pageData.data.attributes
+  //const { hero_section } = props.pageData.data.attributes
   const { hero_section, features_section, cta_section, faq_section, all_in_one_finance, newsletter } = props.pageData.data.attributes
   return (
     <Layout>
