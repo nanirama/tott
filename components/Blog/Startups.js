@@ -29,9 +29,9 @@ export default function StratUpBlk() {
                             </svg> Access to all features</li>
                         </ul>
 
-                        <div class="flex flex-row gap-5">
-                            <a href="#" class="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 md:px-5 px-2 text-gray-600 text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Learn More</a>
-                            <a href="#" class="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 md:px-5 px-2 text-white text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Get Started</a>
+                        <div className="flex flex-row gap-5">
+                            <a href="#" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 md:px-5 px-2 text-gray-600 text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Learn More</a>
+                            <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 md:px-5 px-2 text-white text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Get Started</a>
                         </div>
                     </div>
 

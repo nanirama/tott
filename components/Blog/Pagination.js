@@ -23,8 +23,8 @@ const Pagination = ({ currentPage, numberOfPages, paginationPath = 'blog' }) => 
                         </svg>&nbsp;Previous</button>
                 </div>
                 <div className="sm:flex hidden">
-                    {pages.map((page) => (
-                        <Link
+                    {pages.map((page,index) => (
+                        <Link key={index}
                             href={page.linkURL}
                         >
                             {currentPage === page.label ? (

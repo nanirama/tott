@@ -7,12 +7,12 @@ export default function Newsletter() {
         <p className="md:text-xl text-lg font-normal text-gray-500 lg:mb-0 mb-8">Be the first to know about releases and industry news and insights.</p>
         </div>
         <div className="lg:w-2/5 w-full">
-        <div class="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col">
           <div className="flex flex-col mb-2 w-full">
-            <input class="bg-white rounded-lg text-base leading-none text-gray-500 dark:text-white p-4 md:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 shadow mr-4 mb-2 h-12" type="email" placeholder="Enter your email" />
+            <input className="bg-white rounded-lg text-base leading-none text-gray-500 dark:text-white p-4 md:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 shadow mr-4 mb-2 h-12" type="email" placeholder="Enter your email" />
             <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">We care about your data in our <a href="#" className="underline">privacy policy</a>.</p>
           </div>
-          <button class="md:w-32 w-full hover:bg-zinc-500 bg-zinc-600 rounded-lg text-base font-medium leading-none text-white p-4 shadow h-12">subscribe</button>
+          <button className="md:w-32 w-full hover:bg-zinc-500 bg-zinc-600 rounded-lg text-base font-medium leading-none text-white p-4 shadow h-12">subscribe</button>
         </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function Sidebar({ data, slug, handleInputChange }) {
             <ul>
                 <li className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}><Link href={`/blog/`}><a>View all</a></Link></li>
                 {data && data.map((item, index) => (
-                    <li className={slug === item.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}><Link href={`/blog/category/${item.attributes.slug}`}><a>{item.attributes.name}</a></Link></li>
+                    <li key={index} className={slug === item.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}><Link href={`/blog/category/${item.attributes.slug}`}><a>{item.attributes.name}</a></Link></li>
                 ))}
             </ul>
         </div>
