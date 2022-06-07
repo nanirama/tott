@@ -59,8 +59,8 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
                 <div className='md:w-3/4 w-full'>
                     <div className='flex  flex-wrap'>
                         {posts.length == 0 && (
-                            <div class="w-full bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
-                                <p class="font-bold text-sm">No Posts found</p>
+                            <div className="w-full bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+                                <p className="font-bold text-sm">No Posts found</p>
                             </div>
                         )}
                         {posts && posts.map((blog, index) => {
@@ -75,7 +75,7 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
                 </div>
             </div>
             {posts.length > 0 && (
-                <div class="max-w-7xl mx-auto flex items-center justify-center py-10 px-4">
+                <div className="max-w-7xl mx-auto flex items-center justify-center py-10 px-4">
                     <Pagination currentPage={page} numberOfPages={numOfPages} paginationPath={paginationPath} />
                 </div>
             )}

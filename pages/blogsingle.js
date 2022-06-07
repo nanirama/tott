@@ -70,12 +70,12 @@ export default function Blog(props) {
                            </div>
                            <hr className="my-8" />
                            <h6 className="mb-5">Try out Tott free for 14 days:</h6>
-                           <a href="#" class="w-full text-center hover:bg-zinc-500 bg-zinc-600 rounded-lg shadow border hover:border-zinc-500 border-zinc-600 py-3 px-5 text-white inline-block">Sign up now</a>
+                           <a href="#" className="w-full text-center hover:bg-zinc-500 bg-zinc-600 rounded-lg shadow border hover:border-zinc-500 border-zinc-600 py-3 px-5 text-white inline-block">Sign up now</a>
                            <hr className="my-8" />
                            <div className="flex flex-row gap-3">
                               <a href="" className="border rounded-lg p-2.5">
                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.3335 10.833C8.69138 11.3114 9.14796 11.7073 9.67229 11.9938C10.1966 12.2802 10.7764 12.4506 11.3724 12.4933C11.9683 12.5359 12.5665 12.45 13.1263 12.2411C13.6861 12.0323 14.1944 11.7055 14.6168 11.283L17.1168 8.78298C17.8758 7.99714 18.2958 6.94463 18.2863 5.85214C18.2768 4.75965 17.8386 3.7146 17.0661 2.94207C16.2935 2.16953 15.2485 1.73133 14.156 1.72184C13.0635 1.71234 12.011 2.13232 11.2252 2.89131L9.79183 4.31631M11.6668 9.16631C11.309 8.68787 10.8524 8.29199 10.328 8.00553C9.80371 7.71906 9.22391 7.54871 8.62796 7.50603C8.032 7.46335 7.43384 7.54934 6.87405 7.75816C6.31425 7.96698 5.8059 8.29375 5.3835 8.71631L2.8835 11.2163C2.12451 12.0022 1.70453 13.0547 1.71402 14.1472C1.72352 15.2396 2.16172 16.2847 2.93426 17.0572C3.70679 17.8298 4.75184 18.268 5.84433 18.2775C6.93681 18.2869 7.98932 17.867 8.77517 17.108L10.2002 15.683" stroke="#344054" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.3335 10.833C8.69138 11.3114 9.14796 11.7073 9.67229 11.9938C10.1966 12.2802 10.7764 12.4506 11.3724 12.4933C11.9683 12.5359 12.5665 12.45 13.1263 12.2411C13.6861 12.0323 14.1944 11.7055 14.6168 11.283L17.1168 8.78298C17.8758 7.99714 18.2958 6.94463 18.2863 5.85214C18.2768 4.75965 17.8386 3.7146 17.0661 2.94207C16.2935 2.16953 15.2485 1.73133 14.156 1.72184C13.0635 1.71234 12.011 2.13232 11.2252 2.89131L9.79183 4.31631M11.6668 9.16631C11.309 8.68787 10.8524 8.29199 10.328 8.00553C9.80371 7.71906 9.22391 7.54871 8.62796 7.50603C8.032 7.46335 7.43384 7.54934 6.87405 7.75816C6.31425 7.96698 5.8059 8.29375 5.3835 8.71631L2.8835 11.2163C2.12451 12.0022 1.70453 13.0547 1.71402 14.1472C1.72352 15.2396 2.16172 16.2847 2.93426 17.0572C3.70679 17.8298 4.75184 18.268 5.84433 18.2775C6.93681 18.2869 7.98932 17.867 8.77517 17.108L10.2002 15.683" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                  </svg>
                               </a>
                               <a href="" className="border rounded-lg p-2.5">
@@ -137,9 +137,9 @@ export default function Blog(props) {
                            <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse. </p>
                            <hr className="my-8" />
                            <div className='flex gap-2'>
-                              <a href="#" class="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Product</a>
-                              <a href="#" class="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a>
-                              <a href="#" class="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Sass</a>
+                              <a href="#" className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Product</a>
+                              <a href="#" className="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a>
+                              <a href="#" className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Sass</a>
                            </div>
                         </div>
                      </div>

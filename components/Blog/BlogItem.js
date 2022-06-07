@@ -31,7 +31,7 @@ export default function BlogItem({data}) {
                     
                 <h3 className='text-2xl font-semibold'><Link href={`/blog/${slug}`}><a>{title}</a></Link></h3>
                 <Link href={`/blog/${slug}`}><a><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#101828" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg></a></Link></div>
             <p className='text-base font-normal text-gray-500 mb-5'>{short_description}</p>
             {users_permissions_user && users_permissions_user.data && (
