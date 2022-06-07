@@ -21,7 +21,7 @@ export default function Hero({data}) {
                     <option>UK</option>
                     <option>UE</option>
                   </select>
-                  <input className="w-full focus:outline-none focus:border-0" type="text" placeholder="+1 (555) 000-0000" />
+                  <input className="w-full focus:outline-none focus:border-0" type="email" placeholder="admin@gmail.com" />
                 </div>
                 <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">Free to try for 14 days, no credit card needed.</p>
               </div>
