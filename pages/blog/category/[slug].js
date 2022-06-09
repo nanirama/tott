@@ -14,7 +14,7 @@ const BlogPost = (props) => {
 
 
 export async function getServerSideProps(context) {
-    const limit = 4
+    const limit = 9
     const { slug, page } = context.query
     const pageNumber = page ? page : 1
     const start = +pageNumber === 1 ? 0 : (+pageNumber - 1) * limit

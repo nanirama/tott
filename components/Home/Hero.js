@@ -34,7 +34,7 @@ export default function Hero({data}) {
           <div className="md:w-1/2 w-full px-4">
             <div className='xl:-ml-7 xl:mt-12 flex  xl:justify-start justify-center md:mt-0 mt-8'>            
               <Image className='z-50 ' src={image.data[0].attributes.url}
-                alt=""
+                itemProp="image"
                 width={315}
                 height={544}
               />
@@ -45,7 +45,7 @@ export default function Hero({data}) {
         </div>
         <div className='absolute right-0 top-10 hidden xl:flex'>
           <Image className='z-0' src={image.data[1].attributes.url}
-            alt=""
+            itemProp="image"
             width={680}
             height={632}
             layout="intrinsic"

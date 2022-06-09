@@ -15,6 +15,7 @@ export default function BlogItem({data}) {
     return (
         <div className='md:w-1/2 w-full mb-10 md:px-4'>
             <Image src={postImage}
+                itemProp="image"
                 alt={title}
                 width={460}
                 height={250}
@@ -37,7 +38,8 @@ export default function BlogItem({data}) {
             {users_permissions_user && users_permissions_user.data && (
                     <div className='flex gap-3'>
                     <Image className=' ' src={AuthorImage}
-                        alt=""
+                        itemProp="image"
+                        alt={users_permissions_user.data.attributes.username}
                         width={40}
                         height={40}
                     />

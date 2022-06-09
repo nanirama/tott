@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import moment from 'moment';
-import Author from "../../assets/images/Avatar.png"
+import Link from 'next/link';
 import DefaultImg from "../../assets/images/default-img.png"
 
 export default function BlogFirstItem({data}) {
-    const { title, short_description,feature_image, categories, users_permissions_user, publishedAt, reading_time } = data.attributes
+    const { title, slug, short_description,feature_image, categories, users_permissions_user, publishedAt, reading_time } = data.attributes
     const postImage = feature_image && feature_image.data && feature_image.data.attributes ? feature_image.data.attributes.url : DefaultImg
     const firstCat = categories && categories.data && categories.data[0]
     const AuthorImage = users_permissions_user.data.attributes.image && users_permissions_user.data.attributes.image.data && users_permissions_user.data.attributes.image.data.attributes ? users_permissions_user.data.attributes.image.data.attributes.url : DefaultImg
@@ -12,9 +12,10 @@ export default function BlogFirstItem({data}) {
         <div className='lg:flex gap-8 mb-10 md:px-4'>
             <div className='lg:w-2/3 w-full lg:mb-0 mb-4'>
             <Image src={postImage}
+                itemProp="image"
                 alt={title}
-                width={1120}
-                height={640}
+                width={640}
+                height={360}
             />
             </div>
             <div className='lg:w-1/3 w-full'>
@@ -26,13 +27,14 @@ export default function BlogFirstItem({data}) {
                 <span href='#' className='text-gray-700 text-xs font-medium py-1 px-2 inline-block'>{moment.duration(reading_time).asMinutes()} min read</span>
 
                 </div>
-
-                <h2 className='md:text-3xl text-2xl font-semibold mb-4'>{title}</h2>
+               
+                <h2 className='md:text-3xl text-2xl font-semibold mb-4'><Link href={`/blog/${slug}`}><a>{title}</a></Link></h2>
                 <p className='text-base font-normal text-gray-500 mb-5'>{short_description}</p>
                 {users_permissions_user && users_permissions_user.data && (
                     <div className='flex gap-3'>
-                    <Image className=' ' src={AuthorImage}
-                        alt=""
+                    <Image src={AuthorImage}
+                        itemProp="image"
+                        alt={users_permissions_user.data.attributes.username}
                         width={40}
                         height={40}
                     />

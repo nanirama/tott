@@ -34,14 +34,14 @@ export default function Features({ data }) {
             <div className="md:w-1/2 w-full px-4 relative ">
               <div className='absolute left-0 top-16 hidden lg:flex'>
                 { second_image && second_image.data && <Image className='z-50 ' src={second_image.data.attributes.url}
-                  alt=""
+                  itemProp="image"
                   width={314}
                   height={496}
                 />}
               </div>
               <div className='flex lg:justify-end justify-center md:mt-0 mt-8'>
                 {first_image && first_image.data && <Image className='z-50 ' src={first_image.data.attributes.url}
-                  alt=""
+                  itemProp="image"
                   width={406}
                   height={560}
                 />}

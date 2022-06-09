@@ -38,6 +38,7 @@ export default function StratUpBlk() {
                     <div className="md:w-1/2 w-full px-4 ">
                         <div className='xl:hidden block'>
                             <Image className='z-0' src={BlogHeroImg}
+                                itemProp="image"
                                 alt=""
                                 width={620}
                                 height={456}

@@ -30,7 +30,7 @@ export default function AllInOneFinance({data}) {
           </div>
           <div className="w-full md:w-6/12">
             <div className="flex justify-center md:mt-0 mt-16 px-4 bg">
-              <Image src={image.data[0].attributes.url} width={405} height={496} alt=""/>  
+              <Image itemProp="image" src={image.data[0].attributes.url} width={405} height={496} alt="Tott"/>  
             </div>
           </div>
         </div>

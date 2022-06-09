@@ -17,8 +17,9 @@ function MobileNav({ open, setOpen }) {
     <div className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter`}>
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
         <Link href="/">
-          <a><Image className=' ' src={Logo}
-            alt=""
+          <a><Image src={Logo}
+            itemProp="image"
+            alt="Tott"
             width={145}
             height={38}
           />
