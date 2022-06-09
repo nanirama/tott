@@ -172,7 +172,7 @@ export default function Index({ data }) {
                             <div className='flex gap-2'>
                                 {tags && tags.data && tags.data.map((tag, index) => {
                                     return (
-                                        <div className="bg-slate-100 text-gray-700 hover:bg-pink-100 hover:text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{tag.attributes.name}</div>
+                                        <div key={index} className="bg-slate-100 text-gray-700 hover:bg-pink-100 hover:text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{tag.attributes.name}</div>
                                     )
                                 })}
                             </div>

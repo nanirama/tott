@@ -37,6 +37,7 @@ export default function Hero({data}) {
                 itemProp="image"
                 width={315}
                 height={544}
+                alt={title}
               />
             </div>
           </div>
@@ -48,6 +49,7 @@ export default function Hero({data}) {
             itemProp="image"
             width={680}
             height={632}
+            alt={title}
             layout="intrinsic"
           />
         </div>
