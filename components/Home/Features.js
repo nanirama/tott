@@ -5,7 +5,6 @@ import IphonePro from "../../assets/images/iPhone-Pro.png"
 
 export default function Features({ data }) {
   const { title, sub_title, description, first_image, second_image, features_list } = data
-  console.log('features data', data)
   return (
     <div className="lg:py-20 py-14 relative">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col">
@@ -37,6 +36,7 @@ export default function Features({ data }) {
                   itemProp="image"
                   width={314}
                   height={496}
+                  alt={title}
                 />}
               </div>
               <div className='flex lg:justify-end justify-center md:mt-0 mt-8'>
@@ -44,6 +44,7 @@ export default function Features({ data }) {
                   itemProp="image"
                   width={406}
                   height={560}
+                  alt={sub_title}
                 />}
 
               </div>

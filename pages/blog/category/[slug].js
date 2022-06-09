@@ -4,7 +4,6 @@ import BlogIndex from "../../../components/Blog/BlogIndex"
 import { CATEGORY_ITEM_DATA, TOTAL_BLOGS, CATEGORIES_LIST } from "../../../lib/graphql/queries";
 
 const BlogPost = (props) => {
-    console.log('Props in slug', props)
     return (
         <Layout>
             <BlogIndex data={props} paginationPath={`/blog/category/${props.slug}`} slug={props.slug} />      

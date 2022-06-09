@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 export default function Sidebar({ data, slug, handleInputChange }) {
-    console.log('props cat', data)
     return (
         <div className="lg:pr-10 mb-4 sticky top-0">
             <form className="flex items-center mb-8">
