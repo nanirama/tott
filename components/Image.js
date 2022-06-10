@@ -1,11 +1,14 @@
 import Image from 'next/image'
 
 // replace [yourprojectname] and [yourdomain.com] with your actual project name and (custom) domain
-const cloudflareImageLoader = ({ src, width, height, quality }) => {
-  if (!quality) {
+const cloudflareImageLoader = (props) => {
+  let { src, width, height, quality } = props
+  if (!quality) { 
     quality = 75
   }
-  console.log('Image src',src)
+  if (!height) { 
+    height = 100
+  }
   return `http://images.trady.workers.dev/?width=${width}&height=${height}&quality=${quality}&image=${process.env.DOMAIN_URL}${src}`
 }
 
@@ -19,5 +22,5 @@ const cloudflareImageLoader = ({ src, width, height, quality }) => {
 // }
 
 export default function ImgLoader(props) {
-  return <Image {...props} loader={cloudflareImageLoader} width={props.width} height={props.height} itemProp="image" alt={props.alt ? props.alt : 'Tott'} />
+  return <Image {...props} loader={e=>cloudflareImageLoader(props)} width={props.width} height={props.height} itemProp="image" alt={props.alt ? props.alt : 'Tott'} />
 }
