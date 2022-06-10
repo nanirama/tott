@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     loader: 'imgix',
     path: '',
-    domains: ['res.cloudinary.com'],
+    domains: ['res.cloudinary.com','images.trady.workers.dev'],
   },  
 }
 
