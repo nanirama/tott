@@ -9,7 +9,7 @@ const cloudflareImageLoader = (props) => {
   if (!height) { 
     height = 100
   }
-  return `http://images.trady.workers.dev/?width=${width}&height=${height}&quality=${quality}&image=${src}`
+  return `https://images.trady.workers.dev/?width=${width}&height=${height}&quality=${quality}&image=${src}`
 }
 
 // export default function ImgLoader(props) {
