@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown"
 import moment from 'moment';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Link from 'next/link';
-import Author from "../../assets/images/Avatar.png"
+import ImgLoader from '../Image';
 import Share from './Share';
 import RecentPosts from './RecentPosts';
 
@@ -83,12 +83,11 @@ export default function Index({ data }) {
 
                 return (
                     <div className="postImgWrapper">
-                        <Image
+                        <ImgLoader
                             src={image.properties.src}
+                            alt={alt}
                             width={width}
                             height={height}
-                            className="postImg"
-                            alt={alt}
                         />
                         {alt ? <p className="small" aria-label={alt}>{alt}</p> : null}
                     </div>
@@ -116,7 +115,10 @@ export default function Index({ data }) {
                         </div>
                         <div className="w-full md:w-7/12 px-4">
                             <div className="w-full">
-                                <Image src={postImage} width={950} height={726} alt="" />
+                            <ImgLoader
+                                src={postImage}
+                                width={950} height={726}
+                            />
                             </div>
                         </div>
                     </div>
@@ -142,7 +144,9 @@ export default function Index({ data }) {
                                             console.log('c item', image.data[0].attributes.url)
                                             return (
                                                 <div className="flex flex-row items-center gap-3 mb-6" key={index}>
-                                                    <Image src={image.data[0].attributes.url} width={48} height={48} alt="" />
+                                                    <ImgLoader
+                                                         src={image.data[0].attributes.url} width={48} height={48}
+                                                    />
                                                     <h6 className="flex flex-col text-gray-900">{name}
                                                         <span className="font-normal">{title}</span>
                                                     </h6>
@@ -181,7 +185,7 @@ export default function Index({ data }) {
                 </div>
             </div>
             <div className="">
-            <RecentPosts />
+            {/* <RecentPosts /> */}
             {/* <RecentPosts />
             <StartUpBlk /> */}
 

@@ -1,8 +1,7 @@
 import { useState, Fragment, } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Menu, Transition } from '@headlessui/react'
-// import Logo from "../assets/images/logo.png"
+import Logo from "../assets/images/logo.png"
 import ImgLoader from './Image'
 
 function NavLink({ to, children }) {
@@ -19,13 +18,7 @@ function MobileNav({ open, setOpen }) {
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
         <Link href="/">
           <a>
-            {/* <ImgLoader src={Logo} width={145}/> */}
-            {/* <Image src={Logo}
-            itemProp="image"
-            alt="Tott"
-            width={145}
-            height={38}
-          /> */}
+            <ImgLoader src={Logo} width={145} height={38}/>
           </a>
         </Link>
       </div>
@@ -58,214 +51,197 @@ function MobileNav({ open, setOpen }) {
 
 
 
-<Menu as="div" className="relative text-left flex flex-col">
-  <Menu.Item>
+        <Menu as="div" className="relative text-left flex flex-col">
+          <Menu.Item>
 
-    <a
-      href="#"
-      className={classNames(
+            <a
+              href="#"
+              className={classNames(
 
-        'block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium'
-      )}
-    >
-      Home
-    </a>
+                'block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium'
+              )}
+            >
+              Home
+            </a>
 
-  </Menu.Item>
+          </Menu.Item>
 
- 
-  <div className="relative inline-block text-left z-50">
-<Menu>
-{({ open }) => (
-<>
-<span className="rounded-md shadow-sm">
-  <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex  items-center">
-    <span>Benifits</span>
-    <svg
-      className="w-5 h-5 ml-2 -mr-1"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </Menu.Button>
-</span>
 
-<Transition
-  show={open}
-  enter="transition ease-out duration-100"
-  enterFrom="transform opacity-0 scale-95"
-  enterTo="transform opacity-100 scale-100"
-  leave="transition ease-in duration-75"
-  leaveFrom="transform opacity-100 scale-100"
-  leaveTo="transform opacity-0 scale-95"
->
-  <Menu.Items
-    static
-    className="absolute left-0 w-40 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-  >
-   <div className="">
-      <Menu.Item>
-        {({ active }) => (
-          <a
-            href="#account-settings"
-            className={`${
-              active
-                ? "bg-gray-100 text-gray-900"
-                : "text-gray-700"
-            } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
-          >
-            Account settings
-          </a>
-          
-        )}
-      </Menu.Item>
-     
-      </div>  
+          <div className="relative inline-block text-left z-50">
+            <Menu>
+              {({ open }) => (
+                <>
+                  <span className="rounded-md shadow-sm">
+                    <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex  items-center">
+                      <span>Benifits</span>
+                      <svg
+                        className="w-5 h-5 ml-2 -mr-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </Menu.Button>
+                  </span>
 
-    
-    <div className="">
-      <Menu.Item>
-        {({ active }) => (
-          <a
-            href="#account-settings"
-            className={`${
-              active
-                ? "bg-gray-100 text-gray-900"
-                : "text-gray-700"
-            } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
-          >
-            Account settings
-          </a>
-          
-        )}
-      </Menu.Item>
-     
-      </div> 
+                  <Transition
+                    show={open}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items
+                      static
+                      className="absolute left-0 w-40 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                    >
+                      <div className="">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#account-settings"
+                              className={`${active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700"
+                                } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                            >
+                              Account settings
+                            </a>
 
-  </Menu.Items>
-</Transition>
-</>
-)}
-</Menu>
-</div>
+                          )}
+                        </Menu.Item>
+
+                      </div>
+
+
+                      <div className="">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#account-settings"
+                              className={`${active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700"
+                                } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                            >
+                              Account settings
+                            </a>
+
+                          )}
+                        </Menu.Item>
+
+                      </div>
+
+                    </Menu.Items>
+                  </Transition>
+                </>
+              )}
+            </Menu>
+          </div>
 
 
 
-<div className="relative inline-block text-left z-10">
-<Menu>
-{({ open }) => (
-<>
-<span className="rounded-md shadow-sm">
-  <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex items-center">
-    <span>Resources</span>
-    <svg
-      className="w-5 h-5 ml-2 -mr-1"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </Menu.Button>
-</span>
+          <div className="relative inline-block text-left z-10">
+            <Menu>
+              {({ open }) => (
+                <>
+                  <span className="rounded-md shadow-sm">
+                    <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex items-center">
+                      <span>Resources</span>
+                      <svg
+                        className="w-5 h-5 ml-2 -mr-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </Menu.Button>
+                  </span>
 
-<Transition
-  show={open}
-  enter="transition ease-out duration-100"
-  enterFrom="transform opacity-0 scale-95"
-  enterTo="transform opacity-100 scale-100"
-  leave="transition ease-in duration-75"
-  leaveFrom="transform opacity-100 scale-100"
-  leaveTo="transform opacity-0 scale-95"
->
-  <Menu.Items
-    static
-    className="absolute left-0 w-40 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-  >
-      
-    <div className="">
-      <Menu.Item>
-        {({ active }) => (
-          <a
-            href="#account-settings"
-            className={`${
-              active
-                ? "bg-gray-100 text-gray-900"
-                : "text-gray-700"
-            } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
-          >
-            Account settings
-          </a>
-          
-        )}
-      </Menu.Item>
-     
-      </div>  
-      <div className="">
-      <Menu.Item>
-        {({ active }) => (
-          <a
-            href="#settings"
-            className={`${
-              active
-                ? "bg-gray-100 text-gray-900"
-                : "text-gray-700"
-            } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-          >
-            settings
-          </a>
-        )}
-      </Menu.Item>
-      </div>           
+                  <Transition
+                    show={open}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items
+                      static
+                      className="absolute left-0 w-40 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                    >
 
-  </Menu.Items>
+                      <div className="">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#account-settings"
+                              className={`${active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700"
+                                } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                            >
+                              Account settings
+                            </a>
 
- 
-</Transition>
-</>
-)}
-</Menu>
-</div>
+                          )}
+                        </Menu.Item>
+
+                      </div>
+                      <div className="">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#settings"
+                              className={`${active
+                                  ? "bg-gray-100 text-gray-900"
+                                  : "text-gray-700"
+                                } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                            >
+                              settings
+                            </a>
+                          )}
+                        </Menu.Item>
+                      </div>
+
+                    </Menu.Items>
+
+
+                  </Transition>
+                </>
+              )}
+            </Menu>
+          </div>
 
 
 
-  <Menu.Item>
+          <Menu.Item>
 
-    <a
-      href="#"
-      className={classNames(
+            <a
+              href="#"
+              className={classNames(
 
-        'block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium'
-      )}
-    >
-      Pricing
-    </a>
+                'block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium'
+              )}
+            >
+              Pricing
+            </a>
 
-  </Menu.Item>
+          </Menu.Item>
 
-</Menu>
-{/* <div className="text-sm flex-grow hidden lg:flex">
-  <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-    Home
-  </a>
-  <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-    Benifits
-  </a>
-  <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-    Resources
-  </a>
-  <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-    Pricing
-  </a>
-</div> */}
+        </Menu>
+
 
 
 
@@ -289,11 +265,8 @@ export default function Header() {
 
           <MobileNav open={open} setOpen={setOpen} />
           <div className="flex items-center flex-no-shrink lg:mr-6">
-            {/* <Image className=' ' src={Logo}
-              alt=""
-              width={145}
-              height={38}
-            /> */}
+          <ImgLoader src={Logo} width={145} height={38}/>
+  
 
           </div>
           <div className="w-full block flex-grow flex items-center lg:w-auto float-right lg:flex-row flex-row-reverse gap-5">
@@ -326,167 +299,163 @@ export default function Header() {
 
                 </Menu.Item>
 
-               
+
                 <div className="relative inline-block text-left">
-        <Menu>
-          {({ open }) => (
-            <>
-              <span className="rounded-md shadow-sm">
-                <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex  items-center">
-                  <span>Benifits</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </Menu.Button>
-              </span>
+                  <Menu>
+                    {({ open }) => (
+                      <>
+                        <span className="rounded-md shadow-sm">
+                          <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex  items-center">
+                            <span>Benefits</span>
+                            <svg
+                              className="w-5 h-5 ml-2 -mr-1"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </Menu.Button>
+                        </span>
 
-              <Transition
-                show={open}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items
-                  static
-                  className="absolute -right-24 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                >
-                 <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#account-settings"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                        <Transition
+                          show={open}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
                         >
-                          Account settings
-                        </a>
-                        
-                      )}
-                    </Menu.Item>
-                   
-                    </div>  
+                          <Menu.Items
+                            static
+                            className="absolute -right-24 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                          >
+                            <div className="">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="#account-settings"
+                                    className={`${active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700"
+                                      } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                  >
+                                    Account settings
+                                  </a>
 
-                  
-                  <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#account-settings"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                )}
+                              </Menu.Item>
+
+                            </div>
+
+
+                            <div className="">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="#account-settings"
+                                    className={`${active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700"
+                                      } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                  >
+                                    Account settings
+                                  </a>
+
+                                )}
+                              </Menu.Item>
+
+                            </div>
+
+                          </Menu.Items>
+                        </Transition>
+                      </>
+                    )}
+                  </Menu>
+                </div>
+
+
+
+                <div className="relative inline-block text-left">
+                  <Menu>
+                    {({ open }) => (
+                      <>
+                        <span className="rounded-md shadow-sm">
+                          <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex items-center ">
+                            <span>Resources</span>
+                            <svg
+                              className="w-5 h-5 ml-2 -mr-1"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </Menu.Button>
+                        </span>
+
+                        <Transition
+                          show={open}
+                          enter="transition ease-out duration-100"
+                          enterFrom="transform opacity-0 scale-95"
+                          enterTo="transform opacity-100 scale-100"
+                          leave="transition ease-in duration-75"
+                          leaveFrom="transform opacity-100 scale-100"
+                          leaveTo="transform opacity-0 scale-95"
                         >
-                          Account settings
-                        </a>
-                        
-                      )}
-                    </Menu.Item>
-                   
-                    </div> 
+                          <Menu.Items
+                            static
+                            className="absolute -right-20 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                          >
 
-                </Menu.Items>
-              </Transition>
-            </>
-          )}
-        </Menu>
-      </div>
+                            <div className="">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="#account-settings"
+                                    className={`${active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700"
+                                      } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                  >
+                                    Account settings
+                                  </a>
+
+                                )}
+                              </Menu.Item>
+
+                            </div>
+                            <div className="">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="#settings"
+                                    className={`${active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700"
+                                      } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                  >
+                                    settings
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            </div>
+
+                          </Menu.Items>
 
 
-
-      <div className="relative inline-block text-left">
-        <Menu>
-          {({ open }) => (
-            <>
-              <span className="rounded-md shadow-sm">
-                <Menu.Button className="mt-4 lg:mt-0 text-gray-500 mr-10 text-base font-medium flex items-center ">
-                  <span>Resources</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </Menu.Button>
-              </span>
-
-              <Transition
-                show={open}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items
-                  static
-                  className="absolute -right-20 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                >
-                    
-                  <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#account-settings"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
-                        >
-                          Account settings
-                        </a>
-                        
-                      )}
-                    </Menu.Item>
-                   
-                    </div>  
-                    <div className="">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#settings"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
-                        >
-                          settings
-                        </a>
-                      )}
-                    </Menu.Item>
-                    </div>           
-
-                </Menu.Items>
-             
-               
-              </Transition>
-            </>
-          )}
-        </Menu>
-      </div>
+                        </Transition>
+                      </>
+                    )}
+                  </Menu>
+                </div>
 
 
 
@@ -505,20 +474,6 @@ export default function Header() {
                 </Menu.Item>
 
               </Menu>
-              {/* <div className="text-sm flex-grow hidden lg:flex">
-                <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-                  Home
-                </a>
-                <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-                  Benifits
-                </a>
-                <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-                  Resources
-                </a>
-                <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-gray-500 mr-10 text-base font-medium">
-                  Pricing
-                </a>
-              </div> */}
 
 
 
@@ -534,7 +489,7 @@ export default function Header() {
 
         </nav>
       </div>
-      
+
     </div>
   )
 }

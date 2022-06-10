@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
-// import Logo from "../assets/images/logo.png"
+import ImgLoader from './Image'
+import Logo from "../assets/images/logo.png"
 const Footer = () => {
    return (
       <footer>
@@ -22,7 +23,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4">
                <div className="flex lg:flex-row flex-col border-t border-b py-10">
                   <div className="w-full lg:w-4/12">
-                     {/* <Image itemProp="image" src={Logo} alt="Tott" width={145} height={38} /> */}
+                  <ImgLoader src={Logo} width={145} height={38}/>
                      <p className="md:mt-8 mt-4 text-gray-500 text-base lg:mb-0 mb-12">Websites, but for service businesses</p>
                   </div>
                   <div className="w-full lg:w-8/12">
