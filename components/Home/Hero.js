@@ -16,11 +16,7 @@ export default function Hero({ data }) {
             <div className="flex flex-col mb-2 w-full">
 
               <div className="flex rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 lg:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 mb-2">
-                <select className="border-0 focus:outline-none focus:border-0 mr-3" id="grid-state">
-                  <option>US</option>
-                  <option>UK</option>
-                  <option>UE</option>
-                </select>
+               
                 <input className="w-full focus:outline-none focus:border-0" type="email" placeholder="admin@gmail.com" />
               </div>
               <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">Free to try for 14 days, no credit card needed.</p>
