@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import moment from 'moment';
 import Link from 'next/link';
+import ImgLoader from '../Image';
 import DefaultImg from "../../assets/images/default-img.png"
 
 export default function BlogFirstItem({data}) {
@@ -11,8 +11,8 @@ export default function BlogFirstItem({data}) {
     return (
         <div className='lg:flex gap-8 mb-10 md:px-4'>
             <div className='lg:w-2/3 w-full lg:mb-0 mb-4'>
-            <Image src={postImage}
-                itemProp="image"
+            <ImgLoader
+                src={postImage}
                 alt={title}
                 width={640}
                 height={360}
@@ -32,16 +32,11 @@ export default function BlogFirstItem({data}) {
                 <p className='text-base font-normal text-gray-500 mb-5'>{short_description}</p>
                 {users_permissions_user && users_permissions_user.data && (
                     <div className='flex gap-3'>
-                    <Image src={AuthorImage}
-                        itemProp="image"
-                        alt={users_permissions_user.data.attributes.username}
-                        width={40}
-                        height={40}
-                    />
+                     <ImgLoader src={AuthorImage} alt={users_permissions_user.data.attributes.username} width={40} height={40} />
                     <p className='text-sm font-semibold text-gray-700'>{users_permissions_user.data.attributes.username}<br />
                         <span className='font-normal text-gray-500'>{moment(publishedAt).format('DD MMM YYYY')}</span></p>
-                </div>
-            )}
+                    </div>
+                )}
             </div>
         </div>
     )

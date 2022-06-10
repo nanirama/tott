@@ -15,12 +15,6 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
         query: emptyQuery,
     })
 
-    // blogs.map(post => {
-    //     const { title} = post.attributes
-    //     console.log('post post', post.attributes)
-      
-    //   })
-
     const handleInputChange = event => {        
         const query = event.target.value
         const posts = blogs || []
@@ -65,10 +59,10 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
                         )}
                         {posts && posts.map((blog, index) => {
                             if (index === 0) {
-                                return <BlogFirstItem data={blog} />
+                                return <BlogFirstItem key={index} data={blog} />
                             }
                             else {
-                                return <BlogItem data={blog} />
+                                return <BlogItem key={index} data={blog} />
                             }
                         })}
                     </div>
