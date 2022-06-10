@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ReactMarkdown from "react-markdown";
+import ImgLoader from '../Image';
 import IphonePro1 from "../../assets/images/iPhone-Pro1.png"
 import IphonePro from "../../assets/images/iPhone-Pro.png"
 
@@ -32,20 +33,13 @@ export default function Features({ data }) {
            </div>
             <div className="md:w-1/2 w-full px-4 relative ">
               <div className='absolute left-0 top-16 hidden lg:flex'>
-                { second_image && second_image.data && <Image className='z-50 ' src={second_image.data.attributes.url}
-                  itemProp="image"
-                  width={314}
-                  height={496}
-                  alt={title}
-                />}
+                { second_image && second_image.data && 
+                <ImgLoader src={second_image.data.attributes.url} width={314} height={496} alt={title} />
+                }
               </div>
               <div className='flex lg:justify-end justify-center md:mt-0 mt-8'>
-                {first_image && first_image.data && <Image className='z-50 ' src={first_image.data.attributes.url}
-                  itemProp="image"
-                  width={406}
-                  height={560}
-                  alt={sub_title}
-                />}
+                {first_image && first_image.data &&
+                <ImgLoader src={first_image.data.attributes.url} width={406} height={560} alt={sub_title} />               }
 
               </div>
             </div>

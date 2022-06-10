@@ -17,12 +17,12 @@ export default function AllInOneFinance({data}) {
               {buttons && buttons.map((item, index)=>{
                 return(
                   <div className="mr-3" key={index}>
-                    {item.button_url && <Link href={item.button_url} passHref={true}>
+                    {/* {item.button_url && <Link href={item.button_url} passHref={true}>
                       <a>
                       { item.button_text && item.button_text==='App Store Url' && <Image src={AppStore} width={132} height={44} alt="" />}
                       { item.button_text && item.button_text==='Google Play store Url' && <Image src={GooglePlay} width={132} height={44} alt="" />}
                       </a>
-                    </Link>}
+                    </Link>} */}
                   </div>
                 )
               })}

@@ -2,7 +2,8 @@ import { useState, Fragment, } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, Transition } from '@headlessui/react'
-import Logo from "../assets/images/logo.png"
+// import Logo from "../assets/images/logo.png"
+import ImgLoader from './Image'
 
 function NavLink({ to, children }) {
   return <a href={to} className={`mx-4`}>
@@ -17,12 +18,14 @@ function MobileNav({ open, setOpen }) {
     <div className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter`}>
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
         <Link href="/">
-          <a><Image src={Logo}
+          <a>
+            {/* <ImgLoader src={Logo} width={145}/> */}
+            {/* <Image src={Logo}
             itemProp="image"
             alt="Tott"
             width={145}
             height={38}
-          />
+          /> */}
           </a>
         </Link>
       </div>
@@ -286,11 +289,11 @@ export default function Header() {
 
           <MobileNav open={open} setOpen={setOpen} />
           <div className="flex items-center flex-no-shrink lg:mr-6">
-            <Image className=' ' src={Logo}
+            {/* <Image className=' ' src={Logo}
               alt=""
               width={145}
               height={38}
-            />
+            /> */}
 
           </div>
           <div className="w-full block flex-grow flex items-center lg:w-auto float-right lg:flex-row flex-row-reverse gap-5">

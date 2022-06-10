@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    path: '/_next/image',
-    loader: 'default',
+    loader: 'imgix',
+    path: '',
     domains: ['res.cloudinary.com'],
   },  
 }
