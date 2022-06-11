@@ -38,7 +38,7 @@ export default function StratUpBlk() {
 
                     <div className="md:w-1/2 w-full px-4 ">
                         <div className='xl:hidden block'>
-                            <img  src={BlogHeroImg}/>
+                            {/* <img  src={BlogHeroImg}/> */}
                         {/* <ImgLoader src={BlogHeroImg} width={620} height={456} alt={'Tott'} /> */}
                           
                         </div>
@@ -47,12 +47,12 @@ export default function StratUpBlk() {
 
                 </div>
                 <div className='xl:absolute xl:right-0 xl:top-10 hidden xl:flex'>
-                    <Image className='z-0' src={BlogHeroImg}
+                    {/* <Image className='z-0' src={BlogHeroImg}
                         alt=""
                         width={620}
                         height={456}
                         layout="intrinsic"
-                    />
+                    /> */}
                 </div>
             </div>
 

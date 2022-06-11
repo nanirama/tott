@@ -30,7 +30,7 @@ export default function RecentBlogItem({ data }) {
             <p className='text-gray-500 font-normal text-base mb-5'>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
             <div className='flex gap-2'>
                 {categories && categories.data && categories.data.map((cat, index)=>(
-                    <Link href={`/blog/${cat.attributes.slug}`}><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{cat.attributes.name}</a></Link>
+                    <Link key={index} href={`/blog/${cat.attributes.slug}`}><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{cat.attributes.name}</a></Link>
                 ))}
                 
                 {/* <a href="#" className="bg-slate-100 text-blue-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Research</a>
