@@ -6,11 +6,13 @@ import Link from 'next/link';
 import ImgLoader from '../Image';
 import Share from './Share';
 import RecentPosts from './RecentPosts';
+import StartUpBlk from './Startups'
 
 import DefaultImg from "../../assets/images/default-img.png"
 
 
-export default function Index({ data }) {
+export default function Index({ data, latestPosts }) {
+    console.log('latestPosts',latestPosts)
     const {
         title,
         slug,
@@ -30,7 +32,8 @@ export default function Index({ data }) {
     const stwitterHandle = "_MsLinda";
     const stitle = `Read ${title} `;
     const surl = "/";
-    const MarkdownComponents2 = {
+
+    const MarkdownComponents2 = {        
         h2: heading => {
             const { node } = heading
             if (node.children[0].type === "text") {
@@ -38,6 +41,9 @@ export default function Index({ data }) {
                     <li className="text-base font-medium text-gray-500 mb-2"><AnchorLink href={`#${node.children[0].value.replace(" ", "_").toLowerCase()}`}>{node.children[0].value}</AnchorLink></li>
                 )
             }
+        },
+        li: Text => {
+            return null
         },
         p: paragraph => {
             return null
@@ -57,19 +63,22 @@ export default function Index({ data }) {
         h6: paragraph => {
             return null
         }
+        
     }
     const MarkdownComponents = {
         h2: heading => {
             const { node } = heading
-            console.log('node data', node.children[0])
+            
             if (node.children[0].type === "text") {
                 return (
                     <h2 id={`${node.children[0].value.replace(" ", "_").toLowerCase()}`}>{node.children[0].value}</h2>
                 )
             }
         },
-        p: paragraph => {
+        p: paragraph => {            
             const { node } = paragraph
+
+            
             if (node.children[0].tagName === "img") {
                 const image = node.children[0]
                 const metastring = image.properties.alt
@@ -94,8 +103,6 @@ export default function Index({ data }) {
                 )
             }
             return <p>{paragraph.children}</p>
-
-
         },
     }
     return (
@@ -185,9 +192,8 @@ export default function Index({ data }) {
                 </div>
             </div>
             <div className="">
-            {/* <RecentPosts /> */}
-            {/* <RecentPosts />
-            <StartUpBlk /> */}
+            <RecentPosts data={latestPosts} />
+            {/* <StartUpBlk /> */}
 
             <div className="bg-gray-50 lg:py-10 mt-20">
                <div className="max-w-3xl mx-auto justify-center items-center text-center px-4">
