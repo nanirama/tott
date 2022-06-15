@@ -8,7 +8,7 @@ export default function Hero({ data }) {
     <div className="lg:pt-20 pt-14 relative">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col">
         <div className="md:w-1/2 w-full px-4 ">
-          <h1 className="text-4xl font-semibold mb-10">{title}</h1>
+          <h1 className="lg:text-4xl text-3xl font-semibold mb-10">{title}</h1>
           <h2 className="text-4xl font-semibold mb-5">{sub_title}</h2>
           <ReactMarkdown escapeHtml={false} className="text-xl text-gray-400 leading-8 mb-8 xl:pr-28">{description}</ReactMarkdown>
 

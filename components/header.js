@@ -265,7 +265,7 @@ export default function Header() {
 
           <MobileNav open={open} setOpen={setOpen} />
           <div className="flex items-center flex-no-shrink lg:mr-6">
-          <ImgLoader src={Logo} width={145} height={38}/>
+          <ImgLoader src={Logo} width={140} height={50}/>
   
 
           </div>
