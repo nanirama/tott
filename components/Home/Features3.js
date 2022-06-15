@@ -11,17 +11,17 @@ export default function Features3() {
     return (
         <div className="w-full">
             <div className="max-w-7xl mx-auto flex flex-col px-4 lg:py-20 py-5">
-                <div class="xl:w-3/5 w-full lg:mb-12 mb-8">
-                    <h6 class="text-base font-semibold mb-3">Features</h6>
-                    <h2 class="md:text-4xl text-2xl font-semibold tracking-tight mb-4">Overflowing with useful features</h2>
-                    <div class="md:text-xl text-lg text-gray-500 md:leading-8">
+                <div className="xl:w-3/5 w-full lg:mb-12 mb-8">
+                    <h6 className="text-base font-semibold mb-3">Features</h6>
+                    <h2 className="md:text-4xl text-2xl font-semibold tracking-tight mb-4">Overflowing with useful features</h2>
+                    <div className="md:text-xl text-lg text-gray-500 md:leading-8">
                         <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                     </div>
                 </div>
 
-                <div class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
                     <div>
-                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
                             <div className='w-full flex flex-col'>
                                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 28C4 14.7452 14.7452 4 28 4C41.2548 4 52 14.7452 52 28C52 41.2548 41.2548 52 28 52C14.7452 52 4 41.2548 4 28Z" fill="#D9D8D8" />

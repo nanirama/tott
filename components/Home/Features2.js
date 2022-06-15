@@ -11,15 +11,15 @@ export default function Features2() {
     return (
         <div className="w-full">
             <div className="max-w-7xl mx-auto flex flex-col px-4 lg:py-20 py-5">
-                <div class="xl:w-3/5 w-full lg:mb-12 mb-8">
-                    <h6 class="text-base font-semibold mb-3">Features</h6>
-                    <h2 class="md:text-4xl text-2xl font-semibold tracking-tight mb-4">Beautiful analytics to grow smarter</h2>
-                    <div class="md:text-xl text-lg text-gray-500 md:leading-8">
+                <div className="xl:w-3/5 w-full lg:mb-12 mb-8">
+                    <h6 className="text-base font-semibold mb-3">Features</h6>
+                    <h2 className="md:text-4xl text-2xl font-semibold tracking-tight mb-4">Beautiful analytics to grow smarter</h2>
+                    <div className="md:text-xl text-lg text-gray-500 md:leading-8">
                         <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                     </div>
                 </div>
 
-                <div class="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5">
+                <div className="grid lg:grid-cols-3 grid-cols-1 md:gap-10 gap-5">
                     <div className='w-full flex flex-col'>
 
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
 
                     </div>
@@ -50,7 +50,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             An all-in-one customer service platform that helps you balance everything your customers need to be happy.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
 
                     </div>
@@ -67,7 +67,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
 
                     </div>
@@ -84,7 +84,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
 
                     </div>
@@ -102,7 +102,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
                     </div>
 
@@ -121,7 +121,7 @@ export default function Features2() {
                         <p className="mt-3 mb-5 text-base text-gray-500">
                             We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
                         </p>
-                        <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                        <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
                     </div>
                 </div>

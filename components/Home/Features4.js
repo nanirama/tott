@@ -10,15 +10,15 @@ export default function Features4() {
     return (
         <div className="w-full">
             <div className="max-w-7xl mx-auto flex flex-col px-4 py-10">
-                <div class="xl:w-3/5 w-full lg:mb-12 mb-8">
-                    <h6 class="-mt-8 text-base font-semibold mb-3">Features</h6>
-                    <h2 class="text-4xl font-semibold tracking-tight mb-4">Overflowing with useful features</h2>
-                    <div class="text-xl text-gray-500 leading-8">
+                <div className="xl:w-3/5 w-full lg:mb-12 mb-8">
+                    <h6 className="-mt-8 text-base font-semibold mb-3">Features</h6>
+                    <h2 className="text-4xl font-semibold tracking-tight mb-4">Overflowing with useful features</h2>
+                    <div className="text-xl text-gray-500 leading-8">
                         <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                     </div>
                 </div>
 
-                <div class="grid md:grid-cols-2 grid-cols-1 md:gap-10 pap-3">
+                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 pap-3">
                     <div className='lg:mt-5'>                 
                     <div className='w-full flex gap-3 mb-8'>                      
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ export default function Features4() {
                             <p className="mt-3 mb-5 text-base text-gray-500">
                                 Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
                             </p>
-                            <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                            <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a>
                             </div>
                     </div>
@@ -52,7 +52,7 @@ export default function Features4() {
                             <p className="mt-3 mb-5 text-base text-gray-500">
                                 An all-in-one customer service platform that helps you balance everything your customers need to be happy.
                             </p>
-                            <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                            <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a>
                             </div>
                     </div>
@@ -70,7 +70,7 @@ export default function Features4() {
                             <p className="mt-3 mb-5 text-base text-gray-500">
                                 Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
                             </p>
-                            <a class="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                            <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a>
                             </div>
                     </div>

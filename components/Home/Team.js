@@ -13,26 +13,26 @@ export default function TeamBlock() {
             <div className="max-w-64xl mx-auto flex flex-col px-4 text-center md:mb-14 mb-8">
                 <h2 className="md:text-4xl text-2xl font-semibold text-white md:mb-8 mb-4">Join all the other service companies thriving with Trady</h2>
                 
-                <div class="flex md:flex-row flex-col text-center justify-center w-full">
+                <div className="flex md:flex-row flex-col text-center justify-center w-full">
                    
-                    <a href="#" class="inline-block text-center rounded-lg bg-green-400  py-3 px-5 text-white text-base font-medium md:w-auto w-full">Start Free Trial</a></div>
+                    <a href="#" className="inline-block text-center rounded-lg bg-green-400  py-3 px-5 text-white text-base font-medium md:w-auto w-full">Start Free Trial</a></div>
             </div>
             <div className="max-w-7xl mx-auto px-4">
                
-            <div class="grid lg:grid-cols-3 grid-cols-1 gap-y-8 gap-x-5"> 
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-y-8 gap-x-5"> 
                 <div className='w-full flex flex-col items-center'>
                     <div className='relative'>
                       
                     <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
                         
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">tampalawns</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">tampalawns</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Founder & CEO</p>
                             <p className='text-sm text-white mb-6'>“Trady has literally turned out business around”</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
@@ -55,13 +55,13 @@ export default function TeamBlock() {
                         <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
                         
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">Rich Wilson</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">Rich Wilson</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Engineering Manager</p>
                             <p className='text-sm text-white mb-6'>Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
@@ -89,13 +89,13 @@ export default function TeamBlock() {
   <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
 
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">Annie Stanley</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">Annie Stanley</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Product Manager</p>
                             <p className='text-sm text-white mb-6'>Former PM for Airtable, Medium, Ghost, and Lumi.</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
@@ -117,13 +117,13 @@ export default function TeamBlock() {
   <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
 
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">Johnny Bell</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">Johnny Bell</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Frontend Developer</p>
                             <p className='text-sm text-white mb-6'>Former frontend dev for Linear, Coinbase, and Postscript.</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
@@ -145,13 +145,13 @@ export default function TeamBlock() {
   <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
 
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">Mia Ward</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">Mia Ward</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Backend Developer</p>
                             <p className='text-sm text-white mb-6'>Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
@@ -173,13 +173,13 @@ export default function TeamBlock() {
   <ImgLoader src={Author1} width={384} height={480} alt="Team member" />  
 
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-3xl text-xl font-semibold text-white"><a href="#">Archie Young</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-3xl text-xl font-semibold text-white"><a href="#">Archie Young</a></h3>
                                 <a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11L11 1M11 1H1M11 1V11" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></a>
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>Product Designer</p>
                             <p className='text-sm text-white mb-6'>Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
                                 <a href="">
                                     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.55016 19.7502C16.6045 19.7502 21.5583 12.2469 21.5583 5.74211C21.5583 5.53117 21.5536 5.31554 21.5442 5.1046C22.5079 4.40771 23.3395 3.5445 24 2.55554C23.1025 2.95484 22.1496 3.21563 21.1739 3.32898C22.2013 2.71315 22.9705 1.74572 23.3391 0.606011C22.3726 1.1788 21.3156 1.58286 20.2134 1.80085C19.4708 1.01181 18.489 0.48936 17.4197 0.314295C16.3504 0.13923 15.2532 0.321295 14.2977 0.832341C13.3423 1.34339 12.5818 2.15495 12.1338 3.14156C11.6859 4.12816 11.5754 5.23486 11.8195 6.29054C9.86249 6.19233 7.94794 5.68395 6.19998 4.79834C4.45203 3.91274 2.90969 2.66968 1.67297 1.14976C1.0444 2.23349 0.852057 3.51589 1.13503 4.73634C1.418 5.95678 2.15506 7.02369 3.19641 7.72023C2.41463 7.69541 1.64998 7.48492 0.965625 7.10617V7.1671C0.964925 8.30439 1.3581 9.40683 2.07831 10.287C2.79852 11.1672 3.80132 11.7708 4.91625 11.9952C4.19206 12.1934 3.43198 12.2222 2.69484 12.0796C3.00945 13.0577 3.62157 13.9131 4.44577 14.5266C5.26997 15.14 6.26512 15.4808 7.29234 15.5015C5.54842 16.8714 3.39417 17.6144 1.17656 17.6109C0.783287 17.6103 0.390399 17.5861 0 17.5387C2.25286 18.984 4.87353 19.7516 7.55016 19.7502Z" fill="white" />
