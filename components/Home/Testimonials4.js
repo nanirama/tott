@@ -41,10 +41,10 @@ export default function Testimonial4() {
                         </div>
                         <div className='flex '>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <svg className='ml-5' width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                     </div>
@@ -56,8 +56,8 @@ export default function Testimonial4() {
 
                         <ImgLoader src={Team1} width={384} height={480} alt="" />
                         <div className='absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]'>
-                            <div class="flex justify-between items-center mb-3">
-                                <h3 class="md:text-2xl text-xl font-semibold text-white"><a href="#">Alisa Hester</a></h3>
+                            <div className="flex justify-between items-center mb-3">
+                                <h3 className="md:text-2xl text-xl font-semibold text-white"><a href="#">Alisa Hester</a></h3>
                                 <a className='flex' href="#"><svg className='mr-1' width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.53834 0.609964C8.70914 0.199318 9.29086 0.199318 9.46166 0.609964L11.5278 5.57744C11.5998 5.75056 11.7626 5.86885 11.9495 5.88383L17.3123 6.31376C17.7556 6.3493 17.9354 6.90256 17.5976 7.19189L13.5117 10.6919C13.3693 10.8139 13.3071 11.0053 13.3506 11.1876L14.5989 16.4208C14.7021 16.8534 14.2315 17.1954 13.8519 16.9635L9.26063 14.1592C9.10062 14.0615 8.89938 14.0615 8.73937 14.1592L4.14806 16.9635C3.76851 17.1954 3.29788 16.8534 3.40108 16.4208L4.64939 11.1876C4.69289 11.0053 4.6307 10.8139 4.48831 10.6919L0.402413 7.19189C0.0646445 6.90256 0.244408 6.3493 0.687735 6.31376L6.05054 5.88383C6.23744 5.86885 6.40024 5.75056 6.47225 5.57744L8.53834 0.609964Z" fill="white" />
                                 </svg>
@@ -77,7 +77,7 @@ export default function Testimonial4() {
                             </div>
                             <p className='text-base font-semibold text-white mb-1'>PM, Hourglass</p>
                             <p className='text-sm text-white '>Web Design Agency</p>
-                            <div class="flex flex-row gap-3 items-center">
+                            <div className="flex flex-row gap-3 items-center">
 
                             </div>
                         </div>

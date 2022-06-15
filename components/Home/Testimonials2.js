@@ -110,12 +110,12 @@ export default function Testimonial2() {
             <div className="flex mt-8 max-w-7xl mx-auto px-4">
                 <div className="flex justify-center items-center border sm:w-14 sm:h-14 w-9 h-9 rounded-full">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </div>
                 <div className="flex justify-center items-center border sm:w-14 sm:h-14 w-9 h-9 rounded-full ml-5">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </div>
             </div>

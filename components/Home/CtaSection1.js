@@ -16,12 +16,12 @@ export default function CtaSection1() {
 
         <div className="w-full bg-black">
             <div className="max-w-7xl mx-auto flex flex-col px-4 lg:py-20 py-10">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                     <div><h2 className='text-white lg:text-4xl text-2xl font-semibold tracking-tight leading-tight mb-3'>Join over 4,000+ startups growing with Untitled</h2>
                         <p className='text-zinc-500 text-xl mb-8'>Start your 30-day free trial today.</p>
-                        <div class=" flex md:flex-row flex-col justify-start">
-                            <a href="#" target="_blank" class="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
-                            <a href="#" target="_blank" class="inline-block rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a></div>
+                        <div className=" flex md:flex-row flex-col justify-start">
+                            <a href="#" target="_blank" className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                            <a href="#" target="_blank" className="inline-block rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a></div>
                     </div>
 
                     <div className="flex lg:flex-row flex-wrap  justify-center gap-5 items-center">
