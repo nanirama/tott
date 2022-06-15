@@ -1,8 +1,6 @@
 import React from 'react';
 import ImgLoader from '../Image';
 import Team1 from "../../assets/images/team1.jpg"
-import Team2 from "../../assets/images/Team1.jpg"
-import Team3 from "../../assets/images/team1.jpg"
 
 export default function Testimonial2() {
     return (
@@ -10,7 +8,7 @@ export default function Testimonial2() {
             <div className="lg-w-7xl mx-auto px-4">
                 <div className="max-w-7xl mx-auto px-2 flex lg:flex-row flex-col justify-between mb-16">
                     <div className="flex flex-col lg:mb-0 mb-5">
-                        <h2 className="md:text-4xl text-3xl font-semibold mb-5">Don’t just take our word for it</h2>
+                        <h2 className="md:text-4xl text-3xl font-semibold mb-5">Don&lsquo;t just take our word for it</h2>
                         <p className="md:text-xl text-lg text-gray-500">Hear from some of our amazing customers who are building faster.</p>
                     </div>
                     <div className="flex md:flex-row flex-col items-start">
@@ -22,7 +20,7 @@ export default function Testimonial2() {
             <div className="max-w-7xl mx-auto flex px-4">
             <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8">
                     <div className="relative">
-                        <ImgLoader src={Team2} width={384} height={480} alt="" />
+                        <ImgLoader src={Team1} width={384} height={480} alt="" />
                         <div className="absolute bottom-0 left-0 right-0 border-t py-5 px-4 bg-white/[0.3]">
                             <div className='flex flex-row mb-4'>
                                 <svg className="mr-1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +54,7 @@ export default function Testimonial2() {
                         </div>
                     </div>
                     <div className="relative">
-                        <ImgLoader src={Team3} width={384} height={480} alt="" />
+                        <ImgLoader src={Team1} width={384} height={480} alt="" />
                         <div className="absolute bottom-0 left-0 right-0 border-t py-5 px-4 bg-white/[0.3]">
                             <div className="flex flex-row mb-4">
                                 <svg className="mr-1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +79,7 @@ export default function Testimonial2() {
                         </div>
                     </div>
                     <div className="relative">
-                        <ImgLoader src={Team3} width={384} height={480} alt="" />
+                        <ImgLoader src={Team1} width={384} height={480} alt="" />
                         <div className="absolute bottom-0 left-0 right-0 border-t py-5 px-4 bg-white/[0.3]">
                             <div className="flex flex-row mb-4">
                                 <svg className="mr-1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
