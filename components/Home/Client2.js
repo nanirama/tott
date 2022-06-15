@@ -10,7 +10,7 @@ import Client5 from "../../assets/images/client11.png"
 export default function Clients() {
   return (
     <div className='w-full py-14 px-4 flex  flex flex-col'>
-      <p className='text-base font-medium text-center text-gray-500 mb-6'>We've been mentioned in the press</p>
+      <p className='text-base font-medium text-center text-gray-500 mb-6'>We&lsquo;ve been mentioned in the press</p>
       <div className="max-w-7xl mx-auto px-4 flex lg:flex-row flex-wrap  justify-center lg:gap-10 gap-8 items-center">
         <div className="w-auto text-center flex items-center">
           <ImgLoader src={Client1} width={274} height={40} alt="Client1" />

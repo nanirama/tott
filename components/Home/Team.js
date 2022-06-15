@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import ImgLoader from '../Image';
-import Author1 from "../../assets/images/className=.jpg"
+import Author1 from "../../assets/images/team1.jpg"
 
 
 

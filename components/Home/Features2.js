@@ -119,7 +119,7 @@ export default function Features2() {
                             Our people make the difference
                         </h3>
                         <p className="mt-3 mb-5 text-base text-gray-500">
-                            We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
+                            We&lsquo;re an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
                         </p>
                         <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
