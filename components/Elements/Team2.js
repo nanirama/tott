@@ -13,7 +13,7 @@ export default function Team2() {
                 <p className="text-xl text-gray-500 leading-8">Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do you best work.</p>
             </div>
             <div className="max-w-7xl mx-auto px-4 text-center">
-                <div class="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-y-14 gap-y-5 gap-x-5">
+                <div className="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-y-14 gap-y-5 gap-x-5">
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
                             <ImgLoader src={Author1} width={80} height={80} alt="Team" />

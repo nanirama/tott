@@ -43,7 +43,7 @@ export default function FaqSection1() {
     return (
         <div className="bg-white">
             <div className="max-w-7xl mx-auto py-16 md:py-24 px-4">
-                <h6 class="sm:text-base text-sm font-semibold mb-3 text-center text-gray-700">Support</h6>
+                <h6 className="sm:text-base text-sm font-semibold mb-3 text-center text-gray-700">Support</h6>
                 <h2 className="md:text-5xl text-4xl font-semibold text-gray-900 text-center tracking-tight mb-8">FAQs</h2>
                 <p className="text-center text-gray-500 md:text-xl text-base max-w-3xl mx-auto">Everything you need to know about the product and billing. Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
                 <div className="md:mt-24 mt-14">

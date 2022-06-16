@@ -6,9 +6,9 @@ export default function Philosophy() {
 
         <div className="lg:py-14 py-10 ">
             <div className="max-w-7xl mx-auto flex flex-col px-4">
-                <div class="md:w-3/5 w-full mb-10">
+                <div className="md:w-3/5 w-full mb-10">
                 </div>
-                <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-5">
+                <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-5">
                     <div className='justify-center flex flex-col'>
                         <h6 className="text-base font-semibold mb-2">We're on a mission</h6>
                         <h2 className="md:text-4xl text-3xl text-gray-900 font-semibold tracking-tight md:mb-6 mb-4">Our product philosophy</h2>

@@ -16,8 +16,8 @@ export default function Career2() {
     return (
         <div className="lg:py-14 py-10 px-4">
             <div className="max-w-4xl mx-auto flex flex-col">
-                <h2 class="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4 text-center">Open positions</h2>
-                <p class="text-xl text-gray-500 leading-8 text-center">Want to work with some of the best global talent and build software used by all the companies you know and love? Join the team — we're hiring!</p>
+                <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4 text-center">Open positions</h2>
+                <p className="text-xl text-gray-500 leading-8 text-center">Want to work with some of the best global talent and build software used by all the companies you know and love? Join the team — we're hiring!</p>
                 <div className="py-10">
                     <div className="sm:hidden">
                         <label htmlFor="tabs" className="sr-only">
@@ -64,7 +64,7 @@ export default function Career2() {
                             <div>
                                 <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg></a>
                             </div>
                         </div>
@@ -72,11 +72,11 @@ export default function Career2() {
                     <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Remote</p>
                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Full-time</p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ export default function Career2() {
                             <div>
                                 <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job  <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg></a>
                             </div>
                         </div>
@@ -99,11 +99,11 @@ export default function Career2() {
                     <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Remote</p>
                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Full-time</p>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Career2() {
                             <div>
                                 <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg></a>
                             </div>
                         </div>
@@ -126,11 +126,11 @@ export default function Career2() {
                     <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Remote</p>
                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Full-time</p>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Career2() {
                             <div>
                                 <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg></a>
                             </div>
                         </div>
@@ -153,11 +153,11 @@ export default function Career2() {
                     <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Remote</p>
                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Full-time</p>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ export default function Career2() {
                             <div>
                                 <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg></a>
                             </div>
                         </div>
@@ -180,11 +180,11 @@ export default function Career2() {
                     <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M9 10.8334C10.3807 10.8334 11.5 9.71409 11.5 8.33337C11.5 6.95266 10.3807 5.83337 9 5.83337C7.61929 5.83337 6.5 6.95266 6.5 8.33337C6.5 9.71409 7.61929 10.8334 9 10.8334Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Remote</p>
                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                         </svg> Full-time</p>
                     </div>
                 </div>
