@@ -167,17 +167,12 @@ export default function Features7() {
                                 </ul>
                             </div>
                         </div>
-
                         <div className='p-8 flex'>
                             <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Get Started</a>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     )
 }

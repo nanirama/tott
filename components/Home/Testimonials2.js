@@ -1,6 +1,7 @@
 import React from 'react';
 import ImgLoader from '../Image';
 import Team1 from "../../assets/images/team1.jpg"
+import Button from "../../components/Button/index"
 
 export default function Testimonial2() {
     return (
@@ -13,11 +14,12 @@ export default function Testimonial2() {
                     </div>
                     <div className="flex md:flex-row flex-col items-start">
                         <a href="#" className="inline-block text-center rounded-lg py-3 border md:mr-4 md:mb-0 mb-3 px-5 text-gray-700 text-base font-medium md:w-auto w-full">Our customers</a>
-                        <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Create account</a>
+                        {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Create account</a> */}
+                        <Button/>
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto flex px-4">
+            <div className="max-w-7xl mx-auto flex px-4 justify-center">
             <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8">
                     <div className="relative">
                         <ImgLoader src={Team1} width={384} height={480} alt="" />

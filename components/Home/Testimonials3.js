@@ -26,7 +26,7 @@ export default function Testimonial3() {
                         </svg>
                     </div>
                     <div className='xl:text-5xl lg:text-4xl text-3xl'>
-                    <p className=" md:leading-tight md:tracking-tight text-gray-900 font-medium  md:mb-12 mb-6">Untitled has saved us thousands of hours of work. We’re able to spin up projects and features faster.</p>
+                        <p className=" md:leading-tight md:tracking-tight text-gray-900 font-medium  md:mb-12 mb-6">Untitled has saved us thousands of hours of work. We’re able to spin up projects and features faster.</p>
                     </div>
                     <div className="flex justify-between md:items-center md:flex-row flex-col w-full md:mb-0 mb-12">
                         <div>

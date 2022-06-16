@@ -1,6 +1,6 @@
 import ImgLoader from '../Image';
 import FeatureImg1 from "../../assets/images/features-img1.jpg";
-
+import Button from "../../components/Button/index"
 
 export default function Features1() {
     return (
@@ -14,7 +14,6 @@ export default function Features1() {
             <div className="mx-auto lg:max-w-7xl w-full px-4">
                 <div className=' flex lg:flex-row flex-col lg:gap-20 gap-5'>
                     <div className='lg:w-1/2 w-full'>
-
                         <div className='lg:mt-10 xl:mb-0 mb-3'>
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 28C4 14.7452 14.7452 4 28 4C41.2548 4 52 14.7452 52 28C52 41.2548 41.2548 52 28 52C14.7452 52 4 41.2548 4 28Z" fill="#D9D8D8" />
@@ -28,13 +27,13 @@ export default function Features1() {
                                 Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop. Leverage automation to move fast, while always giving customers a human, helpful experience.
                             </p>
                             <div className="flex md:flex-row flex-col justify-start">
-                                <a href="#" className="flex items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="#" className="flex justify-center items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0001 18.3332C14.6025 18.3332 18.3334 14.6022 18.3334 9.99984C18.3334 5.39746 14.6025 1.6665 10.0001 1.6665C5.39771 1.6665 1.66675 5.39746 1.66675 9.99984C1.66675 14.6022 5.39771 18.3332 10.0001 18.3332Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M8.33342 6.6665L13.3334 9.99984L8.33342 13.3332V6.6665Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg> Demo</a>
-                                <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a>
+                                {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a> */}
+                                <Button />
                             </div>
-
                         </div>
                     </div>
                     <div className='lg:w-1/2 w-full'>
@@ -63,16 +62,15 @@ export default function Features1() {
                                 Keep your customers in the flow by embedding help articles right on your website. With Beacon, they never have to leave the page to find an answer.
                             </p>
                             <div className="flex md:flex-row flex-col justify-start">
-                                <a href="#" className="flex items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="#" className="flex justify-center items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0001 18.3332C14.6025 18.3332 18.3334 14.6022 18.3334 9.99984C18.3334 5.39746 14.6025 1.6665 10.0001 1.6665C5.39771 1.6665 1.66675 5.39746 1.66675 9.99984C1.66675 14.6022 5.39771 18.3332 10.0001 18.3332Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M8.33342 6.6665L13.3334 9.99984L8.33342 13.3332V6.6665Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg> Demo</a>
-                                <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a>
+                                {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a> */}
+                                <Button />
                             </div>
-
                         </div>
                     </div>
-
                 </div>
                 <div className=' flex lg:flex-row flex-col lg:gap-20 gap-5'>
                     <div className='lg:w-1/2 w-full'>
@@ -89,13 +87,13 @@ export default function Features1() {
                                 Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
                             </p>
                             <div className="flex md:flex-row flex-col justify-start">
-                                <a href="#" className="flex items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="#" className="flex justify-center items-center gap-2 inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0001 18.3332C14.6025 18.3332 18.3334 14.6022 18.3334 9.99984C18.3334 5.39746 14.6025 1.6665 10.0001 1.6665C5.39771 1.6665 1.66675 5.39746 1.66675 9.99984C1.66675 14.6022 5.39771 18.3332 10.0001 18.3332Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M8.33342 6.6665L13.3334 9.99984L8.33342 13.3332V6.6665Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg> Demo</a>
-                                <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a>
+                                {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a> */}
+                                <Button />
                             </div>
-
                         </div>
                     </div>
                     <div className='lg:w-1/2 w-full'>
@@ -105,16 +103,6 @@ export default function Features1() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
         </div>
     )
 }

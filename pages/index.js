@@ -33,6 +33,8 @@ import Testimonial3 from "../components/Home/Testimonials3";
 import Client1 from "../components/Home/Client1"
 import Client2 from "../components/Home/Client2"
 
+import Popup from "../components/popup"
+
 import { HOME_DATA } from "../lib/graphql/queries";
 
 
@@ -74,6 +76,8 @@ export default function Home(props) {
 
       <Client2 />
       <Client1 />
+
+      <Popup/>
 
       {newsletter && <Newsletter data={newsletter} />}
 

@@ -3,6 +3,8 @@ import ImgLoader from '../Image';
 import CtaImg from "../../assets/images/cta-image.jpg"
 import CtaImgMobile from "../../assets/images/cta-image_mobile.jpg"
 
+import Button from "../../components/Button/index"
+
 export default function CtaSection3() {
 
     return (
@@ -14,10 +16,10 @@ export default function CtaSection3() {
                         <div className="w-auto text-center flex items-center">
                             <div className="relative">
                                 <div className="md:block hidden">
-                                <ImgLoader src={CtaImg} width={720} height={720} alt="Client1" />
+                                    <ImgLoader src={CtaImg} width={720} height={720} alt="Client1" />
                                 </div>
                                 <div className="md:hidden block">
-                                <ImgLoader src={CtaImgMobile} width={363} height={600} alt="Client1" />
+                                    <ImgLoader src={CtaImgMobile} width={363} height={600} alt="Client1" />
                                 </div>
                                 <div className="absolute bottom-6 left-5 right-5 border text-left py-5 px-4 bg-white/[0.4]">
                                     <p className="md:text-2xl sm:text-xl text-lg text-white font-semibold md:mb-8 mb-6">“Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.”</p>
@@ -62,7 +64,7 @@ export default function CtaSection3() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white md:p-10 py-10 px-4 flex flex-col justify-center">
+                    <div className="bg-white sm:p-10 py-10 px-5 flex flex-col justify-center">
                         <h2 className="text-gray-900 lg:text-4xl text-3xl font-semibold tracking-tight leading-tight mb-3">Join over 4,000+ startups growing with Untitled</h2>
                         <ul role="list" className="mt-6 mb-10 space-y-4">
                             <li className="flex space-x-3">
@@ -89,7 +91,9 @@ export default function CtaSection3() {
                         </ul>
                         <div className="flex md:flex-row flex-col justify-start">
                             <a href="#" target="_blank" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
-                            <a href="#" target="_blank" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a></div>
+                            {/* <a href="#" target="_blank" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a> */}
+                            <Button />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from "../../components/Button/index"
+
 const tiers = [
     {
         nametop: 'Basic plan',
@@ -41,7 +43,6 @@ const tiers = [
 
 export default function Pricing1({ data }) {
     return (
-
         <div>
             <div className="bg-gray-50 ">
                 <div className="max-w-7xl mx-auto md:pt-24 pt-10 md:pb-52 pb-44 px-4 sm:px-6 lg:px-4">
@@ -51,19 +52,21 @@ export default function Pricing1({ data }) {
                         <p className="mt-5 text-xl text-gray-500 text-center">
                             We believe Untitled should be accessible to all companies, no matter the size.
                         </p>
-                        <div className="relative self-center mt-6 rounded-lg p-0.5 flex sm:mt-8">
+                        <div className="relative self-center mt-6 rounded-lg p-0.5 flex md:flex-row flex-col md:mt-8 md:w-80 w-full">
                             <button
                                 type="button"
-                                className="relative w-1/2 bg-white border border-slate-300 mr-4 rounded-md py-2 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
+                                className="relative md:w-auto w-full md:mb-0 mb-4 bg-white border border-slate-300 md:mr-4 rounded-md py-3 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 md:px-5 px-1"
                             >
                                 Chat to sales
                             </button>
-                            <button
+                            {/* <button
                                 type="button"
                                 className="ml-0.5 relative w-1/2 text-white bg-slate-600 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
                             >
                                 Get started
-                            </button>
+                            </button> */}
+
+                            <Button/>
                         </div>
                     </div>
                 </div>

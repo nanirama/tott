@@ -1,7 +1,11 @@
 import { useState } from 'react'
-import Image from 'next/image'
+
+import Link from 'next/link'
 import ImgLoader from './Image'
 import Logo from "../assets/images/logo.png"
+
+import Button from "../components/Button/index"
+
 const Footer = () => {
    return (
       <footer>
@@ -14,7 +18,8 @@ const Footer = () => {
                <div className="md:w-1/2">
                   <div className="flex md:flex-row flex-col md:justify-end justify-start">
                      <a href="#" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
-                     <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border  border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a>
+                     {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border  border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a> */}
+                     <Button />
                   </div>
                </div>
             </div>
@@ -23,7 +28,8 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4">
                <div className="flex lg:flex-row flex-col border-t border-b py-10">
                   <div className="w-full lg:w-4/12">
-                  <ImgLoader src={Logo} width={140} height={50}/>
+                     <Link href="/">
+                        <a> <ImgLoader src={Logo} width={140} height={50} /></a></Link>
                      <p className="md:mt-8 mt-4 text-gray-500 text-base lg:mb-0 mb-12">Websites, but for service businesses</p>
                   </div>
                   <div className="w-full lg:w-8/12">

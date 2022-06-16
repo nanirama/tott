@@ -1,30 +1,45 @@
 import ReactMarkdown from "react-markdown";
 import ImgLoader from '../Image';
-
+import Button from "../../components/Button/index"
 
 export default function Hero({ data }) {
   const { title, sub_title, description, image } = data
   return (
-    <div className="lg:pt-20 pt-14 relative">
+    <div className="lg:pt-20 pt-14 relative sm:mt-20 mt-16">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col">
         <div className="md:w-1/2 w-full px-4 ">
           <h1 className="lg:text-4xl text-3xl font-semibold mb-10">{title}</h1>
           <h2 className="text-4xl font-semibold mb-5">{sub_title}</h2>
           <ReactMarkdown escapeHtml={false} className="text-xl text-gray-400 leading-8 mb-8 xl:pr-28">{description}</ReactMarkdown>
 
-          <div className="flex lg:flex-row flex-col items-stretch xl:pr-28">
-            <div className="flex flex-col mb-2 w-full">
-
-              <div className="flex rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 lg:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 mb-2">
-               
+          {/* <div className="flex lg:flex-row flex-col items-stretch xl:pr-28">
+            <div className="flex flex-col mb-2 w-full mr-3">
+              <div className="flex rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 w-full border border-gray-300 focus:outline-none focus:border-gray-500 mb-2">
                 <input className="w-full focus:outline-none focus:border-0" type="email" placeholder="admin@gmail.com" />
               </div>
               <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">Free to try for 14 days, no credit card needed.</p>
             </div>
-            <button className="lg:w-40 w-full hover:bg-zinc-500 bg-zinc-600 rounded-lg text-base font-medium leading-none text-white p-4 shadow h-12">Get Started</button>
-          </div>
+             <button className="lg:w-52 w-full bg-green-400 rounded-lg text-base font-medium leading-none text-white p-4 h-12">Start Free Trail</button>
+            <Button />
+          </div> */}
 
-
+          <form className="flex lg:flex-row flex-col xl:pr-28">
+            <div className="flex flex-col mb-2 w-full mr-3">              
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="w-full rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 w-full border border-gray-300 focus:outline-none focus:border-gray-500 mb-2"
+                placeholder="Enter your email"
+              />
+              <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">Free to try for 14 days, no credit card needed.</p>
+            </div>
+            <div className="mt-3 rounded-lg md:mt-0 sm:flex-shrink-0">
+              <Button />
+            </div>
+          </form>
 
         </div>
         <div className='absolute right-0 top-10 hidden xl:flex z-0'>
