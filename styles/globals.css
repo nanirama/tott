@@ -90,6 +90,7 @@ details[open] summary p {
 
 .bg{  background-image: url(../assets/images/Blob.png); background-position: bottom center; background-repeat: no-repeat; background-size:contain;}
 
+.banner-bg{  background-image: url(../assets/images/banner-img.jpg); background-position: center center; background-repeat: no-repeat; background-size:cover;}
 
 
 /* BLOG SINGLE */

@@ -1,8 +1,7 @@
 import { React, useState, Fragment, } from 'react'
 import Link from 'next/link'
+import Logo from './Logo'
 import { Menu, Transition } from '@headlessui/react'
-import Logo from "../assets/images/logo.png"
-import ImgLoader from './Image'
 
 import Button from "../components/Button/index"
 
@@ -18,14 +17,10 @@ function MobileNav({ open, setOpen }) {
 
   return (
     <div className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter`}>
-      <div className="flex items-center justify-start px-4 filter drop-shadow-md bg-white h-20">
-        <Link href="/">
-          <a>
-            <ImgLoader src={Logo} width={145} height={38} />
-          </a>
-        </Link>
+      <div className="flex items-center justify-start px-4 filter drop-shadow-md bg-white h-16">
+        <Logo/>
       </div>
-      <div className="flex flex-col p-4 bg-white">
+      <div className="flex flex-col p-2 bg-white border">
         <Menu as="div" className="relative text-left flex flex-col">
           <Menu.Item>
             <a
@@ -200,10 +195,10 @@ export default function Header() {
   return (
     <div className='border border-t-0 border-l-0 border-r-0 z-30 fixed top-0 left-0 right-0 mx-auto bg-white'>
       <div className="max-w-7xl mx-auto px-4">
-        <nav className="flex py-4 h-20 items-center">
+        <nav className="flex py-2 h-16 items-center">
           <MobileNav open={open} setOpen={setOpen} />
           <div className="flex items-center flex-no-shrink lg:mr-6">
-            <Link href="/"><a> <ImgLoader src={Logo} width={140} height={50} /></a></Link>
+            <Logo/>
           </div>
           <div className="w-full block flex-grow flex items-center lg:w-auto float-right lg:flex-row flex-row-reverse sm:gap-5 gap-2">
             <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center lg:hidden cursor-pointer" onClick={() => {

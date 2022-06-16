@@ -72,12 +72,10 @@ export default function Home(props) {
       <Testimonial2 />
       <Testimonial3 />
 
-
-
       <Client2 />
       <Client1 />
 
-      <Popup/>
+      {/* <Popup/> */}
 
       {newsletter && <Newsletter data={newsletter} />}
 

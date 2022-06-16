@@ -12,12 +12,12 @@ const Button = (props) => {
     return (
 
         <>
-            <a href="#" onClick={() => setShowModal(true)} className="md:w-auto w-full inline-block rounded-lg text-white text-center flex items-center justify-center sm:text-base text-sm font-medium bg-green-400 border border-green-400 py-3 md:px-5 px-2">Start Free Trail</a>
+            <a href="#" onClick={() => setShowModal(true)} className="md:w-auto w-full inline-block rounded-lg text-white text-center flex items-center justify-center sm:text-base text-sm font-medium bg-green-400 border border-green-400 py-3 md:px-5 px-2">Start Free Trial</a>
 
             {showModal ? (
                 <>
                     <div
-                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        className="flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                     >
                         <div className="mx-auto max-w-3xl my-6">
                             <div className="relative flex flex-col w-full bg-black sm:px-10 lg:py-24 sm:py-16 py-12 px-5 outline-none focus:outline-none">
@@ -124,7 +124,7 @@ const Button = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="fixed inset-0 z-40 bg-black/[0.6]"></div>
+                    <div className="fixed inset-0 z-40 bg-black"></div>
                 </>
             ) : null}
 

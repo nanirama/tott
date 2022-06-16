@@ -29,7 +29,7 @@ const Footer = () => {
                <div className="flex lg:flex-row flex-col border-t border-b py-10">
                   <div className="w-full lg:w-4/12">
                      <Link href="/">
-                        <a> <ImgLoader src={Logo} width={140} height={50} /></a></Link>
+                        <a> <ImgLoader src={Logo} width={112} height={40} /></a></Link>
                      <p className="md:mt-8 mt-4 text-gray-500 text-base lg:mb-0 mb-12">Websites, but for service businesses</p>
                   </div>
                   <div className="w-full lg:w-8/12">
