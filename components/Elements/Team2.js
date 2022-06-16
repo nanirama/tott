@@ -8,7 +8,7 @@ export default function Team2() {
     return (
         <div className="lg:py-20 py-10 w-full  border-b border-slate-200">
             <div className="max-w-4xl mx-auto flex flex-col px-4 text-center mb-14">
-                <h6 className="text-base text-gray-600 font-semibold mb-4">We're hiring!</h6>
+                <h6 className="text-base text-gray-600 font-semibold mb-4">We&lsquo;re hiring!</h6>
                 <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">Meet our team</h2>
                 <p className="text-xl text-gray-500 leading-8">Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do you best work.</p>
             </div>

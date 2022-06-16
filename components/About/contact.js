@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="text-center">
           <h6 className="text-base font-semibold mb-4">Contact us</h6>
           <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">Get in touch</h2>
-          <p className="text-xl text-gray-500 leading-8 mb-12">We'd love to hear from you. Please fill out this form.</p>
+          <p className="text-xl text-gray-500 leading-8 mb-12">We&lsquo;d love to hear from you. Please fill out this form.</p>
         </div>
         <form>
           <div className="grid grid-cols-6 gap-6">

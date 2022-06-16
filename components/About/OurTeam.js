@@ -12,7 +12,7 @@ export default function OurTeam() {
           <a href="#" className="relative w-full bg-white border border-slate-300 sm:mr-4 sm:mb-0 mb-3 rounded-md py-3 px-4 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
           > Read our principles</a>
           <a href="#" className="relative w-full text-white bg-green-400 rounded-md py-3 px-4 text-base font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
-          > We're hiring!</a>
+          > We&lsquo;re hiring!</a>
         </div>
       </div>
       <Team />

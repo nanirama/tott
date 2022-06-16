@@ -6,7 +6,7 @@ export default function Testimonials4() {
 
         <div className="lg:py-20 py-10 w-full text-center">
             <div className="max-w-6xl mx-auto px-4 flex items-center flex-col justify-center">
-                <h2 className="lg:text-4xl text-2xl  text-gray-900 font-medium mb-10">Love the simplicity of the service and the prompt customer support. We can't imagine working without it.</h2>
+                <h2 className="lg:text-4xl text-2xl  text-gray-900 font-medium mb-10">Love the simplicity of the service and the prompt customer support. We can&lsquo;t imagine working without it.</h2>
                 <div className='w-16 mb-2'>
                     <ImgLoader src={Author1} width={64} height={64} alt="Author" />
                 </div>

@@ -17,7 +17,7 @@ export default function Career2() {
         <div className="lg:py-14 py-10 px-4">
             <div className="max-w-4xl mx-auto flex flex-col">
                 <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4 text-center">Open positions</h2>
-                <p className="text-xl text-gray-500 leading-8 text-center">Want to work with some of the best global talent and build software used by all the companies you know and love? Join the team — we're hiring!</p>
+                <p className="text-xl text-gray-500 leading-8 text-center">Want to work with some of the best global talent and build software used by all the companies you know and love? Join the team — we&lsquo;re hiring!</p>
                 <div className="py-10">
                     <div className="sm:hidden">
                         <label htmlFor="tabs" className="sr-only">
@@ -69,7 +69,7 @@ export default function Career2() {
                             </div>
                         </div>
                     </div>
-                    <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
+                    <p className="font-normal text-left text-gray-500 text-base mb-5">we&lsquo;re looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -96,7 +96,7 @@ export default function Career2() {
                             </div>
                         </div>
                     </div>
-                    <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
+                    <p className="font-normal text-left text-gray-500 text-base mb-5">we&lsquo;re looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -123,7 +123,7 @@ export default function Career2() {
                             </div>
                         </div>
                     </div>
-                    <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
+                    <p className="font-normal text-left text-gray-500 text-base mb-5">we&lsquo;re looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -150,7 +150,7 @@ export default function Career2() {
                             </div>
                         </div>
                     </div>
-                    <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
+                    <p className="font-normal text-left text-gray-500 text-base mb-5">we&lsquo;re looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -177,7 +177,7 @@ export default function Career2() {
                             </div>
                         </div>
                     </div>
-                    <p className="font-normal text-left text-gray-500 text-base mb-5">We're looking for a mid-level product desgner to join our team.</p>
+                    <p className="font-normal text-left text-gray-500 text-base mb-5">we&lsquo;re looking for a mid-level product desgner to join our team.</p>
                     <div className="flex flex-row gap-5">
                         <p className="text-base text-gray-500 font-medium  flex gap-2 items-center"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.5 8.33337C16.5 14.1667 9 19.1667 9 19.1667C9 19.1667 1.5 14.1667 1.5 8.33337C1.5 6.34425 2.29018 4.4366 3.6967 3.03007C5.10322 1.62355 7.01088 0.833374 9 0.833374C10.9891 0.833374 12.8968 1.62355 14.3033 3.03007C15.7098 4.4366 16.5 6.34425 16.5 8.33337Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
