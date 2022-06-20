@@ -9,8 +9,7 @@ export default function Stats2() {
             </div>
             <div className="max-w-7xl mx-auto px-4 flex">
                 <div className='banner-bg w-full'>
-
-                    <div className='md:p-14 p-5 bg-zinc-600/50 flex md:flex-row flex-col gap-8'>
+                    <div className='md:p-14 p-5 bg-zinc-600/50 flex items-center md:flex-row flex-col gap-8'>
                         <div className='md:w-1/3 sm:w-1/2 w-full'>
                             <div className='border py-5 px-5 bg-white/[0.3] text-center'>
                                 <h3 className="lg:text-6xl text-3xl font-semibold text-white mb-4 mt-3">400+</h3>

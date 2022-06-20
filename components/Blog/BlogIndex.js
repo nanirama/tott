@@ -34,7 +34,7 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
       const hasSearchResults = filteredData && query !== emptyQuery
       const posts = hasSearchResults ? filteredData : blogs
     return (
-        <div className="lg:pb-10 pb-5">
+        <div className="lg:pb-10 pb-5 md:mt-20 mt-16">
             <div className="max-w-7xl mx-auto flex md:flex-row flex-col px-4">
                 <div className="lg:py-20 py-10 w-full">
                     <h6 className="text-base font-semibold mb-3">Our blog</h6>

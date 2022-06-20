@@ -100,21 +100,21 @@ export default function Index({ data }) {
     }
     return (
         <div className="md:mt-16 md:mb-20 mb-12 mt-0 mb-5">
-            <div className="top_content mb-10">
+            <div className="top_content md:mb-20 mb-12">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex md:flex-row flex-col-reverse items-center">
-                        <div className="w-full md:w-5/12 px-4">
+                        <div className="w-full md:w-6/12 px-4">
                             <div className="bg-gray-200 rounded-2xl p-1 w-auto inline-block inline-flex gap-1 mb-4">
                                 {firstCat && firstCat.attributes && (
                                     <a href='#' className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a>
                                 )}
                                 <a href="#" className="text-gray-700 text-xs font-medium py-1 px-2 inline-block">{moment.duration(reading_time).asMinutes()} min read</a>
                             </div>
-                            <h1 className="text-5xl text-gray-900 font-semibold mb-6">{title}</h1>
-                            <p className="text-xl text-gray-400">{short_description}</p>
+                            <h1 className="lg:text-5xl md:text-4xl text-3xl text-gray-900 font-semibold mb-6">{title}</h1>
+                            <p className="md:text-xl text-base text-gray-500">{short_description}</p>
                         </div>
-                        <div className="w-full md:w-7/12 px-4">
-                            <div className="w-full">
+                        <div className="w-full md:w-6/12 px-4">
+                            <div className="w-full md:mb-0 mb-10">
                             <ImgLoader
                                 src={postImage}
                                 width={950} height={726}
@@ -131,7 +131,6 @@ export default function Index({ data }) {
                             <div className="blog-sidebar w-full sticky top-0">
                                 <hr className="mb-8" />
                                 <h6 className="mb-3">Table of contents</h6>
-
                                 <ul>
                                     <ReactMarkdown components={MarkdownComponents2}>{description}</ReactMarkdown>
                                 </ul>
@@ -155,7 +154,6 @@ export default function Index({ data }) {
                                         })}
                                     </>
                                 )}
-
                                 <hr className="my-8" />
                                 <h6 className="mb-5">Try out Tott free for 14 days:</h6>
                                 <a href="#" className="w-full text-center hover:bg-zinc-500 bg-zinc-600 rounded-lg shadow border hover:border-zinc-500 border-zinc-600 py-3 px-5 text-white inline-block">Sign up now</a>

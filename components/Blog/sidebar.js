@@ -1,7 +1,26 @@
+import React, { Fragment, useState } from "react"
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+const options = ["View All", "Designs", "Product", "Software Engineering", "Customer Success", "Leadership"];
 
 export default function Sidebar({ data, slug, handleInputChange }) {
+    const router = useRouter()
+
+    function classNames(...classes) {
+        return classes.filter(Boolean).join(' ')
+    }
+    const handleCatChange = (e)=>{
+        if(e.target.value==0){
+            router.push(`/blog/`)
+        }
+        else
+        {
+            router.push(`/blog/category/${e.target.value}`)
+        }        
+    }
     return (
+
         <div className="lg:pr-10 mb-4 sticky top-0">
             <form className="flex items-center mb-8">
                 <div className="relative w-full">
@@ -18,12 +37,41 @@ export default function Sidebar({ data, slug, handleInputChange }) {
                 </div>
             </form>
             <h6 className="font-semibold text-sm mb-5">Blog categories</h6>
-            <ul>
-                <li className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}><Link href={`/blog/`}><a>View all</a></Link></li>
-                {data && data.map((item, index) => (
-                    <li key={index} className={slug === item.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}><Link href={`/blog/category/${item.attributes.slug}`}><a>{item.attributes.name}</a></Link></li>
-                ))}
-            </ul>
+
+            <div>
+                <div className="md:hidden md:mb-0 mb-10">
+                    <label htmlFor="tabs" className="sr-only">
+                        Select a tab
+                    </label>
+                    <select
+                        id="tabs"
+                        name="tabs"
+                        onChange={handleCatChange}
+                        className="block w-full border border-gray-200 py-2 px-2 focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+                    >
+                        <option value="0">View All</option>
+                        {data && data.map((tab, index) => (
+                            <option key={index} value={tab.attributes.slug}>{tab.attributes.name}</option>
+                        ))}
+                    </select>
+                </div>
+                <div className="hidden md:block">
+                    <nav className="flex flex-col" aria-label="Tabs">
+                    <Link href={`/blog/`}><a className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}>View all</a></Link>
+                       {data && data.map((tab, index) => (
+                            <Link href={`/blog/category/${tab.attributes.slug}`}><a
+                                key={tab.attributes.slug}
+                                className={classNames(
+                                    slug === tab.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-3 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'
+                                )}
+                            >
+                                {tab.attributes.name}
+                            </a>
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,37 +1,38 @@
 import Layout from "../components/layout"
 import { ApolloClient, InMemoryCache } from '@apollo/client';
+
 import Hero from "../components/Home/Hero"
 import Features from "../components/Home/Features"
 import Cta from "../components/Home/Cta"
 import Faq from "../components/Home/Faq"
 import AllInOneFinance from "../components/Home/AllInOneFinance"
 import Newsletter from "../components/Home/Newsletter"
-import Team from "../components/Home/Team"
-import Features1 from "../components/Home/Features1";
-import Features2 from "../components/Home/Features2";
-import Features3 from "../components/Home/Features3";
-import Features4 from "../components/Home/Features4";
-import Features5 from "../components/Home/Features5";
-import Features6 from "../components/Home/Features6";
-import Features7 from "../components/Home/Features7";
+import Team from "../components/Home/TeamSection"
+import Features1 from "../components/Elements/Features1";
+import Features2 from "../components/Elements/Features2";
+import Features3 from "../components/Elements/Features3";
+import Features4 from "../components/Elements/Features4";
+import Features5 from "../components/Elements/Features5";
+import Features6 from "../components/Elements/Features6";
+import Features7 from "../components/Elements/Features7";
 
-import Pricing1 from "../components/Home/pricing1"
-import Pricing2 from "../components/Home/pricing2"
-import CtaSection1 from "../components/Home/CtaSection1";
-import CtaSection2 from "../components/Home/CtaSection2";
-import CtaSection3 from "../components/Home/CtaSection3";
-import Integration1 from "../components/Home/integrations1"
-import Integrations2 from "../components/Home/integration2"
+import Pricing1 from "../components/Elements/pricing1"
+import Pricing2 from "../components/Elements/pricing2"
+import CtaSection1 from "../components/Elements/CtaSection1";
+import CtaSection2 from "../components/Elements/CtaSection2";
+import CtaSection3 from "../components/Elements/CtaSection3";
+import Integration1 from "../components/Elements/integrations1"
+import Integrations2 from "../components/Elements/integration2"
 
-import Stats from "../components/Home/Stats";
+import Stats from "../components/Elements/Stats";
 
-import Testimonial1 from "../components/Home/Testimonials1"
-import Testimonial2 from "../components/Home/Testimonials2"
-import Testimonial3 from "../components/Home/Testimonials3";
+import Testimonial1 from "../components/Elements/Testimonials1"
+import Testimonial2 from "../components/Elements/Testimonials2"
+import Testimonial3 from "../components/Elements/Testimonials3";
 
 
-import Client1 from "../components/Home/Client1"
-import Client2 from "../components/Home/Client2"
+import Client1 from "../components/Elements/Client1"
+import Client2 from "../components/Elements/Client2"
 
 import Popup from "../components/popup"
 
@@ -66,7 +67,7 @@ export default function Home(props) {
       <Pricing2 />
       <CtaSection1 />
       <CtaSection2 />
-      <CtaSection3 />
+      <CtaSection3 /> 
 
       <Testimonial1 />
       <Testimonial2 />

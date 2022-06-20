@@ -1,13 +1,18 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { Switch } from '@headlessui/react'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 const Button = (props) => {
+    const [ webValue, setWebValue ] = useState(false)
     const [showModal, setShowModal] = useState(false);
     const [open, setOpen] = useState(true)
     const [enabled, setEnabled] = useState(false)
+
+    useEffect(() => {
+        console.log('webValue',webValue)
+      }, [webValue]);
 
     return (
 
@@ -16,21 +21,22 @@ const Button = (props) => {
 
             {showModal ? (
                 <>
-                    <div
-                        className="flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                    <button
+                        className="fixed top-5 right-5 z-50"
+                        onClick={() => setShowModal(false)}
                     >
-                        <div className="mx-auto max-w-3xl my-6">
-                            <div className="relative flex flex-col w-full bg-black sm:px-10 lg:py-24 sm:py-16 py-12 px-5 outline-none focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>
+                    </button>
+                    <div
+                        className="flex overflow-hidden overflow-y-auto fixed inset-0 z-40 my-14 outline-none focus:outline-none"
+                    >
+                        <div className="mx-auto max-w-3xl">
+                            <div className="relative flex flex-col w-full bg-black sm:px-10 px-5 outline-none focus:outline-none">
                                 <div className="flex items-start justify-between">
                                     <h3 className="sm:text-3xl text-2xl font-semibold text-white sm:mb-6 mb-4 tracking-tight">
                                         Start your 14 day free trial of Trady
                                     </h3>
-                                    <button
-                                        className="absolute sm:top-6 top-0 sm:right-5 right-0 pt-6 pr-4"
-                                        onClick={() => setShowModal(false)}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>
-                                    </button>
+
                                 </div>
                                 <div className="form w-full text-left">
                                     <div className="sm:mb-10 mb-5">
@@ -39,6 +45,7 @@ const Button = (props) => {
                                         </label>
                                         <div className="mt-1.5">
                                             <input
+                                                value={props.email ? props.email : ''}
                                                 type="email"
                                                 name="email"
                                                 id="email"
@@ -97,20 +104,23 @@ const Button = (props) => {
                                             <span className="sm:text-base text-sm text-white">I have an existing website </span>
                                         </Switch.Label>
                                     </Switch.Group>
-                                    <div className="sm:mb-10 mb-5">
-                                        <label htmlFor="company-website" className="text-white text-sm">
-                                            Existing Website URL
-                                        </label>
-                                        <div className="mt-1.5 relative rounded-md shadow-sm">
-                                            <input
-                                                type="text"
-                                                name="company-website"
-                                                id="company-website"
-                                                className="py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full text-sm border border-gray-300 rounded-lg"
-                                                placeholder="www.example.com"
-                                            />
+                                    {!enabled && (
+                                        <div className="sm:mb-10 mb-5">
+                                            <label htmlFor="company-website" className="text-white text-sm">
+                                                Existing Website URL
+                                            </label>
+                                            <div className="mt-1.5 relative rounded-md shadow-sm">
+                                                <input
+                                                    type="text"
+                                                    name="company-website"
+                                                    id="company-website"
+                                                    className="py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full text-sm border border-gray-300 rounded-lg"
+                                                    placeholder="www.example.com"
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
+                                        )}
+                                    
                                     <p className="text-white text-sm sm:mb-10 mb-5">I agree to the Trady <a href="#" className='underline'>Terms of Service</a> and <a href="#" className='underline'>Privacy Policy</a></p>
                                     <button
                                         type="submit"
@@ -124,10 +134,10 @@ const Button = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="fixed inset-0 z-40 bg-black"></div>
+                    <div className="fixed inset-0 z-30 bg-black"></div>
                 </>
             ) : null}
-
+          
         </>
 
     )

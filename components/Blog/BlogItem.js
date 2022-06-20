@@ -12,12 +12,12 @@ export default function BlogItem({ data }) {
     const AuthorImage = users_permissions_user.data.attributes.image && users_permissions_user.data.attributes.image.data && users_permissions_user.data.attributes.image.data.attributes ? users_permissions_user.data.attributes.image.data.attributes.url : DefaultImg
     return (
         <div className='md:w-1/2 w-full mb-10 md:px-4'>
-            <ImgLoader
+           <Link href={`/blog/${slug}`}><a> <ImgLoader
                 src={postImage}
                 alt={title}
                 width={460}
                 height={250}
-            />
+            /></a></Link>
             <div className='bg-gray-200 rounded-2xl p-1 w-auto inline-block inline-flex gap-1 mb-4 mt-5'>
                 {firstCat && firstCat.attributes && (
                     <a href='#' className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a>
