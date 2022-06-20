@@ -11,7 +11,7 @@ export default function Example() {
                 <div className="lg:w-1/2 w-full px-4">
                     <h6 className="text-base font-semibold text-gray-700 mb-3">404 error</h6>
                     <h2 className="xl:text-6xl md:text-5xl text-3xl font-extrabold text-gray-900 tracking-tight mb-6">We lost this page</h2>
-                    <p className="mt-2 md:text-xl text-base text-gray-500 md:mb-12 mb-6">Sorry, the page you are looking for doesn't exist.</p>
+                    <p className="mt-2 md:text-xl text-base text-gray-500 md:mb-12 mb-6">Sorry, the page you are looking for doesn&lsquo;t exist.</p>
                     <div className="w-full flex lg:flex-row flex-col items-stretch xl:pr-28 gap-3 mb-12">
                         <div className="relative">
                             <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer">

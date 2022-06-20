@@ -8,7 +8,7 @@ export default function Section1() {
                     <div className="md:w-1/2 w-full">
                         <h6 className="text-base text-gray-700 mb-3 font-semibold">404 error</h6>
                         <h2 className="md:text-5xl text-3xl font-semibold tracking-tight md:mb-6 mb-3 text-gray-900">Page not found...</h2>
-                        <p className="md:text-xl text-base text-gray-500 mb-10">Sorry, the page you are looking for doesn't exist or has been moved. Try searching our site:</p>
+                        <p className="md:text-xl text-base text-gray-500 mb-10">Sorry, the page you are looking for doesn&lsquo;t exist or has been moved. Try searching our site:</p>
                         <div className="w-full flex lg:flex-row flex-col items-stretch xl:pr-28 gap-3">
                         <div className="relative">
                             <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer">
