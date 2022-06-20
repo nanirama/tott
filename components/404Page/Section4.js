@@ -48,7 +48,7 @@ export default function Example() {
                                 <path d="M17 197.476C20.5468 187.102 27.5418 179.346 35.331 170.849C69.2441 133.852 110.092 101.75 156.096 76.6871C252.68 24.0695 368.551 -2.67021 478.228 33.8537C540.924 54.7325 609.711 101.118 619.246 163.679C624.661 199.206 605.298 230.04 577.709 254.888C548.144 281.518 509.9 302.764 468.685 312.06C436.812 319.249 381.348 320.515 377.853 280.974C375.914 259.043 388.466 238.393 403.255 221.694C434.066 186.908 478.785 165.903 526.218 153.618C608.668 132.265 696.702 140.585 768.088 183.741C795.214 200.137 849.993 248.755 869 279.076" stroke="white" strokeOpacity=".25" strokeWidth="32" strokeLinecap="round" />
                             </g>
                             <defs>
-                                <filter id="filter0_b_827_122092" x="-23.0039" y="-23.0073" width="900" height="370" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <filter id="filter0_b_827_122092" x="-23.0039" y="-23.0073" width="900" height="370" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                     <feGaussianBlur in="BackgroundImage" stdDeviation="12" />
                                     <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_827_122092" />

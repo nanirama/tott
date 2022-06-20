@@ -59,8 +59,7 @@ export default function Sidebar({ data, slug, handleInputChange }) {
                     <nav className="flex flex-col" aria-label="Tabs">
                     <Link href={`/blog/`}><a className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}>View all</a></Link>
                        {data && data.map((tab, index) => (
-                            <Link href={`/blog/category/${tab.attributes.slug}`}><a
-                                key={tab.attributes.slug}
+                            <Link key={tab.attributes.slug} href={`/blog/category/${tab.attributes.slug}`}><a                                
                                 className={classNames(
                                     slug === tab.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-3 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'
                                 )}
