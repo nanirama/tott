@@ -79,7 +79,7 @@ export default function Faq1() {
                             Can other info be added to an invoice?
                         </h3>
                         <p className="mt-3 mb-5 text-base text-gray-500">
-                            At the moment, the only way to add additional information to invoices is to add the information to the workspace's name.
+                            At the moment, the only way to add additional information to invoices is to add the information to the workspace&lsquo;s name.
                         </p>
                         <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         </a>
