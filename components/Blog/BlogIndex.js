@@ -73,8 +73,6 @@ export default function BlogIndex({ data, paginationPath, slug = '' }) {
                     <Pagination currentPage={page} numberOfPages={numOfPages} paginationPath={paginationPath} />
                 </div>
             )}
-
         </div>
-
     )
 }

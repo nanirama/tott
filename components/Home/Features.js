@@ -14,7 +14,6 @@ export default function Features({ data }) {
             <h6 className="text-base font-semibold mb-3">{title}</h6>
             <h2 className="text-4xl font-semibold tracking-tight mb-4">{sub_title}f</h2>
             <ReactMarkdown escapeHtml={false} className="text-xl text-gray-500 leading-8" >{description}</ReactMarkdown>
-
           </div>
           <div className="w-full flex lg:flex-row flex-col ">
             <div className="lg:w-1/2 w-full px-4 lg:pr-14 lg:mt-10 mb-3">
@@ -30,26 +29,12 @@ export default function Features({ data }) {
                   </div>
                 )
               })}
-            </div>
-            {/* <div className="md:w-1/2 w-full px-4 relative ">
-              <div className='absolute left-0 top-16 hidden lg:flex'>
-                { second_image && second_image.data && 
-                <ImgLoader src={second_image.data.attributes.url} width={314} height={496} alt={title} />
-                }
-              </div>
-              <div className='flex lg:justify-end justify-center md:mt-0 mt-8'>
-                {first_image && first_image.data &&
-                <ImgLoader src={first_image.data.attributes.url} width={406} height={560} alt={sub_title} />               }
-
-              </div>
-            </div> */}
-
+            </div>          
             <div className="lg:w-1/2 w-full px-4 relative flex">
               <div className='-mr-16 sm:mt-14 mt-8'>
                 {second_image && second_image.data &&
                   <ImgLoader src={second_image.data.attributes.url} width={314} height={496} alt={title} />
                 }
-
               </div>
               <div className=''>
                 {first_image && first_image.data &&

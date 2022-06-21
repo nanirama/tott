@@ -14,16 +14,14 @@ export default function Features4() {
                         <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                     </div>
                 </div>
-
                 <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 pap-3">
                     <div className='lg:mt-5'>
-                        <div className='w-full flex gap-3 mb-8'>
+                        <div className='w-full flex md:flex-row flex-col gap-3 mb-8'>
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 28C4 14.7452 14.7452 4 28 4C41.2548 4 52 14.7452 52 28C52 41.2548 41.2548 52 28 52C14.7452 52 4 41.2548 4 28Z" fill="#D9D8D8" />
                                 <path d="M38 22C38 20.9 37.1 20 36 20H20C18.9 20 18 20.9 18 22M38 22V34C38 35.1 37.1 36 36 36H20C18.9 36 18 35.1 18 34V22M38 22L28 29L18 22" stroke="#504F4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M28 48C16.9543 48 8 39.0457 8 28H0C0 43.464 12.536 56 28 56V48ZM48 28C48 39.0457 39.0457 48 28 48V56C43.464 56 56 43.464 56 28H48ZM28 8C39.0457 8 48 16.9543 48 28H56C56 12.536 43.464 0 28 0V8ZM28 0C12.536 0 0 12.536 0 28H8C8 16.9543 16.9543 8 28 8V0Z" fill="#F1F0F0" />
                             </svg>
-
                             <div className='flex flex-col'>
                                 <h3 className="text-xl font-medium text-gray-900 mt-3">
                                     Share team inboxes
@@ -35,8 +33,7 @@ export default function Features4() {
                                 </a>
                             </div>
                         </div>
-                        <div className='w-full flex gap-3 mb-8'>
-
+                        <div className='w-full flex md:flex-row flex-col gap-3 mb-8'>
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 28C4 14.7452 14.7452 4 28 4C41.2548 4 52 14.7452 52 28C52 41.2548 41.2548 52 28 52C14.7452 52 4 41.2548 4 28Z" fill="#D9D8D8" />
                                 <path d="M29 18L19 30H28L27 38L37 26H28L29 18Z" stroke="#504F4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -53,8 +50,7 @@ export default function Features4() {
                                 </a>
                             </div>
                         </div>
-                        <div className='w-full flex gap-3 mb-8'>
-
+                        <div className='w-full flex md:flex-row flex-col gap-3 mb-8'>
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 28C4 14.7452 14.7452 4 28 4C41.2548 4 52 14.7452 52 28C52 41.2548 41.2548 52 28 52C14.7452 52 4 41.2548 4 28Z" fill="#D9D8D8" />
                                 <path d="M34 36V26M28 36V20M22 36V30" stroke="#504F4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -71,32 +67,17 @@ export default function Features4() {
                                 </a>
                             </div>
                         </div>
-
-
                     </div>
-
                     <div className='relative'>
-
-                        <div className='sm:absolute sm:left-0 sm:top-16 mx-auto flex justify-center'>
+                        <div className='sm:absolute sm:left-0 sm:top-16 mx-auto md:mt-0 mt-8  flex justify-center'>
                             <ImgLoader src={FeatureImg} width={314} height={496} alt="feature image" />
                         </div>
-                        <div className='flex lg:justify-end justify-center md:mt-0 mt-8 hidden lg:flex'>
+                        <div className='flex lg:justify-end justify-center hidden lg:flex'>
                             <ImgLoader src={FeatureImg2} width={405} height={560} alt="feature image" />
-
                         </div>
-
                     </div>
-
                 </div>
-
-
             </div>
-
-
-
         </div>
-
-
-
     )
 }

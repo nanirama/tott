@@ -21,7 +21,6 @@ export default function Contact() {
                 className="mt-1.5 py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm text-sm border border-gray-300 rounded-md"
               />
             </div>
-
             <div className="col-span-6 sm:col-span-3 md:mb-6 mb-4">
               <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
                 Last name
@@ -63,17 +62,17 @@ export default function Contact() {
                   autoComplete="country"
                   className="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-1 border-transparent bg-transparent text-gray-900 text-sm rounded-lg"
                 >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
+                  <option>US +1 </option>
+                  <option>CA +1</option>
+                  <option>EU +1</option>
                 </select>
               </div>
               <input
                 type="text"
                 name="phone-number"
                 id="phone-number"
-                className="px-3 py-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-16 text-sm border border-gray-300 rounded-lg"
-                placeholder="+1 (555) 987-6543"
+                className="px-3 py-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-20 text-sm border border-gray-300 rounded-lg"
+                placeholder="(555) 987-6543"
               />
             </div>
           </div>

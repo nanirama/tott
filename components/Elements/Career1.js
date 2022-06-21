@@ -1,8 +1,6 @@
 import ImgLoader from '../Image';
 import Banner from "../../assets/images/banner-img.jpg"
 
-
-
 export default function Career1() {
     return (
 
@@ -38,7 +36,6 @@ export default function Career1() {
                     </div>
 
                     <div className="border-t border-slate-200 lg:pt-14 lg:pb-10 py-5">
-
                         <div className="flex md:flex-row flex-col gap-3">
                             <div className="md:w-2/5 w-full">
                                 <h5 className="text-xl font-medium mb-3">Design</h5>
@@ -77,11 +74,7 @@ export default function Career1() {
                                             </div>
                                         </div>
                                     </div>
-
-
-
                                     <p className="font-normal text-gray-500 text-base mb-8">We&lsquo;re looking for a mid-level product desgner to join our team.</p>
-
                                     <div className="flex flex-row gap-5">
                                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -90,9 +83,7 @@ export default function Career1() {
                                             <path d="M10 0.833008V19.1663M14.1667 4.16634H7.91667C7.14312 4.16634 6.40125 4.47363 5.85427 5.02061C5.30729 5.56759 5 6.30946 5 7.08301C5 7.85656 5.30729 8.59842 5.85427 9.1454C6.40125 9.69238 7.14312 9.99967 7.91667 9.99967H12.0833C12.8569 9.99967 13.5987 10.307 14.1457 10.8539C14.6927 11.4009 15 12.1428 15 12.9163C15 13.6899 14.6927 14.4318 14.1457 14.9787C13.5987 15.5257 12.8569 15.833 12.0833 15.833H5" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg> 80k - 100k</p>
                                     </div>
-
                                 </div>
-
                                 <div className="border border-slate-200 p-5 rounded-lg mb-5">
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">UX Designer</h5>
@@ -135,22 +126,11 @@ export default function Career1() {
                                             <path d="M10 0.833008V19.1663M14.1667 4.16634H7.91667C7.14312 4.16634 6.40125 4.47363 5.85427 5.02061C5.30729 5.56759 5 6.30946 5 7.08301C5 7.85656 5.30729 8.59842 5.85427 9.1454C6.40125 9.69238 7.14312 9.99967 7.91667 9.99967H12.0833C12.8569 9.99967 13.5987 10.307 14.1457 10.8539C14.6927 11.4009 15 12.1428 15 12.9163C15 13.6899 14.6927 14.4318 14.1457 14.9787C13.5987 15.5257 12.8569 15.833 12.0833 15.833H5" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg> 80k - 100k</p>
                                     </div>
-
                                 </div>
-
-
-
                             </div>
                         </div>
-
-
-
                     </div>
-
-
-
                     <div className="border-t border-slate-200 lg:pt-14 lg:pb-10 py-5">
-
                         <div className="flex md:flex-row flex-col gap-3">
                             <div className="md:w-2/5 w-full">
                                 <h5 className="text-xl font-medium mb-3">Software Development</h5>
@@ -189,9 +169,7 @@ export default function Career1() {
                                             </div>
                                         </div>
                                     </div>
-
                                     <p className="font-normal text-gray-500 text-base mb-8">We&lsquo;re looking for a mid-level product desgner to join our team.</p>
-
                                     <div className="flex flex-row gap-5">
                                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -200,9 +178,7 @@ export default function Career1() {
                                             <path d="M10 0.833008V19.1663M14.1667 4.16634H7.91667C7.14312 4.16634 6.40125 4.47363 5.85427 5.02061C5.30729 5.56759 5 6.30946 5 7.08301C5 7.85656 5.30729 8.59842 5.85427 9.1454C6.40125 9.69238 7.14312 9.99967 7.91667 9.99967H12.0833C12.8569 9.99967 13.5987 10.307 14.1457 10.8539C14.6927 11.4009 15 12.1428 15 12.9163C15 13.6899 14.6927 14.4318 14.1457 14.9787C13.5987 15.5257 12.8569 15.833 12.0833 15.833H5" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg> 80k - 100k</p>
                                     </div>
-
                                 </div>
-
                                 <div className="border border-slate-200 p-5 rounded-lg mb-5">
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Fronend developer</h5>
@@ -236,7 +212,6 @@ export default function Career1() {
                                         </div>
                                     </div>
                                     <p className="font-normal text-gray-500 text-base mb-8">We&lsquo;re looking for a mid-level UX designer to join our team.</p>
-
                                     <div className="flex flex-row gap-5">
                                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -245,9 +220,7 @@ export default function Career1() {
                                             <path d="M10 0.833008V19.1663M14.1667 4.16634H7.91667C7.14312 4.16634 6.40125 4.47363 5.85427 5.02061C5.30729 5.56759 5 6.30946 5 7.08301C5 7.85656 5.30729 8.59842 5.85427 9.1454C6.40125 9.69238 7.14312 9.99967 7.91667 9.99967H12.0833C12.8569 9.99967 13.5987 10.307 14.1457 10.8539C14.6927 11.4009 15 12.1428 15 12.9163C15 13.6899 14.6927 14.4318 14.1457 14.9787C13.5987 15.5257 12.8569 15.833 12.0833 15.833H5" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg> 80k - 100k</p>
                                     </div>
-
                                 </div>
-
                                 <div className="border border-slate-200 p-5 rounded-lg mb-5">
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Backend Developer</h5>
@@ -281,7 +254,6 @@ export default function Career1() {
                                         </div>
                                     </div>
                                     <p className="font-normal text-gray-500 text-base mb-8">We&lsquo;re looking for a mid-level UX designer to join our team.</p>
-
                                     <div className="flex flex-row gap-5">
                                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -290,21 +262,11 @@ export default function Career1() {
                                             <path d="M10 0.833008V19.1663M14.1667 4.16634H7.91667C7.14312 4.16634 6.40125 4.47363 5.85427 5.02061C5.30729 5.56759 5 6.30946 5 7.08301C5 7.85656 5.30729 8.59842 5.85427 9.1454C6.40125 9.69238 7.14312 9.99967 7.91667 9.99967H12.0833C12.8569 9.99967 13.5987 10.307 14.1457 10.8539C14.6927 11.4009 15 12.1428 15 12.9163C15 13.6899 14.6927 14.4318 14.1457 14.9787C13.5987 15.5257 12.8569 15.833 12.0833 15.833H5" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg> 80k - 100k</p>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </div>
-
-
-
                     </div>
-
-
-
                     <div className="border-t border-slate-200 lg:pt-14 lg:pb-10 py-5">
-
                         <div className="flex md:flex-row flex-col gap-3">
                             <div className="md:w-2/5 w-full">
                                 <h5 className="text-xl font-medium mb-3">Customer Success</h5>
@@ -343,10 +305,7 @@ export default function Career1() {
                                             </div>
                                         </div>
                                     </div>
-
-
                                     <p className="font-normal text-gray-500 text-base mb-8">We&lsquo;re looking for a mid-level product desgner to join our team.</p>
-
                                     <div className="flex flex-row gap-5">
                                         <p className="text-base text-gray-500 font-medium flex gap-2 items-center"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.0003 5.00033V10.0003L13.3337 11.667M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z" stroke="#98A2B3" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -358,45 +317,10 @@ export default function Career1() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                   
+                    </div>                   
                       <ImgLoader src={Banner} width={1216} height={400} alt="Team" />  
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-
-
-
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
         </>
-
     )
 }

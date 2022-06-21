@@ -22,7 +22,7 @@ import CtaSection1 from "../components/Elements/CtaSection1";
 import CtaSection2 from "../components/Elements/CtaSection2";
 import CtaSection3 from "../components/Elements/CtaSection3";
 import Integration1 from "../components/Elements/integrations1"
-import Integrations2 from "../components/Elements/integration2"
+import Integrations2 from "../components/Elements/integrations2"
 
 import Stats from "../components/Elements/Stats";
 

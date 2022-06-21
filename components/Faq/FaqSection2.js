@@ -40,7 +40,6 @@ export default function FaqSection2() {
                         <ImgLoader src={Author} width={120} height={56} alt="" />
                         <h4 className="text-xl text-gray-900 font-medium md:mt-6 mt-4 mb-3">Still have questions?</h4>
                         <p className="md:text-lg text-base text-gray-500 md:mb-8 mb-4">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
-                        {/* <a href={button.button_url} className="hover:bg-zinc-500 bg-zinc-600 rounded-lg shadow border hover:border-zinc-500 border-zinc-600 py-3 px-5 text-white inline-block">{button.button_text}</a> */}
                         <div className='md:w-auto w-full inline-block'>
                             <Button />
                         </div>

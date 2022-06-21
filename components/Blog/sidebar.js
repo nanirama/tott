@@ -2,22 +2,19 @@ import React, { Fragment, useState } from "react"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const options = ["View All", "Designs", "Product", "Software Engineering", "Customer Success", "Leadership"];
-
 export default function Sidebar({ data, slug, handleInputChange }) {
     const router = useRouter()
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
     }
-    const handleCatChange = (e)=>{
-        if(e.target.value==0){
+    const handleCatChange = (e) => {
+        if (e.target.value == 0) {
             router.push(`/blog/`)
         }
-        else
-        {
+        else {
             router.push(`/blog/category/${e.target.value}`)
-        }        
+        }
     }
     return (
 
@@ -37,7 +34,6 @@ export default function Sidebar({ data, slug, handleInputChange }) {
                 </div>
             </form>
             <h6 className="font-semibold text-sm mb-5">Blog categories</h6>
-
             <div>
                 <div className="md:hidden md:mb-0 mb-10">
                     <label htmlFor="tabs" className="sr-only">
@@ -57,9 +53,9 @@ export default function Sidebar({ data, slug, handleInputChange }) {
                 </div>
                 <div className="hidden md:block">
                     <nav className="flex flex-col" aria-label="Tabs">
-                    <Link href={`/blog/`}><a className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}>View all</a></Link>
-                       {data && data.map((tab, index) => (
-                            <Link key={tab.attributes.slug} href={`/blog/category/${tab.attributes.slug}`}><a                                
+                        <Link href={`/blog/`}><a className={slug === '' ? 'py-3 px-3 text-gray-700 text-base font-medium mb-2 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'}>View all</a></Link>
+                        {data && data.map((tab, index) => (
+                            <Link key={tab.attributes.slug} href={`/blog/category/${tab.attributes.slug}`}><a
                                 className={classNames(
                                     slug === tab.attributes.slug ? 'py-3 px-3 text-gray-700 text-base font-medium mb-3 bg-gray-100 rounded-md' : 'py-3 px-3 text-gray-700 text-base font-medium mb-2 hover:bg-gray-100 rounded-md'
                                 )}
