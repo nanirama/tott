@@ -25,7 +25,7 @@ export default function ChoosePassword() {
                                 type="password"
                                 autoComplete="current-password"
                                 placeholder="Create a password"
-                                minlength="8"
+                                minLength="8"
                                 required
                                 className="appearance-none block text-sm mb-4 shadow w-full bg-white text-gray-700 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:bg-white"
                             />
