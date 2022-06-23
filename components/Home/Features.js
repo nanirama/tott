@@ -10,7 +10,7 @@ export default function Features() {
           <div className="xl:w-3/5 px-4 w-full lg:mb-12 mb-8">
             <h6 className="text-base font-semibold mb-3">Features</h6>
             <h2 className="text-4xl font-semibold tracking-tight mb-4">Unlock yourself</h2>
-            <div className="text-xl text-gray-500 leading-8" >Daily personalized fitness, sleep, and recovery data delivered to you in real time with Untitled. We're changing how you move.</div>
+            <div className="text-xl text-gray-500 leading-8" >Daily personalized fitness, sleep, and recovery data delivered to you in real time with Untitled. We&lsquo;re changing how you move.</div>
           </div>
           <div className="w-full flex lg:flex-row flex-col ">
             <div className="lg:w-1/2 w-full px-4 lg:pr-14 lg:mt-10 mb-3">

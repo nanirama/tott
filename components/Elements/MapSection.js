@@ -10,7 +10,7 @@ export default function MapSection() {
             <div className="max-w-7xl mx-auto flex md:flex-row flex-col px-4 text-center">
                 <div className="lg:py-20 py-10 w-full">
                     <h6 className="text-base font-semibold mb-4">About us</h6>
-                    <h2 className="md:text-5xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">We're a distributed team</h2>
+                    <h2 className="md:text-5xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">We&lsquo;re a distributed team</h2>
                     <p className="text-xl text-gray-500 leading-8">We have offices and teams all around the world.</p>
                 </div>
             </div>
