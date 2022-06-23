@@ -13,6 +13,7 @@ import Pricing5 from "../components/Elements/pricing5";
 export default function Pricing() {
 
     return (
+        <div className="lg:mt-20 mt-16">
         <Layout>
             <Features7 />
             <Pricing3 />
@@ -24,6 +25,7 @@ export default function Pricing() {
             <Faq2 />
             <Pricing5 />
         </Layout>
+        </div>
 
     )
 

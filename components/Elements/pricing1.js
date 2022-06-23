@@ -41,7 +41,7 @@ const tiers = [
     },
 ]
 
-export default function Pricing1({ data }) {
+export default function Pricing1() {
     return (
         <div>
             <div className="bg-gray-50 ">
@@ -58,25 +58,15 @@ export default function Pricing1({ data }) {
                                 className="relative md:w-auto w-full md:mb-0 mb-4 bg-white border border-slate-300 md:mr-4 rounded-md py-3 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 md:px-5 px-1"
                             >
                                 Chat to sales
-                            </button>
-                            {/* <button
-                                type="button"
-                                className="ml-0.5 relative w-1/2 text-white bg-slate-600 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto sm:px-8"
-                            >
-                                Get started
-                            </button> */}
-
-                            <Button/>
+                            </button>                           
+                            <Button />
                         </div>
                     </div>
                 </div>
             </div>
-   
             <div className="max-w-7xl mx-auto md:px-6 px-4 -mt-48 mb-14">
                 <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0  sm:grid sm:grid-cols-2 sm:gap-6 md:max-w-4xl md:mx-auto md:max-w-none md:mx-0 md:grid-cols-3">
-                   
                     {tiers.map((tier) => (
-                     
                         <div key={tier.name} className="bg-white border border-gray-200 shadow-lg rounded-lg lg:p-8 p-4 pb-8 divide-y divide-gray-200">
                             <div className="py-6 flex flex-col">
                                 <div className='text-sm px-4 bg-slate-100 rounded-full text-center mx-auto py-1'>{tier.nametop}</div>
@@ -84,46 +74,37 @@ export default function Pricing1({ data }) {
                                     <span className="lg:text-5xl text-2xl font-extrabold text-gray-900">${tier.priceMonthly}</span>{' '}
                                     <span className="lg:text-5xl text-2xl font-extrabold text-gray-900">/mth</span>
                                 </p>
-                               
-
                                 <p className="mt-4 text-base text-gray-500 text-center">{tier.description}</p>
-
                                 <a
                                     href={tier.href}
                                     className="mt-8 block w-full bg-gray-500 border bg-slate-600 rounded-md py-3 text-sm font-semibold text-white text-center hover:bg-gray-900"
                                 >
-                                    Get Started
+                                    Start Free Trail
                                 </a>
-
                                 <button
                                     type="button"
                                     className="w-full border border-slate-300 mr-4 mt-4 rounded-md py-3 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-full sm:px-8"
                                 >
                                     Chat to sales
                                 </button>
-
                             </div>
                             <div className="pt-6">
                                 <ul role="list" className="mt-6 space-y-4">
                                     {tier.includedFeatures.map((feature) => (
                                         <li key={feature} className="flex space-x-3">
-                                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"/>
-<path fillRule="evenodd" clipRule="evenodd" d="M17.0965 7.39016L9.9365 14.3002L8.0365 12.2702C7.6865 11.9402 7.1365 11.9202 6.7365 12.2002C6.3465 12.4902 6.2365 13.0002 6.4765 13.4102L8.7265 17.0702C8.9465 17.4102 9.3265 17.6202 9.7565 17.6202C10.1665 17.6202 10.5565 17.4102 10.7765 17.0702C11.1365 16.6002 18.0065 8.41016 18.0065 8.41016C18.9065 7.49016 17.8165 6.68016 17.0965 7.38016V7.39016Z" fill="#12B76A"/>
-</svg>
-<span className="text-base text-gray-500">{feature}</span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF" />
+                                                <path fillRule="evenodd" clipRule="evenodd" d="M17.0965 7.39016L9.9365 14.3002L8.0365 12.2702C7.6865 11.9402 7.1365 11.9202 6.7365 12.2002C6.3465 12.4902 6.2365 13.0002 6.4765 13.4102L8.7265 17.0702C8.9465 17.4102 9.3265 17.6202 9.7565 17.6202C10.1665 17.6202 10.5565 17.4102 10.7765 17.0702C11.1365 16.6002 18.0065 8.41016 18.0065 8.41016C18.9065 7.49016 17.8165 6.68016 17.0965 7.38016V7.39016Z" fill="#12B76A" />
+                                            </svg>
+                                            <span className="text-base text-gray-500">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
-                            </div>
-                          
-                      
+                        </div>
                     ))}
                 </div>
             </div>
-
         </div>
-
     )
 }

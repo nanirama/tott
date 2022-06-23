@@ -1,7 +1,7 @@
 export default function Features7() {
 
     return (
-        <div className="w-full mt-16">
+        <div className="w-full">
             <div className="max-w-7xl mx-auto flex flex-col px-4 lg:py-20 py-10">
                 <div className="xl:w-3/5 w-full lg:mb-12 mb-8">
                     <h6 className="text-base font-semibold mb-3">Upgrade</h6>
@@ -158,7 +158,7 @@ export default function Features7() {
                             </div>
                         </div>
                         <div className='p-8 flex'>
-                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Get Started</a>
+                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a>
                         </div>
                     </div>
                 </div>

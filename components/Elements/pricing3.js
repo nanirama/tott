@@ -6,10 +6,7 @@ export default function Pricing3() {
                 <div className="w-full lg:mb-12 mb-8 text-center flex flex-col">
                     <h6 className="text-base font-semibold mb-3">Pricing</h6>
                     <h2 className="lg:text-4xl text-2xl font-semibold tracking-tight mb-4">Plans that fit your scale</h2>
-
                     <p className="text-xl text-gray-500 leading-8">Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
-
-
                     <div className="relative border bg-gray-50 self-center mt-6 rounded-lg p-1 flex sm:mt-8 items-center">
                         <button
                             type="button"
@@ -26,15 +23,12 @@ export default function Pricing3() {
                         <div className="h-6 flex items-center hidden md:flex justify-between bg-gray-100 rounded-2xl p-1 w-auto text-gray-700 text-sm font-medium py-1 px-2">Save 20%</div>
                     </div>
                 </div>
-
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
                     <div className='border rounded-lg shadow-lg'>
-
                         <div className='flex gap-3 sm:flex-row justify-between flex-col-reverse mb-3 p-8 border-b'>
                             <div>
                                 <div className='flex flex-row gap-2 mb-1'>
                                     <h5 className="font-semibold text-2xl">Basic plan</h5>
-
                                     <a href='#' className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a>
                                 </div>
                                 <p className='text-base font-normal text-gray-500'>Our most popular plan for small teams.</p>
@@ -43,7 +37,6 @@ export default function Pricing3() {
                                 <p><span className="md:text-5xl text-4xl font-extrabold text-gray-900">$10</span> <span className="text-base font-normal text-gray-500">per month</span></p>
                             </div>
                         </div>
-
                         <div className='py-5 px-8 border-b'>
                             <h5 className='text-base font-semibold text-gray-900'>FEATURES</h5>
                             <p className='text-base font-normal text-gray-400 mb-5'>Everything in our <b>free plan</b> plus....</p>
@@ -124,20 +117,15 @@ export default function Pricing3() {
                                 </ul>
                             </div>
                         </div>
-
                         <div className='p-8 flex'>
-                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Get Started</a>
-
+                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a>
                         </div>
                     </div>
-
                     <div className='border rounded-lg shadow-lg'>
-
                         <div className='flex gap-3 sm:flex-row justify-between flex-col-reverse mb-3 p-8 border-b'>
                             <div>
                                 <div className='flex flex-row gap-2 mb-1'>
                                     <h5 className="font-semibold text-2xl">Business plan</h5>
-
                                     <a href='#' className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a>
                                 </div>
                                 <p className='text-base font-normal text-gray-500'>Advanced features and reporting.</p>
@@ -146,7 +134,6 @@ export default function Pricing3() {
                                 <p><span className="md:text-5xl text-4xl font-extrabold text-gray-900">$10</span> <span className="text-base font-normal text-gray-500">per month</span></p>
                             </div>
                         </div>
-
                         <div className='py-5 px-8 border-b'>
                             <h5 className='text-base font-semibold text-gray-900'>FEATURES</h5>
                             <p className='text-base font-normal text-gray-400 mb-5'>Everything in our <b>free plan</b> plus....</p>
@@ -227,17 +214,12 @@ export default function Pricing3() {
                                 </ul>
                             </div>
                         </div>
-
                         <div className='p-8 flex'>
-                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Get Started</a>
-
+                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     )
 }

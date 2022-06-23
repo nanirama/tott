@@ -4,7 +4,6 @@ import Button from "../../components/Button/index"
 
 export default function Features1() {
     return (
-
         <div className="w-full">
             <div className="max-w-4xl mx-auto flex flex-col px-4 lg:py-20 pb-5 pt-10 text-center">
                 <h6 className="text-base font-semibold mb-4">Features</h6>
@@ -31,20 +30,19 @@ export default function Features1() {
                                     <path d="M10.0001 18.3332C14.6025 18.3332 18.3334 14.6022 18.3334 9.99984C18.3334 5.39746 14.6025 1.6665 10.0001 1.6665C5.39771 1.6665 1.66675 5.39746 1.66675 9.99984C1.66675 14.6022 5.39771 18.3332 10.0001 18.3332Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M8.33342 6.6665L13.3334 9.99984L8.33342 13.3332V6.6665Z" stroke="#344054" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg> Demo</a>
-                                {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Learn more</a> */}
                                 <Button />
                             </div>
                         </div>
                     </div>
                     <div className='lg:w-1/2 w-full'>
-                        <div className='bg-gray-100  md:p-8 p-4 rounded-lg relative pattern lg:mb-28 mb-5 flex justify-center'>
+                        <div className='bg-gray-100 md:p-8 p-4 rounded-lg relative pattern lg:mb-28 mb-5 flex justify-center'>
                             <ImgLoader src={FeatureImg1} width={488} height={328} alt="Team member" />
                         </div>
                     </div>
                 </div>
                 <div className=' flex lg:flex-row flex-col-reverse  lg:gap-20 gap-5'>
                     <div className='lg:w-1/2 w-full'>
-                        <div className='bg-gray-100  md:p-8 p-4 rounded-lg relative pattern-left lg:mb-28 mb-5 flex justify-center'>
+                        <div className='bg-gray-100 md:p-8 p-4 rounded-lg relative pattern-left lg:mb-28 mb-5 flex justify-center'>
                             <ImgLoader src={FeatureImg1} width={488} height={328} alt="Team member" />
                         </div>
                     </div>

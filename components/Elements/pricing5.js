@@ -54,34 +54,26 @@ function classNames(...classes) {
 export default function pricing5() {
   return (
     <div className="bg-white">
-        <div className="max-w-7xl mx-auto bg-white py-16 sm:py-24 sm:px-6 lg:px-8">
-
-<div className="w-full lg:mb-12 mb-8  flex flex-col">
-                    <h6 className="text-base font-semibold mb-3">Pricing</h6>
-                    <h2 className="lg:text-4xl text-2xl font-semibold tracking-tight mb-4">Simple, transparent pricing</h2>
-
-                    <p className="text-xl text-gray-500 leading-8">Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
-
-
-                    <div className="relative border bg-gray-50 self-start mt-6 rounded-lg p-1 flex sm:mt-8">
-                        <button
-                            type="button"
-                            className="relative bg-white border border-slate-300 mr-3 rounded-md py-2 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto px-2"
-                        >
-                            Monthly billing
-                        </button>
-                        <button
-                            type="button"
-                            className="relative border border-transparent mr-3 rounded-md py-2 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto px-2"
-                        >
-                            Annual billing
-                        </button>
-                        
-                    </div>
-                </div>
-
-
-      
+      <div className="max-w-7xl mx-auto bg-white py-16 sm:py-24 sm:px-6 lg:px-8">
+        <div className="w-full lg:mb-12 mb-8  flex flex-col">
+          <h6 className="text-base font-semibold mb-3">Pricing</h6>
+          <h2 className="lg:text-4xl text-2xl font-semibold tracking-tight mb-4">Simple, transparent pricing</h2>
+          <p className="text-xl text-gray-500 leading-8">Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
+          <div className="relative border bg-gray-50 self-start mt-6 rounded-lg p-1 flex sm:mt-8">
+            <button
+              type="button"
+              className="relative bg-white border border-slate-300 mr-3 rounded-md py-2 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto px-2"
+            >
+              Monthly billing
+            </button>
+            <button
+              type="button"
+              className="relative border border-transparent mr-3 rounded-md py-2 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-auto px-2"
+            >
+              Annual billing
+            </button>
+          </div>
+        </div>
         {/* xs to lg */}
         <div className="max-w-2xl mx-auto space-y-16 lg:hidden">
           {tiers.map((tier, tierIdx) => (
@@ -100,7 +92,6 @@ export default function pricing5() {
                   Buy {tier.name}
                 </a>
               </div>
-
               {sections.map((section) => (
                 <table key={section.name} className="w-full">
                   <caption className="bg-gray-50 border-t border-gray-200 py-3 px-4 text-sm font-medium text-gray-900 text-left">
@@ -142,7 +133,6 @@ export default function pricing5() {
                   </tbody>
                 </table>
               ))}
-
               <div
                 className={classNames(
                   tierIdx < tiers.length - 1 ? 'py-5 border-b' : 'pt-5',
@@ -159,7 +149,6 @@ export default function pricing5() {
             </section>
           ))}
         </div>
-
         {/* lg+ */}
         <div className="hidden lg:block">
           <table className="w-full h-px table-fixed">
@@ -184,7 +173,6 @@ export default function pricing5() {
             <tbody className="border-t border-gray-200 divide-y divide-gray-200">
               <tr>
                 <th className="py-8 px-6 text-sm font-medium text-gray-900 text-left align-top" scope="row">
-                  
                 </th>
                 {tiers.map((tier) => (
                   <td key={tier.name} className="h-full py-8 px-6 align-top">
