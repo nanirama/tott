@@ -5,8 +5,8 @@ import BlogIndex from "../../../components/Blog/BlogIndex"
 import { CATEGORY_ITEM_DATA, TOTAL_BLOGS, CATEGORIES_LIST } from "../../../lib/graphql/queries";
 
 const Categories = (props) => {
-    const categories = fetchAPI("/categories")
-    console.log('categories',categories)
+    // const categories = fetchAPI("/categories")
+    // console.log('categories',categories)
     return (
         <Layout>
             <BlogIndex data={props} paginationPath={`/blog/category/${props.slug}`} slug={props.slug} />      
@@ -15,14 +15,14 @@ const Categories = (props) => {
 }
 
 export async function getStaticPaths() {
-    const categories = await fetchAPI("/categories")
+    const categories = await fetchAPI("/api/categories")
     const paths = categories.data.map(category => ({
       params: { slug: category.attributes.slug, }
     }))
   
     return { paths, fallback: false }
   }
-  export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }) {
     const limit = 9
     const { slug, page } = params
     const pageNumber = page ? page : 1

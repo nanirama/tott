@@ -64,7 +64,6 @@ export default function Index({ data }) {
     const MarkdownComponents = {
         h2: heading => {
             const { node } = heading
-            console.log('node data', node.children[0])
             if (node.children[0].type === "text") {
                 return (
                     <h2 id={`${node.children[0].value.replace(" ", "_").toLowerCase()}`}>{node.children[0].value}</h2>
@@ -81,10 +80,7 @@ export default function Index({ data }) {
                 const metaHeight = metastring.match(/x([^}]+)}/)
                 const width = metaWidth ? metaWidth[1] : "768"
                 const height = metaHeight ? metaHeight[1] : "432"
-
-                console.log('caption caption', image.properties)
-
-                return (
+             return (
                     <div className="postImgWrapper">
                         <ImgLoader
                             src={image.properties.src}

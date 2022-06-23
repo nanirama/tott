@@ -16,7 +16,7 @@ export default function Blog(props) {
   )
 }
 export async function getStaticPaths() {
-  const articles = await fetchAPI("/posts")
+  const articles = await fetchAPI("/api/posts")
 
   return {
     paths: articles.data.map((article) => ({
