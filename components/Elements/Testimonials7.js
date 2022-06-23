@@ -46,7 +46,7 @@ export default function Testimonials7() {
             <div className='flex sm:flex-row flex-col justify-between w-full gap-2 items-center p-3'>
                 <p className='text-gray-500 text-sm'>© Untitled UI 2077</p>
                 <p className='flex items-center text-gray-500 text-sm'><svg className='mr-2' width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.6673 2.00033C14.6673 1.26699 14.0673 0.666992 13.334 0.666992H2.66732C1.93398 0.666992 1.33398 1.26699 1.33398 2.00033M14.6673 2.00033V10.0003C14.6673 10.7337 14.0673 11.3337 13.334 11.3337H2.66732C1.93398 11.3337 1.33398 10.7337 1.33398 10.0003V2.00033M14.6673 2.00033L8.00065 6.66699L1.33398 2.00033" stroke="#667085" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.6673 2.00033C14.6673 1.26699 14.0673 0.666992 13.334 0.666992H2.66732C1.93398 0.666992 1.33398 1.26699 1.33398 2.00033M14.6673 2.00033V10.0003C14.6673 10.7337 14.0673 11.3337 13.334 11.3337H2.66732C1.93398 11.3337 1.33398 10.7337 1.33398 10.0003V2.00033M14.6673 2.00033L8.00065 6.66699L1.33398 2.00033" stroke="#667085" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
                 </svg> help@untitledui.com</p>
             </div>
          </>
