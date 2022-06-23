@@ -5,7 +5,7 @@ import ImgLoader from '../Image'
 
 const Logo = () => {
     return (
-        <Link href="/"><a> <ImgLoader src={LogoImg} width={112} height={40} /></a></Link>
+        <Link href="/"><a> <ImgLoader src={LogoImg} width={150} height={40} /></a></Link>
     )
 }
 
