@@ -139,12 +139,13 @@ export default function Index({ data }) {
                                         <h6 className="mb-5">Contributors</h6>
                                         {contributors.map((item, index) => {
                                             const { name, title, image } = item
-                                            console.log('c item', image.data[0].attributes.url)
                                             return (
                                                 <div className="flex flex-row items-center gap-3 mb-6" key={index}>
+                                                    {image && image.data[0] && image.data[0].attributes && (
                                                     <ImgLoader
                                                         src={image.data[0].attributes.url} width={48} height={48}
                                                     />
+                                                    )}
                                                     <h6 className="flex flex-col text-gray-900">{name}
                                                         <span className="font-normal">{title}</span>
                                                     </h6>
