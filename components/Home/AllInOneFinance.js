@@ -3,6 +3,9 @@ import ImgLoader from '../Image';
 import AppStore from "../../assets/images/app-store.png";
 import GooglePlay from "../../assets/images/google-play.png";
 
+
+import AllImg from "../../assets/images/iPhone2.png";
+
 export default function AllInOneFinance({ data }) {
   const { title, sub_title, image, buttons } = data
   return (
@@ -29,7 +32,7 @@ export default function AllInOneFinance({ data }) {
           </div>
           <div className="w-full md:w-6/12">
             <div className="flex justify-center md:mt-0 mt-16 px-4 bg">
-              <ImgLoader src={image.data[0].attributes.url} width={405} height={496} alt="Tott" />
+              <ImgLoader src={AllImg} width={405} height={496} alt="Tott" />
             </div>
           </div>
         </div>

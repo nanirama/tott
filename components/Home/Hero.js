@@ -6,6 +6,9 @@ import { useState, useEffect } from 'react'
 import ImgLoader from '../Image';
 import Button from "../../components/Button/index"
 
+import HeroImg1 from "../../assets/images/here-image.png";
+import HeroImg2 from "../../assets/images/hero-img.png";
+
 export default function Hero({ data }) {
   const [emailValue, setEmailValue] = useState('')
   const { title, sub_title, description, image } = data
@@ -42,17 +45,17 @@ export default function Hero({ data }) {
           </div>
         </div>
         <div className='absolute right-0 top-10 hidden xl:flex z-0'>
-          <div className='z-0'><ImgLoader className='z-0' src={image.data[1].attributes.url} width={680} height={632} /></div>
+          <div className='z-0'><ImgLoader className='z-0' src={HeroImg2} width={680} height={632} /></div>
         </div>
         <div className="md:w-1/2 w-full px-4 xl:block hidden">
           <div className='xl:-ml-20 xl:mt-12 flex  xl:justify-start justify-center md:mt-0 mt-8 z-10'>
-            <ImgLoader src={image.data[0].attributes.url} width={315} height={544} />
+            <ImgLoader src={HeroImg1} width={315} height={544} />
           </div>
         </div>
 
         <div className="flex xl:hidden lg:mt-0 mt-10 -mb-1.5 justify-end relative">
-          <div className="w-2/5 z-10 mt-8 absolute left-4 bottom-0"><ImgLoader src={image.data[0].attributes.url} width={315} height={544} /></div>
-          <div className="w-4/5"><ImgLoader className='z-0' src={image.data[1].attributes.url} width={680} height={632} /></div>
+          <div className="w-2/5 z-10 mt-8 absolute left-4 bottom-0"><ImgLoader src={HeroImg1} width={315} height={544} /></div>
+          <div className="w-4/5"><ImgLoader className='z-0' src={HeroImg2} width={680} height={632} /></div>
         </div>
       </div>
     </div>
