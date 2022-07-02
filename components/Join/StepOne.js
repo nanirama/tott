@@ -8,14 +8,14 @@ export const StepOne = ({setActiveStep, query})=>{
     const [enabled, setEnabled] = useState(false)
     return(
         <div className="mx-auto max-w-3xl">
-                    <div className="relative flex flex-col w-full bg-black sm:px-10 px-5 outline-none focus:outline-none">
+                    <div className="max-w-full relative flex flex-col w-full bg-black sm:px-10 px-5 outline-none focus:outline-none">
                         <div className="flex items-start justify-between">
                             <h3 className="sm:text-3xl text-2xl font-semibold text-white sm:mb-6 mb-4 tracking-tight">
                                 Start your 14 day free trial of Trady
                             </h3>
 
                         </div>
-                        <div className="form w-full text-left">
+                        <div className="max-w-full form w-full text-left">
                             <div className="sm:mb-10 mb-5">
                                 <label htmlFor="email" className="text-sm text-white">
                                     Email Address
@@ -26,7 +26,7 @@ export const StepOne = ({setActiveStep, query})=>{
                                         type="email"
                                         name="email"
                                         id="email"
-                                        className="py-3 px-3 bg-white shadow-sm focus:ring-indigo-500 focus:border-indigo-500 w-full border border-gray-300 text-sm rounded-lg"
+                                        className="max-w-full py-3 px-3 bg-white shadow-sm focus:ring-indigo-500 focus:border-indigo-500 w-full border border-gray-300 text-sm rounded-lg"
                                         placeholder="you@example.com"
                                     />
                                 </div>
@@ -44,7 +44,7 @@ export const StepOne = ({setActiveStep, query})=>{
                                             id="country"
                                             name="country"
                                             autoComplete="country"
-                                            className="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-1 border-transparent bg-transparent text-gray-500 text-sm rounded-lg"
+                                            className="max-w-full focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-1 border-transparent bg-transparent text-gray-500 text-sm rounded-lg"
                                         >
                                             <option>US +1</option>
                                             <option>CA +1</option>
@@ -55,7 +55,7 @@ export const StepOne = ({setActiveStep, query})=>{
                                         type="text"
                                         name="phone-number"
                                         id="phone-number"
-                                        className="py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 w-full pl-20 text-sm bg-white border border-gray-300 rounded-lg"
+                                        className="max-w-full py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 w-full pl-20 text-sm bg-white border border-gray-300 rounded-lg"
                                         placeholder="(415) 688-5737"
                                     />
                                 </div>
@@ -91,7 +91,7 @@ export const StepOne = ({setActiveStep, query})=>{
                                             type="text"
                                             name="company-website"
                                             id="company-website"
-                                            className="py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full text-sm border border-gray-300 rounded-lg"
+                                            className="max-w-full py-3 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full text-sm border border-gray-300 rounded-lg"
                                             placeholder="www.example.com"
                                         />
                                     </div>

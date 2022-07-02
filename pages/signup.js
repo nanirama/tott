@@ -20,9 +20,9 @@ export default function Signup() {
       </div>
       <div className="lg:max-w-7xl mx-auto w-full py-16">
         <SignUpForm />
-        <CheckMail />
+        {/* <CheckMail />
         <CheckMail2 />
-        <MailVerify />
+        <MailVerify /> */}
       </div>
     </Layout>
   )
