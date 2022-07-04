@@ -15,7 +15,7 @@ export default function Blog(props) {
 }
 export async function getStaticPaths() {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/posts`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/posts`
   );
   const articles = await response.json();
   return {
