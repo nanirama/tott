@@ -2,6 +2,8 @@ import App from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import { createContext } from "react";
+import { ApolloProvider } from "@apollo/client";
+import client from "../lib/graphql/apolloClient";
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from "../lib/media";
 import "../styles/globals.css";
@@ -36,7 +38,9 @@ const MyApp = ({ Component, pageProps }) => {
                     });
                 `}
       </Script>
-      <Component {...pageProps} />
+      <ApolloProvider client={client}>
+        <Component {...pageProps} />
+      </ApolloProvider>
     </GlobalContext.Provider>
   );
 };

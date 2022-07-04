@@ -14,7 +14,9 @@ export default function Blog(props) {
   );
 }
 export async function getStaticPaths() {
-  const response = await fetch("https://tott-web-cms.herokuapp.com/api/posts");
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/posts`
+  );
   const articles = await response.json();
   return {
     paths: articles?.data?.map((article) => ({

@@ -28,7 +28,6 @@ const handleChange = useCallback((inputValue) => setValue(inputValue), []);
 
 const handleFocus = (event) => {
     const focusValue = event.target.value;
-    console.log("Should be focus value", focusValue);
     setFocusValue(focusValue);
     setServiceSelect('other')
   };
@@ -45,7 +44,6 @@ const handleServieChange = (e)=>{
 }
 
 useEffect(() => {
-    console.log('serviceSelect',serviceSelect)
   }, [serviceSelect]);
 
 const loadOptions = (inputValue, callback) =>

@@ -9,8 +9,6 @@ import {
 } from "../../../lib/graphql/queries";
 
 const Categories = (props) => {
-  // const categories = fetchAPI("/categories")
-  // console.log('categories',categories)
   return (
     <Layout>
       <BlogIndex
@@ -24,12 +22,9 @@ const Categories = (props) => {
 
 export async function getStaticPaths() {
   const response = await fetch(
-    "https://tott-web-cms.herokuapp.com/api/categories"
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/categories`
   );
   const categories = await response.json();
-  //   categories?.data?.map((category) => {
-  //     console.log("Category", category);
-  //   });
   return {
     paths: categories?.data?.map((category) => ({
       params: {
