@@ -1,9 +1,10 @@
+import Link from 'next/link'
 export default function Stats2() {
     return (
 
         <div className="lg:py-20 py-10 w-full border-b border-slate-200">
             <div className="max-w-4xl mx-auto flex flex-col px-4 text-center items-center lg:mb-14 mb-5">
-                <a href="#" className="bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2 mb-4">Launch faster</a>
+            <Link href="/"><a href="#" className="bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2 mb-4">Launch faster</a></Link>
                 <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">We&lsquo;re only just getting started on our journey</h2>
                 <p className="text-xl text-gray-500 mb-2">Everything you need to build modern UI and great products.</p>
             </div>

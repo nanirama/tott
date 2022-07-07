@@ -1,5 +1,6 @@
 import ImgLoader from '../Image';
 import Banner from "../../assets/images/banner-img.jpg"
+import Link from 'next/link'
 
 export default function Career1() {
     return (
@@ -46,11 +47,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Product Designer</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                                            </svg> Design</a>
+                                            </svg> Design</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -70,7 +71,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -88,11 +89,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">UX Designer</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                                            </svg> Design</a>
+                                            </svg> Design</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -112,7 +113,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -141,11 +142,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Engineering Manager</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#EE46BC" />
-                                            </svg> Software</a>
+                                            </svg> Software</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -165,7 +166,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -183,11 +184,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Fronend developer</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#EE46BC" />
-                                            </svg> Software</a>
+                                            </svg> Software</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -207,7 +208,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -225,11 +226,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Backend Developer</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#EE46BC" />
-                                            </svg> Software</a>
+                                            </svg> Software</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -249,7 +250,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>
@@ -277,11 +278,11 @@ export default function Career1() {
                                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                         <h5 className="font-medium lg:text-lg">Customer Success Manager</h5>
                                         <div className='flex sm:justify-between sm:grow gap-3'>
-                                            <a href='#' className='flex items-center justify-between gap-1 bg-green-50 rounded-2xl p-1 w-auto text-green-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-green-50 rounded-2xl p-1 w-auto text-green-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="3" cy="3" r="3" fill="#12B76A" />
-                                            </svg> Customer Success</a>
+                                            </svg> Customer Success</a></Link>
                                             <div>
-                                                <a href='#' className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <Link href="/"><a className='bg-gray-100 rounded-2xl flex gap-1 w-auto text-gray-700 text-xs font-medium py-1 px-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clipPath="url(#clip0_223_130433)">
                                                         <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58175 16 0 12.4183 0 8C0 8.00187 8 0.00090625 8 0C12.4183 0 16 3.58175 16 8Z" fill="#0052B4" />
                                                         <path d="M7.97852 7.99996H7.99996C7.99996 7.9927 7.99996 7.98575 7.99996 7.97852C7.99283 7.98568 7.98569 7.99282 7.97852 7.99996Z" fill="#F0F0F0" />
@@ -301,7 +302,7 @@ export default function Career1() {
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                                    Melbourne, Australia</a>
+                                                    Melbourne, Australia</a></Link>
                                             </div>
                                         </div>
                                     </div>

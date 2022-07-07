@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ImgLoader from '../Image';
 
 import CtaImg from "../../assets/images/cta-image.jpg"
@@ -30,7 +31,7 @@ export default function CtaSection2() {
                             </li>
                         </ul>
                         <div className=" flex md:flex-row flex-col justify-start mt-4">
-                            <a href="#" target="_blank" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                        <Link href="/"><a className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
                             {/* <a href="#" target="_blank" className="inline-block rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a> */}
                             <Button />
                         </div>

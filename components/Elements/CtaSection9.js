@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from "../../components/Button/index"
 export default function CtaSection9() {
 
@@ -9,7 +10,7 @@ export default function CtaSection9() {
                 <div className="flex md:flex-row flex-col items-stretch max-w-md mx-auto">
                 </div>
                 <div className="flex md:flex-row flex-col text-center justify-center w-full">
-                    <a href="#" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                <Link href="/"><a className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
                     <Button />
                 </div>
             </div>

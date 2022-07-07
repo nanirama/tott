@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export default function Paginate({ data, pageIndex, setPageIndex }) {
     const { page, pageSize, total, pageCount } = data
+    console.log('p data', data)
     let pages = [];
     for (let i = 0; i < pageCount; i++) {
         pages.push({

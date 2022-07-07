@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ImgLoader from '../Image';
 import CareerImg from "../../assets/images/career-img.jpg"
 
@@ -22,9 +23,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">Product Designer</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#175CD3" />
-                                    </svg> Design</a>
+                                    </svg> Design</a></Link>
 
                                 </div>
                             </div>
@@ -45,9 +46,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">Customer Success Manager</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-green-50 rounded-2xl p-1 w-auto text-green-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-green-50 rounded-2xl p-1 w-auto text-green-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#12B76A" />
-                                    </svg> Customer Success</a>
+                                    </svg> Customer Success</a></Link>
 
                                 </div>
                             </div>
@@ -68,9 +69,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">SEO Marketing Manager</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-orange-50 rounded-2xl p-1 w-auto text-orange-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-orange-50 rounded-2xl p-1 w-auto text-orange-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#B93815" />
-                                    </svg> Marketing</a>
+                                    </svg> Marketing</a></Link>
 
                                 </div>
                             </div>
@@ -95,9 +96,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">Engineering Manager</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-pink-50 rounded-2xl p-1 w-auto text-pink-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#C11574" />
-                                    </svg> Software Development</a>
+                                    </svg> Software Development</a></Link>
 
                                 </div>
                             </div>
@@ -118,9 +119,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">Account Executive</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#12B76A" />
-                                    </svg> Sales</a>
+                                    </svg> Sales</a></Link>
 
                                 </div>
                             </div>
@@ -141,9 +142,9 @@ export default function Career4() {
                             <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                                 <h5 className="font-medium lg:text-lg">UX Researcher</h5>
                                 <div className='flex sm:justify-between sm:grow gap-3'>
-                                    <a href='#' className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <Link href="/"><a className='flex items-center justify-between gap-1 bg-blue-50 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" fill="#B93815" />
-                                    </svg> Design</a>
+                                    </svg> Design</a></Link>
 
                                 </div>
                             </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function BottomBanners() {
     return (
         <>
@@ -17,12 +18,12 @@ export default function BottomBanners() {
                                 </p>
                             </div>
                             <div className="order-3 mt-4 flex-shrink-0 w-full flex md:flex-row flex-col-reverse md:order-2 md:mt-0 md:w-auto">
-                                <a href="#" className="flex items-center justify-center px-4 py-2 md:mr-2 md:mt-0 mt-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white">
+                            <Link href="/"><a  className="flex items-center justify-center px-4 py-2 md:mr-2 md:mt-0 mt-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white">
                                     Decline
-                                </a>
-                                <a href="#" className="flex items-center justify-center px-4 py-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-gray-50">
+                                </a></Link>
+                                <Link href="/"><a className="flex items-center justify-center px-4 py-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-gray-50">
                                     Allow
-                                </a>
+                                </a></Link>
                             </div>
                             <div className="order-2 flex-shrink-0 md:order-3 sm:ml-2">
                                 <button type="button" className="-mr-1 flex p-2 rounded-lg  focus:outline-none focus:ring-2 focus:ring-white">
@@ -40,7 +41,7 @@ export default function BottomBanners() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="pr-16 sm:text-center sm:px-16">
                         <p className="font-medium text-gray-800">
-                            We’ve just launched a new feature! <span className="text-gray-600">Check out the <a href="#" className="underline">new dashboard.</a></span>
+                            We’ve just launched a new feature! <span className="text-gray-600">Check out the <Link href="/"><a className="underline">new dashboard.</a></Link></span>
                         </p>
                     </div>
                     <div className="absolute inset-y-0 right-0 pt-1 pr-2 flex items-start">
@@ -59,7 +60,7 @@ export default function BottomBanners() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="pr-16 sm:text-center sm:px-16">
                         <p className="font-medium text-white">
-                            We’ve just launched a new feature! <span className="text-gray-300">Check out the <a href="#" className="underline">new dashboard.</a></span>
+                            We’ve just launched a new feature! <span className="text-gray-300">Check out the <Link href="/"><a className="underline">new dashboard.</a></Link></span>
                         </p>
                     </div>
                     <div className="absolute inset-y-0 right-0 pt-1 pr-2 flex items-start">

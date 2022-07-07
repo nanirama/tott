@@ -1,4 +1,5 @@
 import React, { useRef } from "react"
+import Link from 'next/link'
 import ImgLoader from '../Image';
 import Team1 from "../../assets/images/team1.jpg"
 import Button from "../../components/Button/index"
@@ -48,7 +49,7 @@ export default function Testimonial2() {
                         <p className="md:text-xl text-lg text-gray-500">Hear from some of our amazing customers who are building faster.</p>
                     </div>
                     <div className="flex md:flex-row flex-col items-start">
-                        <a href="#" className="inline-block text-center rounded-lg py-3 border md:mr-4 md:mb-0 mb-3 px-5 text-gray-700 text-base font-medium md:w-auto w-full">Our customers</a>
+                    <Link href="/"><a className="inline-block text-center rounded-lg py-3 border md:mr-4 md:mb-0 mb-3 px-5 text-gray-700 text-base font-medium md:w-auto w-full">Our customers</a></Link>
                         <Button />
                     </div>
                 </div>
@@ -79,7 +80,7 @@ export default function Testimonial2() {
                                         <path d="M8.53834 0.609964C8.70914 0.199318 9.29086 0.199318 9.46166 0.609964L11.5278 5.57744C11.5998 5.75056 11.7626 5.86885 11.9495 5.88383L17.3123 6.31376C17.7556 6.3493 17.9354 6.90256 17.5976 7.19189L13.5117 10.6919C13.3693 10.8139 13.3071 11.0053 13.3506 11.1876L14.5989 16.4208C14.7021 16.8534 14.2315 17.1954 13.8519 16.9635L9.26063 14.1592C9.10062 14.0615 8.89938 14.0615 8.73937 14.1592L4.14806 16.9635C3.76851 17.1954 3.29788 16.8534 3.40108 16.4208L4.64939 11.1876C4.69289 11.0053 4.6307 10.8139 4.48831 10.6919L0.402413 7.19189C0.0646445 6.90256 0.244408 6.3493 0.687735 6.31376L6.05054 5.88383C6.23744 5.86885 6.40024 5.75056 6.47225 5.57744L8.53834 0.609964Z" fill="white" />
                                     </svg>
                                 </div>
-                                <h3 className="md:text-3xl text-xl font-semibold text-white mb-4"><a href="#">Alisa Hester</a></h3>
+                                <h3 className="md:text-3xl text-xl font-semibold text-white mb-4"><Link href="/"><a>Alisa Hester</a></Link></h3>
                                 <p className="md:text-lg text-base font-semibold text-white mb-1">PM, Hourglass</p>
                                 <p className="text-base text-white">Web Design Agency</p>
                             </div>
@@ -90,7 +91,7 @@ export default function Testimonial2() {
                         <ImgLoader src={Team1} width={384} height={480} alt="" />
                         <div className="absolute bottom-0 left-0 right-0 border-t py-5 px-4 bg-white/[0.3]">
                             <p className="xl:text-lg text-base font-semibold text-white md:mb-6 mb-4">“We’ve really sped up our workflow using Untitled.”</p>
-                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><a href="#">Rich Wilson</a></h3>
+                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><Link href="/"><a>Rich Wilson</a></Link></h3>
                             <p className="md:text-lg text-base font-semibold text-white mb-1">COO, Command+R </p>
                             <p className="text-base text-white">Web Development Agency</p>
                         </div>
@@ -118,7 +119,7 @@ export default function Testimonial2() {
                                 </svg>
                             </div>
                             
-                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><a href="#">Annie Stanley</a></h3>
+                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><Link href="/"><a>Annie Stanley</a></Link></h3>
                             <p className="md:text-lg text-base font-semibold text-white mb-1">Designer, Catalog </p>
                             <p className="text-base text-white">UX Agency</p>
                         </div>
@@ -145,7 +146,7 @@ export default function Testimonial2() {
                                     <path d="M8.53834 0.609964C8.70914 0.199318 9.29086 0.199318 9.46166 0.609964L11.5278 5.57744C11.5998 5.75056 11.7626 5.86885 11.9495 5.88383L17.3123 6.31376C17.7556 6.3493 17.9354 6.90256 17.5976 7.19189L13.5117 10.6919C13.3693 10.8139 13.3071 11.0053 13.3506 11.1876L14.5989 16.4208C14.7021 16.8534 14.2315 17.1954 13.8519 16.9635L9.26063 14.1592C9.10062 14.0615 8.89938 14.0615 8.73937 14.1592L4.14806 16.9635C3.76851 17.1954 3.29788 16.8534 3.40108 16.4208L4.64939 11.1876C4.69289 11.0053 4.6307 10.8139 4.48831 10.6919L0.402413 7.19189C0.0646445 6.90256 0.244408 6.3493 0.687735 6.31376L6.05054 5.88383C6.23744 5.86885 6.40024 5.75056 6.47225 5.57744L8.53834 0.609964Z" fill="white" />
                                 </svg>
                             </div>
-                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><a href="#">Johnny Bell</a></h3>
+                            <h3 className="xl:text-3xl md:text-2xl text-xl font-semibold text-white mb-4"><Link href="/"><a>Johnny Bell</a></Link></h3>
                             <p className="md:text-lg text-base font-semibold text-white mb-1">PM, Sisyphus </p>
                             <p className="text-base text-white">Machine Learning</p>
                         </div>
@@ -172,7 +173,7 @@ export default function Testimonial2() {
                                         <path d="M8.53834 0.609964C8.70914 0.199318 9.29086 0.199318 9.46166 0.609964L11.5278 5.57744C11.5998 5.75056 11.7626 5.86885 11.9495 5.88383L17.3123 6.31376C17.7556 6.3493 17.9354 6.90256 17.5976 7.19189L13.5117 10.6919C13.3693 10.8139 13.3071 11.0053 13.3506 11.1876L14.5989 16.4208C14.7021 16.8534 14.2315 17.1954 13.8519 16.9635L9.26063 14.1592C9.10062 14.0615 8.89938 14.0615 8.73937 14.1592L4.14806 16.9635C3.76851 17.1954 3.29788 16.8534 3.40108 16.4208L4.64939 11.1876C4.69289 11.0053 4.6307 10.8139 4.48831 10.6919L0.402413 7.19189C0.0646445 6.90256 0.244408 6.3493 0.687735 6.31376L6.05054 5.88383C6.23744 5.86885 6.40024 5.75056 6.47225 5.57744L8.53834 0.609964Z" fill="white" />
                                     </svg>
                                 </div>
-                                <h3 className="md:text-3xl text-xl font-semibold text-white mb-4"><a href="#">Mia Ward</a></h3>
+                                <h3 className="md:text-3xl text-xl font-semibold text-white mb-4"><Link href="/"><a>Mia Ward</a></Link></h3>
                                 <p className="md:text-lg text-base font-semibold text-white mb-1">Backend Developer</p>
                                 <p className="text-base text-white">UX Agency</p>
                             </div>

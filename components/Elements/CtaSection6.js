@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ImgLoader from '../Image';
 import Client1 from "../../assets/images/client1.png"
 import Client2 from "../../assets/images/client2.png"
@@ -57,7 +58,7 @@ export default function CtaSection6() {
                 <div className="flex lg:flex-row flex-wrap  md:justify-end justify-center md:gap-5 items-start">
 
                   
-            <a href="#" target="_blank" className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                <Link href="/"><a className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
                         <Button/>
                       
                     

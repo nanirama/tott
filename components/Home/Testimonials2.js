@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import ImgLoader from '../Image';
 import Team1 from "../../assets/images/team1.jpg"
 import Button from "../../components/Button/index"
@@ -13,7 +14,7 @@ export default function Testimonial2() {
                         <p className="md:text-xl text-lg text-gray-500">Hear from some of our amazing customers who are building faster.</p>
                     </div>
                     <div className="flex md:flex-row flex-col items-start">
-                        <a href="#" className="inline-block text-center rounded-lg py-3 border md:mr-4 md:mb-0 mb-3 px-5 text-gray-700 text-base font-medium md:w-auto w-full">Our customers</a>
+                        <Link href="/"><a className="inline-block text-center rounded-lg py-3 border md:mr-4 md:mb-0 mb-3 px-5 text-gray-700 text-base font-medium md:w-auto w-full">Our customers</a></Link>
                         {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Create account</a> */}
                         <Button/>
                     </div>

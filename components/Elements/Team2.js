@@ -16,56 +16,56 @@ export default function Team2() {
                 <div className="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-y-14 gap-y-5 gap-x-5">
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author1} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author1} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Olivia Rhye</h5>
                         <p className='text-base'>Founder & CEO</p>
                     </div>
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author2} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author2} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Phoenix Baker</h5>
                         <p className='text-base'>Engineering Manager</p>
                     </div>
                     <div className='w-full  flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author3} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author3} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Lana Steiner</h5>
                         <p className='text-base'>Product Manager</p>
                     </div>
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author4} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author4} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Demi Wilkinson</h5>
                         <p className='text-base'>Frontend Developer</p>
                     </div>
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author1} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author1} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Candice Wu</h5>
                         <p className='text-base'>Backend Developer</p>
                     </div>
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author2} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author2} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Natali Craig</h5>
                         <p className='text-base'>Product Designer</p>
                     </div>
                     <div className='w-full flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author3} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author3} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Drew Cano</h5>
                         <p className='text-base'>UX Researcher</p>
                     </div>
                     <div className='w-full  flex flex-col items-center'>
                         <div className='w-20'>
-                            <ImgLoader src={Author4} width={80} height={80} alt="Team" />
+                            <ImgLoader src={Author4} width={80} height={80} alt="Team" className="rounded-full" />
                         </div>
                         <h5 className='text-lg font-medium mt-2'>Orlando Diggs</h5>
                         <p className='text-base'>Customer Success</p>

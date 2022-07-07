@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function Pricing3() {
 
     return (
@@ -29,7 +30,7 @@ export default function Pricing3() {
                             <div>
                                 <div className='flex flex-row gap-2 mb-1'>
                                     <h5 className="font-semibold text-2xl">Basic plan</h5>
-                                    <a href='#' className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a>
+                                    <Link href="/"><a className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a></Link>
                                 </div>
                                 <p className='text-base font-normal text-gray-500'>Our most popular plan for small teams.</p>
                             </div>
@@ -126,7 +127,7 @@ export default function Pricing3() {
                             <div>
                                 <div className='flex flex-row gap-2 mb-1'>
                                     <h5 className="font-semibold text-2xl">Business plan</h5>
-                                    <a href='#' className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a>
+                                    <Link href="/"><a className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a></Link>
                                 </div>
                                 <p className='text-base font-normal text-gray-500'>Advanced features and reporting.</p>
                             </div>
@@ -215,7 +216,7 @@ export default function Pricing3() {
                             </div>
                         </div>
                         <div className='p-8 flex'>
-                            <a href="#" className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a>
+                        <Link href="/"><a className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a></Link>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const tabs = [
     { name: 'View All', href: '#', current: true },
     { name: 'Design', href: '#', current: false },
@@ -58,14 +59,15 @@ export default function Career2() {
                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                         <h5 className="font-medium lg:text-lg">Product Designer</h5>
                         <div className='flex sm:justify-between sm:grow gap-3'>
-                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                            </svg> Design</a>
+                            </svg> Design</a></Link>
+
                             <div>
-                                <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
+                            <Link href="/"><a className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg></a>
+                                    </svg></a></Link>
                             </div>
                         </div>
                     </div>
@@ -85,14 +87,14 @@ export default function Career2() {
                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                         <h5 className="font-medium lg:text-lg">Engineering Manager</h5>
                         <div className='flex sm:justify-between sm:grow gap-3'>
-                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                            </svg> Design</a>
+                            </svg> Design</a></Link>
                             <div>
-                                <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
+                            <Link href="/"><a className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job  <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg></a>
+                                    </svg></a></Link>
                             </div>
                         </div>
                     </div>
@@ -112,14 +114,14 @@ export default function Career2() {
                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                         <h5 className="font-medium lg:text-lg">Customer Success Manager</h5>
                         <div className='flex sm:justify-between sm:grow gap-3'>
-                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                            </svg> Design</a>
+                            </svg> Design</a></Link>
                             <div>
-                                <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
+                            <Link href="/"><a className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg></a>
+                                    </svg></a></Link>
                             </div>
                         </div>
                     </div>
@@ -139,14 +141,14 @@ export default function Career2() {
                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                         <h5 className="font-medium lg:text-lg">Account Executive</h5>
                         <div className='flex sm:justify-between sm:grow gap-3'>
-                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                            </svg> Design</a>
+                            </svg> Design</a></Link>
                             <div>
-                                <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
+                            <Link href="/"><a className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg></a>
+                                    </svg></a></Link>
                             </div>
                         </div>
                     </div>
@@ -166,14 +168,14 @@ export default function Career2() {
                     <div className='flex gap-3 sm:flex-row flex-col mb-3'>
                         <h5 className="font-medium lg:text-lg">SEO Marketing Manager</h5>
                         <div className='flex sm:justify-between sm:grow gap-3'>
-                            <a href='#' className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Link href="/"><a className='flex items-center justify-between gap-1 bg-cyan-100 rounded-2xl p-1 w-auto text-blue-700 text-xs font-medium py-1 px-2'><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3" cy="3" r="3" fill="#2E90FA" />
-                            </svg> Design</a>
+                            </svg> Design</a></Link>
                             <div>
-                                <a href='#' className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
+                            <Link href="/"><a className='hidden lg:flex gap-2 items-center w-auto text-gray-700 text-sm font-medium '>
                                     View job   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.83301 10.1666L10.1663 1.83325M10.1663 1.83325H1.83301M10.1663 1.83325V10.1666" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg></a>
+                                    </svg></a></Link>
                             </div>
                         </div>
                     </div>

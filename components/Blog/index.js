@@ -29,6 +29,7 @@ export default function Index({ data }) {
     const postImage = feature_image && feature_image.data && feature_image.data.attributes ? feature_image.data.attributes.url : DefaultImg
     const firstCat = categories && categories.data && categories.data[0]
     const AuthorImage = users_permissions_user.data.attributes.image && users_permissions_user.data.attributes.image.data && users_permissions_user.data.attributes.image.data.attributes ? users_permissions_user.data.attributes.image.data.attributes.url : DefaultImg
+    console.log('blog Content', tags)
     const stwitterHandle = "_MsLinda";
     const stitle = `Read ${title} `;
     const surl = "/";
@@ -104,9 +105,9 @@ export default function Index({ data }) {
                         <div className="w-full md:w-6/12 px-4">
                             <div className="bg-gray-200 rounded-2xl p-1 w-auto inline-block inline-flex gap-1 mb-4">
                                 {firstCat && firstCat.attributes && (
-                                    <a href='#' className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a>
+                                    <Link href="/"><a className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a></Link>
                                 )}
-                                <a href="#" className="text-gray-700 text-xs font-medium py-1 px-2 inline-block">{moment.duration(reading_time).asMinutes()} min read</a>
+                                <Link href="/"><a className="text-gray-700 text-xs font-medium py-1 px-2 inline-block">{moment.duration(reading_time).asMinutes()} min read</a></Link>
                             </div>
                             <h1 className="lg:text-5xl md:text-4xl text-3xl text-gray-900 font-semibold mb-6">{title}</h1>
                             <p className="md:text-xl text-base text-gray-500">{short_description}</p>
@@ -190,14 +191,7 @@ export default function Index({ data }) {
                     <div className="max-w-3xl mx-auto justify-center items-center text-center px-4">
                         <h2 className="md:text-4xl text-3xl font-semibold text-gray-900 md:tracking-tight mb-5">Sign up for our newsletter</h2>
                         <p className="md:text-xl text-lg font-normal text-gray-500 md:mb-10 mb-8">Be the first to know about releases and industry news and insights.</p>
-                        {/* <div className="flex md:flex-row flex-col items-stretch max-w-md mx-auto">
-                            <div className="flex flex-col mb-2 w-full">
-                                <input className="bg-white rounded-lg text-base leading-none text-gray-500 dark:text-white p-4 md:w-11/12 w-full border border-gray-300 focus:outline-none focus:border-gray-500 shadow mr-4 mb-2 h-12" type="email" placeholder="Enter your email" />
-                                <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">We care about your data in our <a href="#" className="underline">privacy policy</a>.</p>
-                            </div>
-                            <button className="md:w-32 w-full hover:bg-zinc-500 bg-zinc-600 rounded-lg text-base font-medium leading-none text-white p-4 shadow h-12">subscribe</button>
-                        </div> */}
-
+ 
                         <div>
                             <div className="flex lg:flex-row flex-col max-w-lg mx-auto pb-5">
                                 <div className="flex flex-col mb-2 w-full mr-3">

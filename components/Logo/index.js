@@ -4,10 +4,11 @@ import { fetcher } from "../../lib/api";
 import ImgLoader from "../Image";
 
 const Logo = () => {
-  const LOGO_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/company-logo?populate=*`;
+  const LOGO_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/company-logo?populate=*`;
   const { data, error } = useSWR(LOGO_ENDPOINT, fetcher);
   if (error) <p>Loading failed...</p>;
   if (!data) <p>Loading ...</p>;
+  console.log('LOGO_ENDPOINT',LOGO_ENDPOINT)
   const logoImg =
     data &&
     data.data &&
@@ -23,7 +24,7 @@ const Logo = () => {
       <Link href="/">
         <a>
           {" "}
-          <ImgLoader src={logoImg} width={148} height={50} />
+          <ImgLoader src={logoImg} width={178} height={50} />
         </a>
       </Link>
     );

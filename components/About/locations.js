@@ -8,20 +8,20 @@ export default function Locations() {
                     <p className="text-xl font-normal leading-8 text-white">Find us at these locations.</p>
                 </div>
                 <div className='md:w-1/3 w-full'>
-                    <h6 className="text-xl text-white mb-3 w-full">Melbourne</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 text-white w-40">100 Flinders Street Melbourne VIC 3000 AU</p>
-                    <h6 className="text-xl text-white mb-3 w-full">Sydney</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 text-white w-40">100 George Street Sydney NSW 2000</p>
-                    <h6 className="text-xl text-white mb-3w-full">Byron Bay</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 lg:mb-0  text-white w-40">100 Jonson Street<br /> Byron Bay NSW 2481 AU</p>
+                    <h6 className="text-xl text-white mb-3">Melbourne</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 text-white">100 Flinders Street<br /> Melbourne VIC 3000 AU</p>
+                    <h6 className="text-xl text-white mb-3">Sydney</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 text-white">100 George Street<br /> Sydney NSW 2000</p>
+                    <h6 className="text-xl text-white mb-3">Byron Bay</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 lg:mb-0  text-white">100 Jonson Street<br /> Byron Bay NSW 2481 AU</p>
                 </div>
                 <div className='md:w-1/3 w-full'>
-                    <h6 className="text-xl text-white mb-3 w-full">London</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 text-white w-40">100 Oxford Street London W1D 1LL UK</p>
-                    <h6 className="text-xl text-white mb-3 w-full">San Francisco</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 text-white w-40">100 Market  Street San Francisco, CA 94105 USA</p>
-                    <h6 className="text-xl text-white mb-3 w-full">Sweden</h6>
-                    <p className="text-base font-light text-gray-300 mb-8 lg:mb-0 text-white w-40">Drottninggatan 100 111 60 Stockholm SE</p>
+                    <h6 className="text-xl text-white mb-3">London</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 text-white">100 Oxford Street<br /> London W1D 1LL UK</p>
+                    <h6 className="text-xl text-white mb-3">San Francisco</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 text-white">100 Market  Street<br /> San Francisco, CA 94105 USA</p>
+                    <h6 className="text-xl text-white mb-3">Sweden</h6>
+                    <p className="text-base font-light text-gray-300 mb-8 lg:mb-0 text-white">Drottninggatan 100<br /> 111 60 Stockholm SE</p>
                 </div>
             </div>
         </div>

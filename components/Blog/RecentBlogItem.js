@@ -31,9 +31,6 @@ export default function RecentBlogItem({ data }) {
                 {categories && categories.data && categories.data.map((cat, index) => (
                     <Link key={index} href={`/blog/${cat.attributes.slug}`}><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{cat.attributes.name}</a></Link>
                 ))}
-
-                {/* <a href="#" className="bg-slate-100 text-blue-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Research</a>
-                <a href="#" className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Presentation</a> */}
             </div>
         </div>
     )

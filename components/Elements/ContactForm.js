@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function ContactForm() {
     return (
 <form>
@@ -93,7 +94,7 @@ export default function ContactForm() {
               className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
             />
             <label htmlFor="comments" className="font-medium text-gray-500 ml-3 text-base">
-              You agree to our friendly <a href="#" className="underline">privacy policy.</a>
+              You agree to our friendly <Link href="/"><a className="underline">privacy policy.</a></Link>
             </label>
           </div>
           <button

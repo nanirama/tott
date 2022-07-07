@@ -8,6 +8,7 @@ const Button = (props) => {
     const [ webValue, setWebValue ] = useState(false)
 
     useEffect(() => {
+        console.log('webValue',webValue)
       }, [webValue]);
 
     return (

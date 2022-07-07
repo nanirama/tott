@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ImgLoader from '../Image';
 import CareerImg from "../../assets/images/career-img.jpg"
 import Button from "../../components/Button/index"
@@ -16,7 +17,7 @@ export default function Philosophy() {
                         <p className="text-gray-500 text-lg mb-4">Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit congue convallis aliquet.</p>
                         <p className="text-gray-500 text-lg mb-4">Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean.</p>
                         <div className=" flex md:flex-row flex-col md:justify-start justify-start text-center mt-5">
-                            <a href="#" target="_blank" className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                        <Link href="/"><a className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
                             <Button />
                         </div>
                     </div>

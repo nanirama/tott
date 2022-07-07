@@ -19,8 +19,8 @@ export default function FriendlyTeamsection2() {
                                 <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <div className='w-100 flex flex-col'>
-                                <div className='w-full'>Melbourne</div>
-                                <div className=' w-40 text-gray-200 pt-3 text-base '>100 Flinders Street, Melbourne VIC 3000 AU</div>
+                                <div className=''>Melbourne</div>
+                                <div className='w-full text-gray-200 pt-3 text-base'>100 Flinders Street, Melbourne VIC 3000 AU</div>
                             </div>
                         </div>
                         <div className='w-100 flex flex-row gap-5 text-white text-xl text-medium mt-12'>
@@ -29,8 +29,8 @@ export default function FriendlyTeamsection2() {
                                 <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <div className='w-100 flex flex-col'>
-                                <div className='w-full'>Sydney</div>
-                                <div className=' w-40 text-gray-200 pt-3 text-base'>100 George Street, Sydney NSW 2000 AU</div>
+                                <div className=''>Sydney</div>
+                                <div className='w-full text-gray-200 pt-3 text-base'>100 George Street, Sydney NSW 2000 AU</div>
                             </div>
                         </div>
                     </div>

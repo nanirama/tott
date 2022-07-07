@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link'
 const tiers = [
     {
         nametop: 'Basic plan',
@@ -102,12 +102,13 @@ export default function Pricing2({ data }) {
                                         </li>
                                     ))}
                                 </ul>
+                                <Link href={tier.href}>
                                 <a
-                                    href={tier.href}
                                     className="mt-8 block w-full bg-gray-500 border bg-slate-600 rounded-md mt-4 py-3 text-sm font-semibold text-white text-center hover:bg-gray-900"
                                 >
                                     Get Started
                                 </a>
+                                </Link>
                             </div>
                         </div>
 

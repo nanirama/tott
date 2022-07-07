@@ -7,13 +7,6 @@ import { Menu, Transition } from "@headlessui/react";
 
 import Button from "../components/Button/index";
 
-function NavLink({ to, children }) {
-  return (
-    <a href={to} className={`mx-4`}>
-      {children}
-    </a>
-  );
-}
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -248,7 +241,7 @@ function DesktopNav({ data, error, open, setOpen }) {
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-  const MENU_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/menus?filters[slug][$eq]=header&populate=*`;
+  const MENU_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/menus?filters[slug][$eq]=header&populate=*`;
   const { data, error } = useSWR(MENU_ENDPOINT, fetcher);
   const header_menu =
     data && data.menus && data.menus[0] && data.menus[0].items
@@ -288,12 +281,11 @@ export default function NavBar() {
         <div className="flex justify-end w-full">
           <a
             href="#"
+            rel="noopener noreferrer"
             className="flex items-center justify-center inline-block text-sm rounded text-gray-500  py-2.5 md:px-4 px-2 text-base font-medium"
           >
             Login
-          </a>
-          {/* <a href="#" onClick={() => setShowModal(true)} className="inline-block sm:text-sm text-xs rounded-lg text-white text-center bg-green-400 py-3 md:px-5 sm:px-2 px-1 font-medium">Start Free Trail</a> */}
-          <Button />
+          </a> <Button />
         </div>
       </div>
     </nav>

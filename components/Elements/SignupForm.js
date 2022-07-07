@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 export default function SignupForm() {
     return (
         <div className='w-full'>
@@ -44,7 +44,7 @@ export default function SignupForm() {
                     Sign up with Google
                 </button>
 
-                <p className='text-center text-sm'>Already have an account? <a href="#">Log in</a></p>
+                <p className='text-center text-sm'>Already have an account? <Link href="/"><a>Log in</a></Link></p>
             </div>
 
 

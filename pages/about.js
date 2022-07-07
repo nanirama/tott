@@ -17,8 +17,7 @@ import Testimonial5 from "../components/Elements/Testimonials5";
 
 export default function AboutUs() {
   return (
-    <Layout>  
-       
+    <Layout>         
       <MapSection />
       <Locations />
       <Team2 />

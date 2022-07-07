@@ -1,4 +1,5 @@
 import { Switch } from '@headlessui/react'
+import Link from 'next/link'
 import { React, useState } from 'react'
 
 function classNames(...classes) {
@@ -98,7 +99,7 @@ export const StepOne = ({setActiveStep, query})=>{
                                 </div>
                             )}
 
-                            <p className="text-white text-sm sm:mb-10 mb-5">I agree to the Trady <a href="#" className='underline'>Terms of Service</a> and <a href="#" className='underline'>Privacy Policy</a></p>
+                            <p className="text-white text-sm sm:mb-10 mb-5">I agree to the Trady <Link href="/"><a className='underline'>Terms of Service</a> and <a href="#" className='underline'>Privacy Policy</a></Link></p>
                             <button
                                 type="submit"
                                 onClick={()=>setActiveStep(2)}

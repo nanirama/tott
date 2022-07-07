@@ -10,46 +10,7 @@ import Button from "../components/Button/index"
 
 import { FOOTER_DATA, HOME_DATA } from "../lib/graphql/queries";
 
-const QUERY = gql`
-  query FooterData {
-   footer{
-      data{
-         attributes{
-         createdAt
-         updatedAt
-         publishedAt
-         description
-         copyright_disclaimer
-         logo{
-            data{
-               id
-               attributes{
-                  name
-                  caption
-                  width
-                  height
-                  formats
-               }
-            }
-         }
-         nav_items{
-            heading
-            items{
-               button_text
-               button_url
-            }
-         }
-         social_links{
-            platform{
-               button_text
-               button_url
-            }
-         }
-         }
-      }
-   }
-  }
-`;
+
 
 const Footer = () => {
    const { loading, error, data } = useQuery(FOOTER_DATA);
@@ -59,7 +20,7 @@ const Footer = () => {
       return <div>Error loading.</div>;
    if (loading)
       return <div>...</div>;
-
+   console.log('footerdata', footerData)
    const checkLinkHandler = (string) => {
       if (/(http(s?)):\/\//i.test(string)) {
          return true;
@@ -77,8 +38,9 @@ const Footer = () => {
                </div>
                <div className="md:w-1/2">
                   <div className="flex md:flex-row flex-col md:justify-end justify-start">
-                     <a href="#" className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
-                     {/* <a href="#" className="inline-block text-center rounded-lg bg-zinc-600 border  border-zinc-600 py-3 px-5 text-white text-base font-medium md:w-auto w-full">Get Started</a> */}
+                     <Link href="/">
+                     <a className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a>
+                     </Link>                     
                      <Button />
                   </div>
                </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from "../../components/Button/index"
 
 export default function Example() {
@@ -12,9 +13,9 @@ export default function Example() {
                     <p className="lg:text-xl text-base text-gray-500 mb-0">Have questions? We’re here to help.</p>
                 </div>
                 <div className="mt-8 flex md:flex-row flex-col-reverse">
-                    <a href="#" className="md:w-auto w-full inline-block bg-white md:mr-3 md:mt-0 mt-4 items-center justify-center px-5 py-3 border border-slate-300 text-gray-700 text-base font-medium rounded-lg">
+                <Link href="/"><a className="md:w-auto w-full inline-block bg-white md:mr-3 md:mt-0 mt-4 items-center justify-center px-5 py-3 border border-slate-300 text-gray-700 text-base font-medium rounded-lg">
                         Chat to sales
-                    </a>
+                    </a></Link>
                     <Button />
                 </div>
             </div>

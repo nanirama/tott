@@ -1,6 +1,6 @@
 import ImgLoader from '../Image';
 import Map from "../../assets/images/map.png"
-
+import Link from 'next/link'
 export default function MapSection() {
     return (
         <div className='w-full lg:mt-20 mt-16'>
@@ -19,12 +19,12 @@ export default function MapSection() {
                     <div className='md:w-1/3 w-full mb-3'>
                         <h5 className='text-xl mb-3 font-medium'>Support</h5>
                         <p className='text-base text-gray-500 mb-3'>Our friendly team is here to help.</p>
-                        <a href='#' className='text-base font-medium'>support@untitledui.com</a>
+                        <Link href="/"><a className='text-base font-medium'>support@untitledui.com</a></Link>
                     </div>
                     <div className='md:w-1/3 w-full mb-3'>
                         <h5 className='text-xl mb-3 font-medium'>Sales</h5>
                         <p className='text-base text-gray-500 mb-3'>Our friendly team is here to help.</p>
-                        <a href='#' className='text-base font-medium'>sales@untitledui.com</a>
+                        <Link href="/"><a className='text-base font-medium'>sales@untitledui.com</a></Link>
                     </div>
                     <div className='md:w-1/3 w-full mb-3'>
                         <h5 className='text-xl mb-3 font-medium'>Phone</h5>

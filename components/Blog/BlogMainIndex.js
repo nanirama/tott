@@ -11,11 +11,13 @@ import Paginate from "./Paginate";
 export default function BlogMainIndex({ categoriesList, slug = "" }) {
   const [pageIndex, setPageIndex] = useState(0);
 
-  const API_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/posts?pagination[page]=${pageIndex}&pagination[pageSize]=9&populate=*`;
+  const API_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/posts?pagination[page]=${pageIndex}&pagination[pageSize]=9&populate=*`;
   const { data, error } = useSWR(API_ENDPOINT, fetcher);
   if (error) <p>Loading failed...</p>;
   if (!data) <p>Loading ...</p>;
   const blogs = data && data.data ? data.data : [];
+  console.log("API_ENDPOINT", data);
+  //const { blogs, page, numOfPages, categoriesList, total } = data
 
   const emptyQuery = "";
 
