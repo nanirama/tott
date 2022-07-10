@@ -1,5 +1,5 @@
 
-
+import Link from "next/link";
 export default function CheckMail2() {
     return (
 

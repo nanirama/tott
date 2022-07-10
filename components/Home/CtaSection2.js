@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ImgLoader from '../Image';
 
 import CtaImg from "../../assets/images/cta-image.jpg"
