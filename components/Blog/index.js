@@ -29,7 +29,6 @@ export default function Index({ data }) {
     const postImage = feature_image && feature_image.data && feature_image.data.attributes ? feature_image.data.attributes.url : DefaultImg
     const firstCat = categories && categories.data && categories.data[0]
     const AuthorImage = users_permissions_user.data.attributes.image && users_permissions_user.data.attributes.image.data && users_permissions_user.data.attributes.image.data.attributes ? users_permissions_user.data.attributes.image.data.attributes.url : DefaultImg
-    console.log('blog Content', tags)
     const stwitterHandle = "_MsLinda";
     const stitle = `Read ${title} `;
     const surl = "/";

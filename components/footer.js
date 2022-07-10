@@ -20,7 +20,6 @@ const Footer = () => {
       return <div>Error loading.</div>;
    if (loading)
       return <div>...</div>;
-   console.log('footerdata', footerData)
    const checkLinkHandler = (string) => {
       if (/(http(s?)):\/\//i.test(string)) {
          return true;

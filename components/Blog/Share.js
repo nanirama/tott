@@ -7,7 +7,6 @@ import {
 } from 'react-share';
 
 const Share = ({ socialConfig, tags }) => {
-    console.log('share page')
     return (
         <div className="flex flex-row gap-3 post-social">
             <RedditShareButton url={socialConfig.config.url} title={socialConfig.config.title} >

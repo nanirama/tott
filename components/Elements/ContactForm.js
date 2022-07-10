@@ -41,7 +41,6 @@ export default function ContactForm() {
     } catch (error) {
       if (error) {
         setIsLoading(!isLoading);
-        console.log("Error", error);
       }
     }
   };

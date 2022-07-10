@@ -7,7 +7,6 @@ import { BLOGS_DATA, TOTAL_BLOGS, CATEGORIES_LIST } from "../../lib/graphql/quer
 
 
 export default function Blog(props) {
-    console.log('props', props)
   return (
     <Layout>     
       <BlogMainIndex categoriesList={props.categoriesList}/>
