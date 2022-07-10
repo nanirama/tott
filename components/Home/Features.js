@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import ImgLoader from '../Image';
 import IphonePro1 from "../../assets/images/iPhone-Pro1.png"
 import IphonePro from "../../assets/images/iPhone-Pro.png"

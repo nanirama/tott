@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 export default function Lovetohearsection() {
     return (
         <div className="max-w-7xl mx-auto px-4 lg:mt-20 mt-16">

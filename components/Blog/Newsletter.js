@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Newsletter() {
   return (
     <div className="bg-gray-50 lg:py-24 md:py-16 py-10">

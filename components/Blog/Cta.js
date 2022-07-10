@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Cta() {
   return (
     <div className="max-w-7xl mx-auto px-4">

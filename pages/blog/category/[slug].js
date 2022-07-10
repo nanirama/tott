@@ -27,9 +27,9 @@ export async function getStaticPaths() {
     `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/categories`
   );
   const categories = await response.json();
-  //   categories?.data?.map((category) => {
-  //     console.log("Category", category);
-  //   });
+  categories?.data?.map((category) => {
+    console.log("Category", category);
+  });
   return {
     paths: categories?.data?.map((category) => ({
       params: {

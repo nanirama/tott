@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import ImgLoader from '../Image';
 import Button from "../../components/Button/index"
 import ContentImg from "../../assets/images/content-img.png"
@@ -12,7 +12,7 @@ export default function CtaSection7() {
           </h2>
           <p className="text-xl text-gray-500">Join over 4,000+ startups already growing with Untitled.</p>
           <div className="mt-8 flex md:flex-row flex-col justify-center md:mb-16 mb-10">
-          <Link href="/"><a className="inline-block bg-white items-center justify-center md:mr-3 md:mb-0 mb-3 px-5 py-3 border border-slate-300 text-base font-medium rounded-lg text-gray-700">
+              <Link href="/"><a className="inline-block bg-white items-center justify-center md:mr-3 md:mb-0 mb-3 px-5 py-3 border border-slate-300 text-base font-medium rounded-lg text-gray-700">
                 Learn More
               </a></Link>
             <Button/>

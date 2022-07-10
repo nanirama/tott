@@ -30,7 +30,7 @@ const Pagination = ({ currentPage, numberOfPages, paginationPath = 'blog' }) => 
                             {currentPage === page.label ? (
                                 <span className="text-sm font-medium cursor-pointer text-gray-700 py-2 px-3 mr-4 bg-slate-100 rounded-lg">{page.label}</span>
                             ) : (
-                                <Link href="/"><a className="text-sm font-medium cursor-pointer text-gray-400 hover:rounded-lg hover:bg-slate-100  hover:text-gray-700 py-2 px-3 mr-4">{page.label}</a></Link>
+                                <a className="text-sm font-medium cursor-pointer text-gray-400 hover:rounded-lg hover:bg-slate-100  hover:text-gray-700 py-2 px-3 mr-4">{page.label}</a>
                             )}
                         </Link>
                     ))}

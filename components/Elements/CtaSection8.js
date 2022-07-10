@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import ImgLoader from '../Image';
 import Client1 from "../../assets/images/client1-1.png"
 import Client2 from "../../assets/images/client2-1.png"
@@ -21,7 +21,7 @@ export default function CtaSection8() {
                     <div className=''><h2 className='text-gray-900 lg:text-4xl text-2xl font-semibold tracking-tight leading-tight mb-3'>Join over 4,000+ startups growing with Untitled</h2>
                         <p className='text-zinc-500 text-xl mb-8'>Start your 30-day free trial today.</p>
                         <div className=" flex md:flex-row flex-col justify-start">
-                        <Link href="/"><a className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
+                            <Link href="/"><a className="inline-block rounded-lg bg-white border border-slate-300 py-3 px-5 text-gray-600 text-base font-medium md:mr-3 md:mb-0 mb-3 md:w-auto w-full">Learn More</a></Link>
                             <Button/>
                             </div>
                     </div>

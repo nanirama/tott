@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import ImgLoader from '../Image';
 import FeatureImg from "../../assets/images/iPhone12-Pro.png";
 import FeatureImg2 from "../../assets/images/iPhone12-Pro2.png";
@@ -30,8 +30,8 @@ export default function Features4() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                         <div className='w-full flex md:flex-row flex-col gap-3 mb-8'>
@@ -47,8 +47,8 @@ export default function Features4() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     An all-in-one customer service platform that helps you balance everything your customers need to be happy.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                         <div className='w-full flex md:flex-row flex-col gap-3 mb-8'>
@@ -64,8 +64,8 @@ export default function Features4() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     Measure what matters with Untitled&lsquo;s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                     </div>

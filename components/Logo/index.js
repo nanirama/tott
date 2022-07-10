@@ -8,7 +8,6 @@ const Logo = () => {
   const { data, error } = useSWR(LOGO_ENDPOINT, fetcher);
   if (error) <p>Loading failed...</p>;
   if (!data) <p>Loading ...</p>;
-  console.log('LOGO_ENDPOINT',LOGO_ENDPOINT)
   const logoImg =
     data &&
     data.data &&

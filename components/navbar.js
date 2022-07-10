@@ -7,6 +7,13 @@ import { Menu, Transition } from "@headlessui/react";
 
 import Button from "../components/Button/index";
 
+function NavLink({ to, children }) {
+  return (
+    <a href={to} className={`mx-4`}>
+      {children}
+    </a>
+  );
+}
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -281,11 +288,11 @@ export default function NavBar() {
         <div className="flex justify-end w-full">
           <a
             href="#"
-            rel="noopener noreferrer"
             className="flex items-center justify-center inline-block text-sm rounded text-gray-500  py-2.5 md:px-4 px-2 text-base font-medium"
           >
             Login
-          </a> <Button />
+          </a>
+          <Button />
         </div>
       </div>
     </nav>

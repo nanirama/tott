@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from "next/link";
 import BlogHeroImg from "../../assets/images/startup-img.png"
 
 export default function StratUpBlk() {
@@ -23,8 +23,8 @@ export default function StratUpBlk() {
                         </svg> Access to all features</li>
                     </ul>
                     <div className="flex flex-row gap-5">
-                    <Link href="/"><a className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 md:px-5 px-2 text-gray-600 text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Learn More</a></Link>
-                    <Link href="/"><a className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 md:px-5 px-2 text-white text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Get Started</a></Link>
+                        <Link href="/"><a className="inline-block text-center rounded-lg bg-white border border-slate-300 py-3 md:px-5 px-2 text-gray-600 text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Learn More</a></Link>
+                        <Link href="/"><a className="inline-block text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 md:px-5 px-2 text-white text-base font-medium md:mb-0 mb-4 md:w-auto w-full">Get Started</a></Link>
                     </div>
                 </div>
                 <div className="md:w-1/2 w-full px-4 ">

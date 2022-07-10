@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from "next/link";
 import ContactForm from "../Elements/ContactForm"
 export default function FriendlyTeamsection() {
     return (
@@ -16,7 +16,7 @@ export default function FriendlyTeamsection() {
                             </svg>
                             <div className='text-xl font-medium text-white mt-5'>Email</div>
                             <p className='text-base text-neutral-200 font-normal mb-4 pt-2'>Our friendly team is here to help.</p>
-                            <Link href="/"><a className='font-medium text-white hover:text-green-400 text-base'>hi@untitledui.com</a></Link>
+                            <a href='#' className='font-medium text-white hover:text-green-400 text-base'>hi@untitledui.com</a>
                         </div>
                         <div className='w-100'>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ export default function FriendlyTeamsection() {
                             </svg>
                             <div className='text-xl font-medium text-white mt-5'>Live chat</div>
                             <p className='text-base text-neutral-200 font-normal mb-4 pt-2'>Our friendly team is here to help.</p>
-                            <Link href="/"><a className='font-medium text-white hover:text-green-400 text-base'>Start new chat</a></Link>
+                            <a href='#' className='font-medium text-white hover:text-green-400 text-base'>Start new chat</a>
                         </div>
                         <div className='w-100'>
                             <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">

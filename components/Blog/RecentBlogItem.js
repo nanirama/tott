@@ -30,7 +30,7 @@ export default function RecentBlogItem({ data }) {
             <div className='flex gap-2'>
                 {categories && categories.data && categories.data.map((cat, index) => (
                     <Link key={index} href={`/blog/${cat.attributes.slug}`}><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">{cat.attributes.name}</a></Link>
-                ))}
+                ))}         
             </div>
         </div>
     )

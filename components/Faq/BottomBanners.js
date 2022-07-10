@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function BottomBanners() {
     return (
         <>
@@ -14,11 +14,11 @@ export default function BottomBanners() {
 
                                 </span>
                                 <p className="md:ml-3 font-medium text-white">
-                                    We use third-party cookies in order to personalise your experience <span className="text-gray-300">Read our <a href="#" className="underline">Cookie Policy.</a></span>
+                                    We use third-party cookies in order to personalise your experience <span className="text-gray-300">Read our <Link href="/"><a className="underline">Cookie Policy.</a></Link></span>
                                 </p>
                             </div>
                             <div className="order-3 mt-4 flex-shrink-0 w-full flex md:flex-row flex-col-reverse md:order-2 md:mt-0 md:w-auto">
-                            <Link href="/"><a  className="flex items-center justify-center px-4 py-2 md:mr-2 md:mt-0 mt-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white">
+                                <Link href="/"><a className="flex items-center justify-center px-4 py-2 md:mr-2 md:mt-0 mt-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white">
                                     Decline
                                 </a></Link>
                                 <Link href="/"><a className="flex items-center justify-center px-4 py-2 border border-slate-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-gray-50">

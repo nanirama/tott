@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
-import Link from 'next/link'
+import Link from "next/link";
 import { CheckIcon, MinusIcon } from '@heroicons/react/solid'
 
 const tiers = [
@@ -86,14 +86,12 @@ export default function pricing5() {
                   <span className="text-base font-medium text-gray-500">/mo</span>
                 </p>
                 <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
-                <Link href={tier.href}>
                 <a
-                  
+                  href={tier.href}
                   className="mt-6 block border border-gray-800 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                 >
                   Buy {tier.name}
                 </a>
-                </Link>
               </div>
               {sections.map((section) => (
                 <table key={section.name} className="w-full">
@@ -142,13 +140,12 @@ export default function pricing5() {
                   'border-t border-gray-200 px-4'
                 )}
               >
-                <Link href={tier.href}>
                 <a
+                  href={tier.href}
                   className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                 >
                   Buy {tier.name}
                 </a>
-                </Link>
               </div>
             </section>
           ))}
@@ -186,13 +183,12 @@ export default function pricing5() {
                         <span className="text-base font-medium text-gray-500">/mo</span>
                       </p>
                       <p className="mt-4 mb-16 text-sm text-gray-500">{tier.description}</p>
-                      <Link href={tier.href}>
                       <a
+                        href={tier.href}
                         className="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                       >
                         Buy {tier.name}
                       </a>
-                      </Link>
                     </div>
                   </td>
                 ))}
@@ -244,14 +240,12 @@ export default function pricing5() {
                 </th>
                 {tiers.map((tier) => (
                   <td key={tier.name} className="pt-5 px-6">
-                    
-                    <Link href={tier.href}>
-                      <a
+                    <a
+                      href={tier.href}
                       className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                     >
                       Buy {tier.name}
                     </a>
-                    </Link>
                   </td>
                 ))}
               </tr>

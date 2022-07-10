@@ -1,5 +1,5 @@
+import Link from "next/link";
 import Image from 'next/image'
-import Link from 'next/link'
 import BlogImg1 from "../../assets/images/blog-img1.jpg"
 
 export default function RecentPost() {
@@ -16,50 +16,50 @@ export default function RecentPost() {
                     <div className='lg:w-1/3 w-full mb-8'>
                         <Image src={BlogImg1} alt="" />
                         <h6 className='text-sm font-semibold mt-5 mb-3'>Olivia Rhye • 20 Jan 2022</h6>
-                        <Link href="/"><a className='flex justify-between items-center mb-3'>
+                        <a href='#' className='flex justify-between items-center mb-3'>
                             <h3 className='text-2xl font-semibold'>UX review presentations</h3>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#101828" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg></a></Link>
+                            </svg></a>
                         <p className='text-gray-500 font-normal text-base mb-5'>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
                         <div className='flex gap-2'>
-                        <Link href="/"><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Design</a></Link>
-                        <Link href="/"><a className="bg-slate-100 text-blue-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Research</a></Link>
-                        <Link href="/"><a className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Presentation</a></Link>
+                            <Link href="/"><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Design</a></Link>
+                            <Link href="/"><a className="bg-slate-100 text-blue-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Research</a></Link>
+                            <Link href="/"><a className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Presentation</a></Link>
                         </div>
                     </div>
                     <div className='lg:w-1/3 w-full mb-8'>
                         <Image src={BlogImg1} alt="" />
                         <h6 className='text-sm font-semibold mt-5 mb-3'>Phoenix Baker • 19 Jan 2022</h6>
-                        <Link href="/"><a className='flex justify-between items-center mb-3'>
+                        <a href='#' className='flex justify-between items-center mb-3'>
                             <h3 className='text-2xl font-semibold'>Migrating to Linear 101</h3>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#101828" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg></a></Link>
+                            </svg></a>
                         <p className='text-gray-500 font-normal text-base mb-5'>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
                         <div className='flex gap-2'>
-                        <Link href="/"><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Product</a></Link>
-                        <Link href="/"><a className="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a></Link>
-                        <Link href="/"><a className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Sass</a></Link>
+                            <Link href="/"><a className="bg-slate-100 text-gray-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Product</a></Link>
+                            <Link href="/"><a className="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a></Link>
+                            <Link href="/"><a className="bg-pink-100 text-pink-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Sass</a></Link>
                         </div>
                     </div>
                     <div className='lg:w-1/3 w-full mb-8'>
                         <Image src={BlogImg1} alt="" />
                         <h6 className='text-sm font-semibold mt-5 mb-3'>Lana Steiner • 18 Jan 2022</h6>
-                        <Link href="/"><a className='flex justify-between items-center mb-3'>
+                        <a href='#' className='flex justify-between items-center mb-3'>
                             <h3 className='text-2xl font-semibold'>Building your API Stack</h3>
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#101828" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg></a></Link>
+                            </svg></a>
                         <p className='text-gray-500 font-normal text-base mb-5'>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
                         <div className='flex gap-2'>
-                        <Link href="/"><a className="bg-green-100 text-green-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Software Development</a></Link>
-                        <Link href="/"><a className="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a></Link>
+                            <Link href="/"><a className="bg-green-100 text-green-700 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Software Development</a></Link>
+                            <Link href="/"><a className="bg-pink-100 text-pink-600 font-medium rounded-2xl text-sm py-1 px-2 inline-block">Tools</a></Link>
                         </div>
                     </div>
                 </div>
                 <div className='text-center lg:mt-10 mt-5 lg:mb-20 mb-5'>
-                <Link href="/"><a className="inline-flex justify-center items-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium  text-center">View All Posts</a></Link>
+                    <Link href="/"><a className="inline-flex justify-center items-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium  text-center">View All Posts</a></Link>
                 </div>
                 <hr className="my-8" />
             </div>

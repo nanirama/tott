@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import { Switch } from '@headlessui/react'
 import { React, useState } from 'react'
-
+import Link from "next/link";
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }

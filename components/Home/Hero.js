@@ -21,7 +21,7 @@ export default function Hero({ data }) {
   return (
     <div className="lg:pt-20 pt-14 relative lg:mt-20 mt-16">
       <div className="max-w-7xl mx-auto flex lg:flex-row flex-col">
-        <div className="lg:w-1/2 w-full px-4 ">
+        <div className="lg:w-1/2 w-full px-4 xl:mr-20">
           <h1 className="lg:text-4xl text-3xl font-semibold mb-10">{title}</h1>
           <h2 className="text-4xl font-semibold mb-5">{sub_title}</h2>
           <ReactMarkdown escapeHtml={false} className="text-xl text-gray-400 leading-8 mb-8 xl:pr-28">{description}</ReactMarkdown>
@@ -44,10 +44,10 @@ export default function Hero({ data }) {
             </div>
           </div>
         </div>
-        <div className='absolute right-0 top-10 hidden xl:flex z-0'>
+        <div className='absolute right-0 top-10 hidden xl:flex z-0 '>
           <div className='z-0'><ImgLoader className='z-0' src={HeroImg2} width={680} height={632} /></div>
         </div>
-        <div className="md:w-1/2 w-full px-4 xl:block hidden">
+        <div className="md:w-1/2 w-full px-4 xl:block hidden border">
           <div className='xl:-ml-20 xl:mt-12 flex  xl:justify-start justify-center md:mt-0 mt-8 z-10'>
             <ImgLoader src={HeroImg1} width={315} height={544} />
           </div>

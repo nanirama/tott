@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../../components/Button/index"
 
 export default function Newsletter({ data }) {
@@ -18,7 +19,7 @@ export default function Newsletter({ data }) {
               className="w-full rounded-lg text-base leading-none text-gray-500 dark:text-white p-3 w-full border border-gray-300 focus:outline-none focus:border-gray-500 shadow mb-2"
               placeholder="Enter your email"
             />
-            <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">We care about your data in our <a href="#" className="underline">privacy policy</a>.</p>
+            <p className="text-sm text-gray-500 text-left md:mb-0 mb-2">We care about your data in our <Link href="/"><a className="underline">privacy policy</a></Link>.</p>
           </div>
           <div className="mt-3 rounded-lg md:mt-0 sm:flex-shrink-0">
             <Button />

@@ -21,7 +21,7 @@ export default function BlogItem({ data }) {
             <div>
             <div className='bg-gray-200 rounded-2xl p-1 w-auto inline-block inline-flex gap-1 mb-4 mt-5'>
                 {firstCat && firstCat.attributes && (
-                    <Link href="/"><a className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a></Link>
+                    <a href='#' className='bg-white text-gray-700 font-semibold rounded-2xl text-xs py-1 px-2 inline-block'>{firstCat.attributes.name}</a>
                 )}
                 <span href='#' className='text-gray-700 text-xs font-medium py-1 px-2 inline-block'>{moment.duration(reading_time).asMinutes()} min read</span>
             </div>

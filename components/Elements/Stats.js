@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Stats() {
     return (
         <div className="bg-zinc-900 py-10 md:py-20">
@@ -20,7 +20,7 @@ export default function Stats() {
                 <dl className="sm:grid sm:grid-cols-4 md:mt-10 mt-3">
                     <div className="flex flex-col border-b border-gray-500 lg:px-6 px-4 md:py-2 py-4 sm:border-0 sm:border-r-2 sm:border-l-2">
                         <dt className="order-3 mt-2 text-lg leading-6 font-medium text-gray-500">
-                        <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
+                            <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
                                 <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a></Link>
                         </dt>
@@ -30,7 +30,7 @@ export default function Stats() {
 
                     <div className="flex flex-col border-b border-gray-500 lg:px-6 px-4 md:py-2 py-4 sm:border-0">
                     <dt className="order-3 mt-2 text-lg leading-6 font-medium text-gray-500">
-                    <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
+                            <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
                                 <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a></Link>
                         </dt>
@@ -39,7 +39,7 @@ export default function Stats() {
                     </div>
                     <div className="flex flex-col border-b border-gray-500 lg:px-6 px-4 md:py-2 py-4 sm:border-0 sm:border-l-2">
                     <dt className="order-3 mt-2 text-lg leading-6 font-medium text-gray-500">
-                    <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
+                            <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
                                 <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a></Link>
                         </dt>
@@ -48,7 +48,7 @@ export default function Stats() {
                     </div>
                     <div className="flex flex-col border-t border-gray-500 lg:px-6 px-4 md:py-2 py-4 sm:border-0 sm:border-l-2">
                     <dt className="order-3 mt-2 text-lg leading-6 font-medium text-gray-500">
-                    <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
+                            <Link href="/"><a className="flex items-center text-gray-600 visited:text-zinc-700 font-medium">Learn More
                                 <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </a></Link>
                         </dt>

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Section2() {
     return (
         <div className="bg-white md:py-20 py-10 mb-10">
@@ -12,13 +12,10 @@ export default function Section2() {
                             <svg className="mr-2 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#344054" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>  Go back
-                        </a>
-                        </Link>
-                        <Link href="/">
-                        <a className="flex text-lg font-medium text-white items-center justify-center rounded-lg shadow-xs border border-transparent bg-green-400 py-3 px-8">
+                        </a></Link>
+                        <Link href="/"><a className="flex text-lg font-medium text-white items-center justify-center rounded-lg shadow-xs border border-transparent bg-green-400 py-3 px-8">
                             Take me home
-                        </a>
-                        </Link>
+                        </a></Link>
                     </div>
                 </div>
             </div>
@@ -31,7 +28,7 @@ export default function Section2() {
                             </svg>
                             <h5 className="md:mt-12 mt-8 text-xl font-medium text-gray-900">Documentation</h5>
                             <p className="mt-2 text-base text-gray-500">Dive in to learn all about our product.</p>
-                            <Link href="/"><a className="text-base text-gray-900 font-medium flex mt-5">Start learning <svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Link href="#"><a className="text-base text-gray-900 font-medium flex mt-5">Start learning <svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.16602 10.0003H15.8327M15.8327 10.0003L9.99935 4.16699M15.8327 10.0003L9.99935 15.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                             </svg></a></Link>
                         </div>
@@ -41,7 +38,7 @@ export default function Section2() {
                             </svg>
                             <h5 className="md:mt-12 mt-8 text-xl font-medium text-gray-900">Our blog</h5>
                             <p className="mt-2 text-base text-gray-500">Read the latest posts on our blog.</p>
-                            <Link href="/"><a className="text-base text-gray-900 font-medium flex mt-5">View lastest posts <svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Link href="#"><a className="text-base text-gray-900 font-medium flex mt-5">View lastest posts <svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.16602 10.0003H15.8327M15.8327 10.0003L9.99935 4.16699M15.8327 10.0003L9.99935 15.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                             </svg></a></Link>
                         </div>
@@ -51,7 +48,7 @@ export default function Section2() {
                             </svg>
                             <h5 className="md:mt-12 mt-8 text-xl font-medium text-gray-900">Chat to us</h5>
                             <p className="mt-2 text-base text-gray-500">Can’t find what you’re looking for?</p>
-                            <Link href="/"><a className="text-base text-gray-900 font-medium flex mt-5">Chat to our team<svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <Link href="#"><a className="text-base text-gray-900 font-medium flex mt-5">Chat to our team<svg className="ml-2 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.16602 10.0003H15.8327M15.8327 10.0003L9.99935 4.16699M15.8327 10.0003L9.99935 15.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
                             </svg></a></Link>
                         </div>

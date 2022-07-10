@@ -1,6 +1,5 @@
 import { CheckIcon } from '@heroicons/react/solid'
-import Link from 'next/link'
-
+import Link from "next/link";
 import ImgLoader from '../Image';
 import Logo from "../../assets/images/logo-white.png"
 
@@ -35,8 +34,7 @@ export default function SignUpSteps() {
                     {stepIdx !== steps.length - 1 ? (
                       <div className="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true" />
                     ) : null}
-                    <Link href={step.href}>
-                    <a  className="relative flex items-start group">
+                    <a href={step.href} className="relative flex items-start group">
                       <span className="h-9 flex items-center">
                         <span className="relative z-10 w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full group-hover:bg-gray-400">
                           <CheckIcon className="w-5 h-5 text-gray-700" aria-hidden="true" />
@@ -47,14 +45,13 @@ export default function SignUpSteps() {
                         <span className="text-base text-gray-300">{step.description}</span>
                       </span>
                     </a>
-                    </Link>
                   </>
                 ) : step.status === 'current' ? (
                   <>
                     {stepIdx !== steps.length - 1 ? (
                       <div className="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true" />
                     ) : null}
-                    <Link href={step.href}><a className="relative flex items-start group" aria-current="step">
+                    <a href={step.href} className="relative flex items-start group" aria-current="step">
                       <span className="h-9 flex items-center" aria-hidden="true">
                         <span className="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-600 rounded-full">
                           <span className="h-2.5 w-2.5 bg-gray-600 rounded-full" />
@@ -65,15 +62,13 @@ export default function SignUpSteps() {
                         <span className="text-base text-gray-300">{step.description}</span>
                       </span>
                     </a>
-                    </Link>
                   </>
                 ) : (
                   <>
                     {stepIdx !== steps.length - 1 ? (
                       <div className="-ml-px absolute mt-0.5 top-4 left-4 w-0.5 h-full bg-gray-300" aria-hidden="true" />
                     ) : null}
-                    <Link href={step.href}>
-                    <a className="relative flex items-start group">
+                    <a href={step.href} className="relative flex items-start group">
                       <span className="h-9 flex items-center" aria-hidden="true">
                         <span className="relative z-10 w-8 h-8 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full group-hover:border-gray-400">
                           <span className="h-2.5 w-2.5 bg-transparent rounded-full group-hover:bg-gray-300" />
@@ -84,7 +79,6 @@ export default function SignUpSteps() {
                         <span className="text-base text-gray-300">{step.description}</span>
                       </span>
                     </a>
-                    </Link>
                   </>
                 )}
               </li>

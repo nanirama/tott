@@ -1,8 +1,7 @@
 import { Fragment, useState } from 'react'
-import Link from 'next/link'
+import Link from "next/link";
 import { Dialog, Transition } from '@headlessui/react'
 import { Switch } from '@headlessui/react'
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -129,7 +128,7 @@ export default function Popup() {
                                                 />
                                             </div>
                                         </div>
-                                        <p className="text-white text-sm sm:mb-8 mb-4">I agree to the Trady <Link href="#" ><a className='underline'>Terms of Service</a></Link> and <Link href="#"><a className='underline'>Privacy Policy</a></Link></p>
+                                        <p className="text-white text-sm sm:mb-8 mb-4">I agree to the Trady <Link href="/"><a className='underline'>Terms of Service</a></Link> and <Link href="/"><a className='underline'>Privacy Policy</a></Link></p>
                                         <button
                                             type="submit"
                                             className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"

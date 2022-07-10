@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from "next/link";
 import Button from "../../components/Button/index"
 
 const tiers = [
@@ -75,13 +75,12 @@ export default function Pricing1() {
                                     <span className="lg:text-5xl text-2xl font-extrabold text-gray-900">/mth</span>
                                 </p>
                                 <p className="mt-4 text-base text-gray-500 text-center">{tier.description}</p>
-                                <Link href={tier.href}>
                                 <a
+                                    href={tier.href}
                                     className="mt-8 block w-full bg-gray-500 border bg-slate-600 rounded-md py-3 text-sm font-semibold text-white text-center hover:bg-gray-900"
                                 >
                                     Start Free Trail
                                 </a>
-                                </Link>
                                 <button
                                     type="button"
                                     className="w-full border border-slate-300 mr-4 mt-4 rounded-md py-3 text-base font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:z-10 sm:w-full sm:px-8"

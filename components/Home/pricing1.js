@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from "next/link";
 import Button from "../../components/Button/index"
 
 const tiers = [
@@ -87,14 +87,13 @@ export default function Pricing1({ data }) {
                                
 
                                 <p className="mt-4 text-base text-gray-500 text-center">{tier.description}</p>
-                                <Link href={tier.href}>
+
                                 <a
-                                    
+                                    href={tier.href}
                                     className="mt-8 block w-full bg-gray-500 border bg-slate-600 rounded-md py-3 text-sm font-semibold text-white text-center hover:bg-gray-900"
                                 >
                                     Get Started
                                 </a>
-                                </Link>
 
                                 <button
                                     type="button"

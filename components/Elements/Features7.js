@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Features7() {
 
     return (
@@ -26,8 +26,8 @@ export default function Features7() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                         <div className='w-full flex gap-3 mb-4'>
@@ -43,8 +43,8 @@ export default function Features7() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     An all-in-one customer service platform that helps you balance everything your customers need to be happy.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                         <div className='w-full flex gap-3 mb-4'>
@@ -60,8 +60,8 @@ export default function Features7() {
                                 <p className="mt-3 mb-5 text-base text-gray-500">
                                     Measure what matters with Untitled&lsquo;s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
                                 </p>
-                                <Link href="/"><a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
-                                </a></Link>
+                                <a className="flex items-center text-gray-600 visited:text-gray-600 font-medium">Learn More <svg width="28" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16675 7.00033H12.8334M12.8334 7.00033L7.00008 1.16699M12.8334 7.00033L7.00008 12.8337" stroke="#323232" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ export default function Features7() {
                             <div>
                                 <div className='flex flex-row gap-2 mb-1'>
                                     <h5 className="font-semibold text-2xl">Basic plan</h5>
-                                    <Link href="/"><a className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a></Link>
+                                    <a href='#' className='flex items-center hidden md:flex justify-between bg-gray-50 rounded-2xl p-1 w-auto text-gray-700 text-base font-medium py-1 px-2'>Popular</a>
                                 </div>
                                 <p className='text-base font-normal text-gray-500'>Our most popular plan for small teams.</p>
                             </div>
@@ -159,7 +159,7 @@ export default function Features7() {
                             </div>
                         </div>
                         <div className='p-8 flex'>
-                        <Link href="/"><a className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a></Link>
+                            <Link href="/"><a className="text-center rounded-lg bg-zinc-600 border border-zinc-600 py-3 px-5 text-white text-base font-medium w-full">Start Free Trail</a></Link>
                         </div>
                     </div>
                 </div>
