@@ -9,6 +9,8 @@ import {
 } from "../../../lib/graphql/queries";
 
 const Categories = (props) => {
+  // const categories = fetchAPI("/categories")
+  // console.log('categories',categories)
   return (
     <Layout>
       <BlogIndex
@@ -26,7 +28,7 @@ export async function getStaticPaths() {
   );
   const categories = await response.json();
   categories?.data?.map((category) => {
-    
+    console.log("Category", category);
   });
   return {
     paths: categories?.data?.map((category) => ({

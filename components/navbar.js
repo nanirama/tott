@@ -292,6 +292,7 @@ export default function NavBar() {
           >
             Login
           </a>
+          {/* <a href="#" onClick={() => setShowModal(true)} className="inline-block sm:text-sm text-xs rounded-lg text-white text-center bg-green-400 py-3 md:px-5 sm:px-2 px-1 font-medium">Start Free Trail</a> */}
           <Button />
         </div>
       </div>

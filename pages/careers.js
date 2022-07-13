@@ -17,10 +17,11 @@ export default function AboutUs({ pageData }) {
     team_section,
     stats,
     mission_section,
+    seo
   } = pageData;
   return (
     <div className="lg:mt-20 mt-16">
-      <Layout>
+      <Layout seo={seo}>
         <Career2 openPositions={open_positions} />
         <Career1 currentJobs={current_jobs} />
         <Career3 currentJobs={jobs_grid_section} />

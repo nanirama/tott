@@ -4,6 +4,7 @@ import Seo from "./seo"
 
 const Layout = ({ children, seo }) => (
   <>
+    <Seo seo={seo}/>
     <Header />
     {children}
     <Footer />

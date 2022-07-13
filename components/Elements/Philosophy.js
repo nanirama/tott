@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ImgLoader from "../Image";
 import Button from "../../components/Button/index";
 

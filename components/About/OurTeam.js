@@ -1,19 +1,22 @@
 import Team from "../Elements/Team";
-import Link from "next/link";
+
 export default function OurTeam({ teamInfo }) {
-  const { heading, short_description, buttons, profiles } = teamInfo;
   return (
     <div className="border-b border-slate-200 pb-5">
       <div className="max-w-7xl mx-auto px-4 py-10 text-center">
         <div className="lg:max-w-3xl mx-auto w-full flex flex-col align-center mb-12">
-          <h2 className="md:text-4xl text-3xl font-bold text-gray-900 text-center">
-            {heading}
-          </h2>
-          <p className="mt-5 text-xl text-gray-500 text-center">
-            {short_description}
-          </p>
+          {teamInfo?.heading && (
+            <h2 className="md:text-4xl text-3xl font-bold text-gray-900 text-center">
+              {teamInfo?.heading}
+            </h2>
+          )}
+          {teamInfo?.short_description && (
+            <p className="mt-5 text-xl text-gray-500 text-center">
+              {teamInfo?.short_description}
+            </p>
+          )}
           <div className="relative sm:self-center items-center mt-6 rounded-lg p-0.5 flex sm:mt-8 sm:flex-row flex-col">
-            {buttons?.map((button, index) => (
+            {teamInfo?.buttons?.map((button, index) => (
               <a
                 key={index}
                 href={button.button_url}
@@ -35,7 +38,9 @@ export default function OurTeam({ teamInfo }) {
             </a> */}
           </div>
         </div>
-        <Team profiles={profiles} />
+        {teamInfo?.profiles?.length > 0 && (
+          <Team profiles={teamInfo?.profiles} />
+        )}
       </div>
     </div>
   );

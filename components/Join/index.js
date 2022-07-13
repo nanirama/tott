@@ -10,6 +10,7 @@ const JoinIndex = (props) => {
   const { query } = useRouter();
   const [activeStep, setActiveStep] = useState(1);
   const [webValue, setWebValue] = useState(false);
+  const [siteId, setSiteId] = useState('');
 
   const escFunction = useCallback(
     (event) => {
@@ -42,9 +43,9 @@ const JoinIndex = (props) => {
       </Link>
       <div className="flex overflow-hidden overflow-y-auto fixed inset-0 z-40 my-14 outline-none focus:outline-none">
         {activeStep === 1 ? (
-          <StepOne setActiveStep={setActiveStep} query={query} />
+          <StepOne setActiveStep={setActiveStep} setSiteId={setSiteId} query={query} />
         ) : (
-          <StepTwo query={query} />
+          <StepTwo siteId={siteId} query={query} />
         )}
       </div>
       <div className="fixed inset-0 z-30 bg-black"></div>

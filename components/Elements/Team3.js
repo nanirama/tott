@@ -1,22 +1,26 @@
-import Link from "next/link";
 import ImgLoader from "../Image";
 
 export default function Team3({ teamInfo }) {
-  const { heading, short_description, profiles } = teamInfo;
   return (
     <div className="lg:py-20 py-10 w-full  bg-gray-50">
       <div className="max-w-4xl mx-auto flex flex-col px-4 text-center mb-14">
         <h6 className="text-base text-gray-600 font-semibold mb-4">
           We&lsquo;re hiring!
         </h6>
-        <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">
-          {heading}
-        </h2>
-        <p className="text-xl text-gray-500 leading-8">{short_description}</p>
+        {teamInfo?.heading && (
+          <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4">
+            {teamInfo?.heading}
+          </h2>
+        )}
+        {teamInfo?.short_description && (
+          <p className="text-xl text-gray-500 leading-8">
+            {teamInfo?.short_description}
+          </p>
+        )}
       </div>
       <div className="max-w-7xl mx-auto px-4 text-center">
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8">
-          {profiles?.map((profile, index) => (
+          {teamInfo?.profiles?.map((profile, index) => (
             <div
               className="w-full flex flex-col items-center bg-white p-8"
               key={index}

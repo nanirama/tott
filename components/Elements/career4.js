@@ -1,4 +1,3 @@
-import Link from "next/link";
 export default function Career4({ openPositions }) {
   const { heading, description, jobs } = openPositions;
   return (

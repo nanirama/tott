@@ -10,17 +10,16 @@
 // function classNames(...classes) {
 //   return classes.filter(Boolean).join(" ");
 // }
-import Link from "next/link";
+
 export default function Career2({ openPositions }) {
-  const { heading, description, jobs } = openPositions;
   return (
     <div className="lg:py-14 py-10 px-4">
       <div className="max-w-4xl mx-auto flex flex-col">
         <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-4 text-center">
-          {heading}
+          {openPositions?.heading}
         </h2>
         <p className="text-xl text-gray-500 leading-8 text-center">
-          {description}
+          {openPositions?.description}
         </p>
         <div className="py-10">
           <div className="sm:hidden">
@@ -34,9 +33,11 @@ export default function Career2({ openPositions }) {
               className="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
               defaultValue="All"
             >
-              {jobs?.data?.map(({ id, attributes: { department } }) => (
-                <option key={id}>{department?.data?.attributes?.name}</option>
-              ))}
+              {openPositions?.jobs?.data?.map(
+                ({ id, attributes: { department } }) => (
+                  <option key={id}>{department?.data?.attributes?.name}</option>
+                )
+              )}
             </select>
           </div>
           <div className="hidden sm:block">
@@ -44,27 +45,29 @@ export default function Career2({ openPositions }) {
               <a className="bg-gray-100 text-gray-700 px-3 py-2 font-medium text-sm rounded-md">
                 All
               </a>
-              {jobs?.data?.map(({ id, attributes: { department } }) => (
-                <a
-                  key={id}
-                  className="px-3 py-2 font-medium text-sm rounded-md"
-                  //   href={tab.href}
-                  //   className={classNames(
-                  //     tab.current
-                  //       ? "bg-gray-100 text-gray-700"
-                  //       : "text-gray-500 hover:text-gray-700",
-                  //     "px-3 py-2 font-medium text-sm rounded-md"
-                  //   )}
-                  //   aria-current={tab.current ? "page" : undefined}
-                >
-                  {department?.data?.attributes?.name}
-                </a>
-              ))}
+              {openPositions?.jobs?.data?.map(
+                ({ id, attributes: { department } }) => (
+                  <a
+                    key={id}
+                    className="px-3 py-2 font-medium text-sm rounded-md"
+                    //   href={tab.href}
+                    //   className={classNames(
+                    //     tab.current
+                    //       ? "bg-gray-100 text-gray-700"
+                    //       : "text-gray-500 hover:text-gray-700",
+                    //     "px-3 py-2 font-medium text-sm rounded-md"
+                    //   )}
+                    //   aria-current={tab.current ? "page" : undefined}
+                  >
+                    {department?.data?.attributes?.name}
+                  </a>
+                )
+              )}
             </nav>
           </div>
         </div>
 
-        {jobs?.data?.map(
+        {openPositions?.jobs?.data?.map(
           ({
             id,
             attributes: {

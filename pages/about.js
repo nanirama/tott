@@ -18,9 +18,7 @@ export default function AboutUs({ pageData }) {
   const {
     title,
     sub_title,
-    feature_image: {
-      data: { attributes: mapImage },
-    },
+    feature_image,
     contact,
     office_locations,
     our_team,
@@ -29,24 +27,25 @@ export default function AboutUs({ pageData }) {
     growing_stats,
     testimonials,
     open_positions,
+    seo
   } = pageData;
   return (
-    <Layout>
+    <Layout seo={seo}>
       <MapSection
         title={title}
         subTitle={sub_title}
-        mapImage={mapImage}
+        mapImage={feature_image?.data?.attributes}
         contacts={contact}
       />
       <Locations officeLocations={office_locations} />
       <Team2 ourTeam={our_team} />
       <Career1 currentJobs={first_jobs_section} />
       <Contact />
-      <Team teamInfo={team_section} />
-      <Stats stats={growing_stats} />
+      <Team teamInfo={team_section || {}} />
+      <Stats stats={growing_stats || {}} />
       <Testimonial4 testimonials={testimonials} />
-      <Team3 teamInfo={team_section} />
-      <Career2 openPositions={open_positions} />
+      <Team3 teamInfo={team_section || {}} />
+      <Career2 openPositions={open_positions || {}} />
       <Testimonial5 />
     </Layout>
   );
@@ -61,7 +60,7 @@ export const getStaticProps = async () => {
   const { data } = await client.query({ query: ABOUT_PAGE_DATA });
   return {
     props: {
-      pageData: data?.about?.data?.attributes,
+      pageData: data?.about?.data?.attributes || {},
     },
   };
 };

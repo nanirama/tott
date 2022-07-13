@@ -1,21 +1,24 @@
 import Head from "next/head"
-import { useContext } from "react"
-import { GlobalContext } from "../pages/_app"
-import { getStrapiMedia } from "../lib/media"
+import { useRouter } from "next/router";
 
 const Seo = ({ seo }) => {
-  const { defaultSeo, siteName } = useContext(GlobalContext)
-  const seoWithDefaults = {
-    ...defaultSeo,
-    ...seo,
+  console.log('Seodata in seo', seo)
+  const siteName = 'Trady'
+  const siteUrl = 'https://trady.com/'
+  let fullSeo = {}
+  if(seo && seo.metaTitle){
+    fullSeo = {
+      metaTitle: `${seo.metaTitle} | ${siteName}`,
+      metaDescription: seo.metaDescription,
+      shareImage: seo.sharedImage.media.data[0].attributes.url,
+      article: seo.article ? seo.article : false,
+      preventIndexing: seo.preventIndexing
+    }
   }
-  const fullSeo = {
-    ...seoWithDefaults,
-    // Add title suffix
-    metaTitle: `${seoWithDefaults.metaTitle} | ${siteName}`,
-    // Get full image URL
-    shareImage: getStrapiMedia(seoWithDefaults.shareImage),
-  }
+  
+
+  const router = useRouter();
+  const canonicalUrl = (siteUrl + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
 
   return (
     <Head>
@@ -41,7 +44,13 @@ const Seo = ({ seo }) => {
         </>
       )}
       {fullSeo.article && <meta property="og:type" content="article" />}
+      {fullSeo.preventIndexing && (
+        <>
+          <meta name="robots" content="noindex"></meta>
+        </>
+      )}
       <meta name="twitter:card" content="summary_large_image" />
+      <link rel="canonical" href={canonicalUrl} />
     </Head>
   )
 }

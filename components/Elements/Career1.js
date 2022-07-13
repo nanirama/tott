@@ -1,16 +1,6 @@
 import ImgLoader from "../Image";
-import Link from "next/link";
-import Banner from "../../assets/images/banner-img.jpg";
 
 export default function Career1({ currentJobs }) {
-  const {
-    heading,
-    short_description,
-    jobs,
-    banner: {
-      data: { attributes },
-    },
-  } = currentJobs;
   return (
     <>
       <div className="lg:py-14 py-10 w-full border-b border-slate-200">
@@ -18,10 +8,10 @@ export default function Career1({ currentJobs }) {
           <div className="flex md:flex-row flex-col gap-4 mb-14 justify-bwetween">
             <div className="md:w-3/5 w-full">
               <h2 className="md:text-4xl text-3xl font-semibold tracking-tight md:mb-6 mb-3 text-gray-900">
-                {heading}
+                {currentJobs?.heading}
               </h2>
               <p className="text-xl text-gray-500 font-normal leading-8">
-                {short_description}
+                {currentJobs?.short_description}
               </p>
             </div>
             <div className="md:w-2/5 w-full">
@@ -63,7 +53,7 @@ export default function Career1({ currentJobs }) {
               </div>
             </div>
           </div>
-          {jobs?.data?.map(
+          {currentJobs?.jobs?.data?.map(
             ({
               id,
               attributes: {
@@ -796,12 +786,12 @@ export default function Career1({ currentJobs }) {
               </div>
             </div>
           </div> */}
-          {attributes && (
+          {currentJobs?.banner && (
             <ImgLoader
-              src={attributes?.url}
-              width={attributes?.width}
-              height={attributes?.height}
-              alt={attributes?.alternativeText}
+              src={currentJobs?.banner?.data?.attributes?.url}
+              width={currentJobs?.banner?.data?.attributes?.width}
+              height={currentJobs?.banner?.data?.attributes?.height}
+              alt={currentJobs?.banner?.data?.attributes?.alternativeText}
             />
           )}
         </div>

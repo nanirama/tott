@@ -16,6 +16,7 @@ export default function BlogMainIndex({ categoriesList, slug = "" }) {
   if (error) <p>Loading failed...</p>;
   if (!data) <p>Loading ...</p>;
   const blogs = data && data.data ? data.data : [];
+  //const { blogs, page, numOfPages, categoriesList, total } = data
 
   const emptyQuery = "";
 

@@ -41,9 +41,9 @@ import { HOME_DATA } from "../lib/graphql/queries";
 
 
 export default function Home(props) {
-  const { hero_section, cta_section, faq_section, all_in_one_finance, newsletter } = props.pageData.data.attributes
+  const { hero_section, cta_section, faq_section, all_in_one_finance, newsletter, seo } = props.pageData.data.attributes
   return (
-    <Layout>
+    <Layout seo={seo}>
      {hero_section && <Hero data={hero_section} />}
       <Team />
       {cta_section && <Cta data={cta_section} />}

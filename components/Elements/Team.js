@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ImgLoader from "../Image";
 
 export default function Team({ profiles }) {
@@ -16,9 +15,9 @@ export default function Team({ profiles }) {
             <div className="absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]">
               <div className="flex justify-between items-center mb-3">
                 <h3 className="md:text-3xl text-xl font-semibold text-white">
-                  <Link href="/"><a>{profile.username}</a></Link>
+                  <a href="#">{profile.username}</a>
                 </h3>
-                <Link href="/"><a>
+                <a href="#">
                   <svg
                     width="12"
                     height="12"
@@ -34,7 +33,7 @@ export default function Team({ profiles }) {
                       strokeLinejoin="round"
                     ></path>
                   </svg>
-                </a></Link>
+                </a>
               </div>
               <p className="text-base font-semibold text-white mb-1">
                 {profile.post}
@@ -119,9 +118,9 @@ export default function Team({ profiles }) {
           <div className="absolute bottom-6 left-5 right-5 border py-5 px-4 bg-white/[0.3]">
             <div className="flex justify-between items-center mb-3">
               <h3 className="md:text-3xl text-xl font-semibold text-white">
-                <Link href="/"><a>Rich Wilson</a>
+                <a href="#">Rich Wilson</a>
               </h3>
-              <Link href="/"><a>
+              <a href="#">
                 <svg
                   width="12"
                   height="12"

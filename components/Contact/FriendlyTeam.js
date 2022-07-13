@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from "react";
 import Link from "next/link";
 import ContactForm from "../Elements/ContactForm"
+import { useForm } from 'react-hook-form';
 export default function FriendlyTeamsection() {
+    const { register, formState: { errors }, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
+    const [isLoading, setIsLoading] = useState(false);
+    const [data, setData] = useState({
+        first_name: "",
+        last_name: "",
+        email: "",
+        phone: "",
+        message: "",
+        agree: false,
+    });
     return (
         <div className='bg-neutral-800 mx-auto md:py-24 py-10 px-4 sm:mt-20 mt-16'>
             <div className="max-w-7xl mx-auto">
@@ -46,56 +58,49 @@ export default function FriendlyTeamsection() {
                     </div>
                     <div className='md:w-1/2 w-full bg-white sm:p-10 p-5 rounded-2xl'>
                         <div className="mt-10 md:mt-0 md:col-span-2">
-                            <form action="#" method="POST">
+                            <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className="grid grid-cols-12 sm:gap-6 gap-2">
-                                    <div className="md:col-span-6 col-span-12">
+                                    <div className="md:col-span-6 col-span-12 h-20">
                                         <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                                             First name
                                         </label>
-                                        <input
-                                            type="text"
-                                            name="first-name"
-                                            id="first-name"
-                                            autoComplete="given-name"
-                                            className="mt-1 block w-full py-2 px-3  placeholder-gray-500  border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                            placeholder="First name" />
+
+                                        <input placeholder={"First name"}  {...register('firstname', { required: true })}
+                                            className={errors.firstname && 'error-class focus:ring-indigo-500 focus:border-indigo-500'}
+                                        />
+                                        {errors.firstname && <p>Please complete this required field.</p>}
+
                                     </div>
-                                    <div className="md:col-span-6 col-span-12">
+                                    <div className="md:col-span-6 col-span-12 h-20">
                                         <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
                                             Last name
                                         </label>
-                                        <input
-                                            type="text"
-                                            name="last-name"
-                                            id="last-name"
-                                            autoComplete="family-name"
-                                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                            placeholder="Last name" />
+
+                                        <input placeholder={"Last name"}  {...register('lastname', { required: true })}
+                                            className={errors.lastname && 'error-class focus:ring-indigo-500 focus:border-indigo-500'}
+                                        />
+                                        {errors.lastname && <p>Please complete this required field.</p>}
                                     </div>
-                                    <div className="col-span-12">
+                                    <div className="col-span-12 h-20">
                                         <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
                                             Email address
                                         </label>
-                                        <input
-                                            type="text"
-                                            name="email-address"
-                                            id="email-address"
-                                            autoComplete="email"
-                                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                            placeholder="you@company.com" />
+
+                                        <input placeholder={"you@company.com"}  {...register('email', { required: true })}
+                                            className={errors.email && 'error-class focus:ring-indigo-500 focus:border-indigo-500'}
+                                        />
+                                        {errors.email && <p>Please complete this required field.</p>}
                                     </div>
-                                    <div className="col-span-12">
+                                    <div className="col-span-12 h-36">
                                         <label htmlFor="comment" className="block text-sm font-medium text-gray-700">
                                             Message
                                         </label>
                                         <div className="mt-1">
-                                            <textarea
-                                                rows={4}
-                                                name="comment"
-                                                id="comment"
-                                                className="focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 h-32 p-3 block w-full sm:text-sm border-gray-300 border rounded-md" placeholder="Leave us a message..."
-                                                defaultValue={''}
+
+                                            <textarea rows={4} placeholder={"Leave us a message..."}  {...register('comment', { required: true })}
+                                                className={errors.comment && 'error-class'}
                                             />
+                                            {errors.comment && <p>Please complete this required field.</p>}
                                         </div>
                                     </div>
                                     <div className="col-span-12">
