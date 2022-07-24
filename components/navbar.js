@@ -34,9 +34,8 @@ function MobileNav({ data, error, open, setOpen }) {
 
   return (
     <div
-      className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${
-        open ? "-translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 ease-in-out filter`}
+      className={` z-50 absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out filter`}
     >
       <div className="flex items-center justify-start px-4 filter drop-shadow-md bg-white h-16">
         <Logo />
@@ -93,11 +92,10 @@ function MobileNav({ data, error, open, setOpen }) {
                                       {({ active }) => (
                                         <Link href={`${sub.url}`}>
                                           <a
-                                            className={`${
-                                              active
-                                                ? "bg-gray-100 text-gray-900"
-                                                : "text-gray-700"
-                                            } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                            className={`${active
+                                              ? "bg-gray-100 text-gray-900"
+                                              : "text-gray-700"
+                                              } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
                                           >
                                             {sub.title}
                                           </a>
@@ -202,11 +200,10 @@ function DesktopNav({ data, error, open, setOpen }) {
                                   {({ active }) => (
                                     <Link href={`${sub.url}`}>
                                       <a
-                                        className={`${
-                                          active
-                                            ? "bg-gray-100 text-gray-900"
-                                            : "text-gray-700"
-                                        } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
+                                        className={`${active
+                                          ? "bg-gray-100 text-gray-900"
+                                          : "text-gray-700"
+                                          } flex justify-between w-full px-4 py-3 text-sm leading-5 text-left`}
                                       >
                                         {sub.title}
                                       </a>
@@ -249,6 +246,7 @@ function DesktopNav({ data, error, open, setOpen }) {
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const MENU_ENDPOINT = `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/menus?filters[slug][$eq]=header&populate=*`;
+  const ADMIN_ENDPOINT = `${process.env.NEXT_PUBLIC_APP_URL}/admin`;  
   const { data, error } = useSWR(MENU_ENDPOINT, fetcher);
   const header_menu =
     data && data.menus && data.menus[0] && data.menus[0].items
@@ -267,35 +265,33 @@ export default function NavBar() {
           }}
         >
           <span
-            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-              open ? "rotate-45 translate-y-3.5" : ""
-            }`}
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""
+              }`}
           />
           <span
-            className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${
-              open ? "w-0" : "w-full"
-            }`}
+            className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"
+              }`}
           />
           <span
-            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-              open ? "-rotate-45 -translate-y-3.5" : ""
-            }`}
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""
+              }`}
           />
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto flex hidden lg:flex">
           <DesktopNav data={data} error={error} />
         </div>
         <div className="flex justify-end w-full">
-          <a
-            href="#"
-            className="flex items-center justify-center inline-block text-sm rounded text-gray-500  py-2.5 md:px-4 px-2 text-base font-medium"
+
+          <a href={ADMIN_ENDPOINT}
+            className={`flex items-center justify-center inline-block text-sm rounded text-gray-500  py-2.5 md:px-4 px-2 text-base font-medium`}
           >
             Login
           </a>
+
           {/* <a href="#" onClick={() => setShowModal(true)} className="inline-block sm:text-sm text-xs rounded-lg text-white text-center bg-green-400 py-3 md:px-5 sm:px-2 px-1 font-medium">Start Free Trail</a> */}
           <Button />
         </div>
       </div>
-    </nav>
+    </nav >
   );
 }

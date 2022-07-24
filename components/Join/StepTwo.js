@@ -11,6 +11,7 @@ import Image6 from '../../assets/images/image-6.png';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { HashLoader } from 'react-spinners';
+import { JOIN } from "../../core/api/api-routes";
 
 export const StepTwo = ({ query, siteId }) => {
     const router = useRouter();
@@ -67,7 +68,7 @@ export const StepTwo = ({ query, siteId }) => {
         formData.append('site_id', siteId);
 
         axios
-            .post('https://lb.trady.com/api/join', formData, {
+            .post(JOIN, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

@@ -1,22 +1,22 @@
-import App from "next/app";
+import { useEffect, createContext } from "react";
 import Head from "next/head";
 import Script from "next/script";
-import { createContext } from "react";
+import TagManager from "react-gtm-module";
 import { ApolloProvider } from "@apollo/client";
 import client from "../lib/graphql/apolloClient";
-import { fetchAPI } from "../lib/api";
-import { getStrapiMedia } from "../lib/media";
 import "../styles/globals.css";
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({});
 
 const MyApp = ({ Component, pageProps }) => {
-  const { global } = pageProps;
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-N9MM9XQ" });
+  }, []);
 
   return (
     <GlobalContext.Provider>
-      <Head>
+       <Head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"

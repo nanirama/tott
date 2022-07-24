@@ -2,7 +2,6 @@ import Head from "next/head"
 import { useRouter } from "next/router";
 
 const Seo = ({ seo }) => {
-  console.log('Seodata in seo', seo)
   const siteName = 'Trady'
   const siteUrl = 'https://trady.com/'
   let fullSeo = {}

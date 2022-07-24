@@ -23,7 +23,7 @@ const Logo = () => {
       <Link href="/">
         <a>
           {" "}
-          <ImgLoader src={logoImg} width={178} height={50} />
+          <ImgLoader src={logoImg} width={178} height={61} />
         </a>
       </Link>
     );
