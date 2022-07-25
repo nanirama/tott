@@ -1,7 +1,6 @@
 import React from "react";
 import ImgLoader from "../../../components/Image";
 import Logo from "../../../assets/images/trady-logo.png"
-import Bar from "../../../assets/images/bar.png"
 
 
 const Step3 = () => {
@@ -29,8 +28,12 @@ const Step3 = () => {
                             <p className="font-normal text-xs text-gray-400 mb-4">By submitting you&lsquo;re accepting Trady&lsquo;s terms of use and privacy policy</p>
                         </div>
                         <div className="flex flex-col py-3">
-                            <p className="font-normal text-base text-gray-400 -mb-2">0% done</p>
-                            <div><ImgLoader src={Bar} width={164} height={4} />    </div>
+                            <p className="font-normal text-base text-gray-400 mb-2">50% done</p>
+                            <div className='w-full'>
+                                <div className="w-1/2 bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                    <div className="bg-green-500 h-1.5 rounded-full" style={{ 'width': '50%' }}></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

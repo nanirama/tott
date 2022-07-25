@@ -56,9 +56,13 @@ export default function Home({ pageData }) {
     promotional_banner,
     promotional_banner_two,
     promotional_banner_three,
-    seo
+    testimonials,
+    customers,
+    testimonials_style_two,
+    nominations,
+    client_companies,
+    seo,
   } = pageData;
-  console.log("hmepage pageData", pageData)
   return (
     <Layout seo={seo}>
       <Hero data={hero_section || {}} />
@@ -82,12 +86,12 @@ export default function Home({ pageData }) {
       <CtaSection1 data={promotional_banner || {}} />
       <CtaSection2 data={promotional_banner_two || {}} />
       <CtaSection3 data={promotional_banner_three || {}} />
-      <Testimonial1 />
-      <Testimonial2 />
-      <Testimonial3 />
-      <Client2 />
-      <Client1 />
-      {/* {newsletter && <Newsletter data={newsletter} />} */}
+      <Testimonial1 data={testimonials || {}} />
+      <Testimonial2 data={customers || {}} />
+      <Testimonial3 data={testimonials_style_two || {}} />
+      <Client2 data={nominations || {}} />
+      <Client1 data={client_companies || {}} />
+      {/* <Newsletter /> */}
     </Layout>
   );
 }

@@ -3,7 +3,6 @@ import Link from "next/link";
 import ImgLoader from "../../../components/Image";
 
 import Logo from "../../../assets/images/trady-logo.png"
-import Bar from "../../../assets/images/bar.png"
 
 
 const Step5 = () => {
@@ -93,7 +92,14 @@ const Step5 = () => {
             </div>
             <div className="flex flex-col py-3">
               <p className="font-normal text-base text-gray-400 -mb-2">50% done</p>
-              <div><ImgLoader src={Bar} width={164} height={4} />  </div>
+              <div className="flex flex-col py-3">
+                <p className="font-normal text-base text-gray-400 mb-2">50% done</p>
+                <div className='w-full'>
+                  <div className="w-1/2 bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                    <div className="bg-green-500 h-1.5 rounded-full" style={{ 'width': '50%' }}></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

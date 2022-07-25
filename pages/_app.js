@@ -22,21 +22,6 @@ const MyApp = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </Head>
-      <Script
-        strategy="lazyOnload"
-        id="googleAnalytics"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
-      />
-      <Script strategy="lazyOnload" id="google-tag">
-        {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
-                    page_path: window.location.pathname,
-                    });
-                `}
-      </Script>
       <ApolloProvider client={client}>
         <Component {...pageProps} />
       </ApolloProvider>

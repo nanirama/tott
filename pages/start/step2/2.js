@@ -3,7 +3,6 @@ import Link from "next/link";
 import ImgLoader from "../../../components/Image";
 
 import Logo from "../../../assets/images/trady-logo.png"
-import Bar from "../../../assets/images/bar.png"
 import FacebookImg from "../../../assets/images/facebook-img.png"
 
 
@@ -11,7 +10,7 @@ const Step2 = () => {
 
     return (
         <>
-             <div className="w-full h-screen flex flex-col justify-between bg-gray-50">
+            <div className="w-full h-screen flex flex-col justify-between bg-gray-50">
                 <div className="flex justify-center py-6 bg-white border-b border-solid border-gray-200 ">
                     <ImgLoader src={Logo} width={97} height={32} />
                 </div>
@@ -32,8 +31,14 @@ const Step2 = () => {
                             </div>
                         </div>
                         <div className="flex flex-col py-3">
-                            <p className="font-normal text-base text-gray-400 -mb-2">50% done</p>
-                            <div><ImgLoader src={Bar} width={164} height={4} />  </div>
+                            <div className="flex flex-col py-3">
+                                <p className="font-normal text-base text-gray-400 mb-2">50% done</p>
+                                <div className='w-full'>
+                                    <div className="w-1/2 bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                        <div className="bg-green-500 h-1.5 rounded-full" style={{ 'width': '50%' }}></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

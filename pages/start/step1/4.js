@@ -1,7 +1,6 @@
 import React from "react";
 import ImgLoader from "../../../components/Image";
 import Logo from "../../../assets/images/trady-logo.png"
-import Bar from "../../../assets/images/bar.png"
 
 
 const Step4 = () => {
@@ -99,8 +98,12 @@ const Step4 = () => {
                             <button className="rounded bg-gray-100 hover:bg-green-400 hover:text-white border text-base border-solid border-gray-200  text-gray-300 px-6 py-2 text-white mb-3">Submit</button>
                         </div>
                         <div className="flex flex-col py-3">
-                            <p className="font-normal text-base text-gray-400 -mb-2">0% done</p>
-                            <div><ImgLoader src={Bar} width={164} height={4} />    </div>
+                            <p className="font-normal text-base text-gray-400 mb-2">50% done</p>
+                            <div className='w-full'>
+                                <div className="w-1/2 bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                                    <div className="bg-green-500 h-1.5 rounded-full" style={{ 'width': '50%' }}></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,23 +1,24 @@
-import Head from "next/head"
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const Seo = ({ seo }) => {
-  const siteName = 'Trady'
-  const siteUrl = 'https://trady.com/'
-  let fullSeo = {}
-  if(seo && seo.metaTitle){
+  const siteName = "Trady";
+  const siteUrl = "https://trady.com/";
+  let fullSeo = {};
+  if (seo && seo?.metaTitle) {
     fullSeo = {
-      metaTitle: `${seo.metaTitle} | ${siteName}`,
-      metaDescription: seo.metaDescription,
-      shareImage: seo.sharedImage.media.data[0].attributes.url,
+      metaTitle: `${seo?.metaTitle} | ${siteName}`,
+      metaDescription: seo?.metaDescription,
+      shareImage: seo?.sharedImage?.media?.data?.attributes.url,
       article: seo.article ? seo.article : false,
-      preventIndexing: seo.preventIndexing
-    }
+      preventIndexing: seo?.preventIndexing,
+    };
   }
-  
 
   const router = useRouter();
-  const canonicalUrl = (siteUrl + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (
+    siteUrl + (router.asPath === "/" ? "" : router.asPath)
+  ).split("?")[0];
 
   return (
     <Head>
@@ -51,7 +52,7 @@ const Seo = ({ seo }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <link rel="canonical" href={canonicalUrl} />
     </Head>
-  )
-}
+  );
+};
 
-export default Seo
+export default Seo;
